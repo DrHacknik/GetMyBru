@@ -10,7 +10,7 @@ This application is written using C# and .NET 4.6.x.
 
 # Screenshots 
 ![ScreenMain](Common/Screenshots/GetMyBru_KQUhOMYpdt.png)
-![ScreenMain](Common/Screenshots/GetMyBru_n8HqmX3518.png)
+![ScreenMain](Common/Screenshots/GetMyBru_o22isUGdeZ.png)
 # Credits 
 * [WiiUBru](https://wiiubru.com/appstore/#/)
 * [SwitchBru](https://switchbru.com/appstore/#/)
