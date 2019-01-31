@@ -37,5 +37,10 @@ namespace GetMyBru.GetMyBru.GUI
             LblVersion.Text = "Version: " + Application.ProductVersion;
             return;
         }
+
+        private void LblExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

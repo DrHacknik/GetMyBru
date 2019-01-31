@@ -49,8 +49,8 @@
             this.LblVersion = new MaterialSkin.Controls.MaterialLabel();
             this.NtfMain = new System.Windows.Forms.NotifyIcon(this.components);
             this.MtxMain = new MaterialSkin.Controls.MaterialContextMenuStrip();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openSelectorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSwitchLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxALogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSwitch)).BeginInit();
@@ -89,7 +89,7 @@
             this.PcxALogo.BackColor = System.Drawing.Color.Transparent;
             this.PcxALogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxALogo.BackgroundImage")));
             this.PcxALogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxALogo.Location = new System.Drawing.Point(608, 447);
+            this.PcxALogo.Location = new System.Drawing.Point(608, 446);
             this.PcxALogo.Name = "PcxALogo";
             this.PcxALogo.Size = new System.Drawing.Size(16, 16);
             this.PcxALogo.TabIndex = 1;
@@ -103,7 +103,7 @@
             this.LblOk.Depth = 0;
             this.LblOk.Font = new System.Drawing.Font("Roboto", 11F);
             this.LblOk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LblOk.Location = new System.Drawing.Point(624, 445);
+            this.LblOk.Location = new System.Drawing.Point(624, 444);
             this.LblOk.MouseState = MaterialSkin.MouseState.HOVER;
             this.LblOk.Name = "LblOk";
             this.LblOk.Size = new System.Drawing.Size(27, 19);
@@ -237,7 +237,7 @@
             this.PcxSettings.BackColor = System.Drawing.Color.Transparent;
             this.PcxSettings.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxSettings.BackgroundImage")));
             this.PcxSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxSettings.Location = new System.Drawing.Point(519, 447);
+            this.PcxSettings.Location = new System.Drawing.Point(519, 446);
             this.PcxSettings.Name = "PcxSettings";
             this.PcxSettings.Size = new System.Drawing.Size(16, 16);
             this.PcxSettings.TabIndex = 7;
@@ -251,7 +251,7 @@
             this.LblSettings.Depth = 0;
             this.LblSettings.Font = new System.Drawing.Font("Roboto", 11F);
             this.LblSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LblSettings.Location = new System.Drawing.Point(535, 445);
+            this.LblSettings.Location = new System.Drawing.Point(535, 444);
             this.LblSettings.MouseState = MaterialSkin.MouseState.HOVER;
             this.LblSettings.Name = "LblSettings";
             this.LblSettings.Size = new System.Drawing.Size(64, 19);
@@ -264,7 +264,7 @@
             this.PcxExit.BackColor = System.Drawing.Color.Transparent;
             this.PcxExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxExit.BackgroundImage")));
             this.PcxExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxExit.Location = new System.Drawing.Point(458, 447);
+            this.PcxExit.Location = new System.Drawing.Point(458, 446);
             this.PcxExit.Name = "PcxExit";
             this.PcxExit.Size = new System.Drawing.Size(16, 16);
             this.PcxExit.TabIndex = 9;
@@ -278,7 +278,7 @@
             this.LblExit.Depth = 0;
             this.LblExit.Font = new System.Drawing.Font("Roboto", 11F);
             this.LblExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LblExit.Location = new System.Drawing.Point(474, 445);
+            this.LblExit.Location = new System.Drawing.Point(474, 444);
             this.LblExit.MouseState = MaterialSkin.MouseState.HOVER;
             this.LblExit.Name = "LblExit";
             this.LblExit.Size = new System.Drawing.Size(34, 19);
@@ -294,7 +294,7 @@
             this.LblVersion.Depth = 0;
             this.LblVersion.Font = new System.Drawing.Font("Roboto", 11F);
             this.LblVersion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LblVersion.Location = new System.Drawing.Point(65, 444);
+            this.LblVersion.Location = new System.Drawing.Point(65, 443);
             this.LblVersion.MouseState = MaterialSkin.MouseState.HOVER;
             this.LblVersion.Name = "LblVersion";
             this.LblVersion.Size = new System.Drawing.Size(59, 19);
@@ -317,21 +317,21 @@
             this.exitToolStripMenuItem});
             this.MtxMain.MouseState = MaterialSkin.MouseState.HOVER;
             this.MtxMain.Name = "MtxMain";
-            this.MtxMain.Size = new System.Drawing.Size(181, 70);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.MtxMain.Size = new System.Drawing.Size(149, 48);
             // 
             // openSelectorToolStripMenuItem
             // 
             this.openSelectorToolStripMenuItem.Name = "openSelectorToolStripMenuItem";
-            this.openSelectorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openSelectorToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.openSelectorToolStripMenuItem.Text = "Open Selector";
             this.openSelectorToolStripMenuItem.Click += new System.EventHandler(this.openSelectorToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // FmSelectSystem
             // 

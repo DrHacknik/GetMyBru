@@ -41,5 +41,10 @@ namespace GetMyBru.GetMyBru.GUI
             //MessageBox.Show("Packages RAW Data returned:" + Environment.NewLine + BruParser.PackagesRawList, "Packages:", MessageBoxButtons.OK, MessageBoxIcon.Information);
             return;
         }
+
+        private void LblExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -104,6 +104,7 @@
             this.LblExit.Size = new System.Drawing.Size(34, 19);
             this.LblExit.TabIndex = 16;
             this.LblExit.Text = "Exit";
+            this.LblExit.Click += new System.EventHandler(this.LblExit_Click);
             // 
             // PcxSettings
             // 
