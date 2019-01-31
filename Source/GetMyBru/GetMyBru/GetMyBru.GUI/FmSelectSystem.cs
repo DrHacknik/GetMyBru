@@ -57,5 +57,17 @@ namespace GetMyBru.GetMyBru.GUI
             this.Refresh();
             return;
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void openSelectorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form FmMain = new FmSelectSystem();
+            FmMain.Show();
+            return;
+        }
     }
 }

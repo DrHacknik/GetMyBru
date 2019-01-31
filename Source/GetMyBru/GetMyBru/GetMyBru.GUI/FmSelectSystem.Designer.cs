@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FmSelectSystem));
             this.PcxSwitchLogo = new System.Windows.Forms.PictureBox();
             this.PnlSplitter = new System.Windows.Forms.Panel();
@@ -46,6 +47,10 @@
             this.PcxExit = new System.Windows.Forms.PictureBox();
             this.LblExit = new MaterialSkin.Controls.MaterialLabel();
             this.LblVersion = new MaterialSkin.Controls.MaterialLabel();
+            this.NtfMain = new System.Windows.Forms.NotifyIcon(this.components);
+            this.MtxMain = new MaterialSkin.Controls.MaterialContextMenuStrip();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openSelectorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSwitchLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxALogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSwitch)).BeginInit();
@@ -53,6 +58,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PcxWii)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSettings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxExit)).BeginInit();
+            this.MtxMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // PcxSwitchLogo
@@ -295,6 +301,38 @@
             this.LblVersion.TabIndex = 11;
             this.LblVersion.Text = "%VER%";
             // 
+            // NtfMain
+            // 
+            this.NtfMain.ContextMenuStrip = this.MtxMain;
+            this.NtfMain.Icon = ((System.Drawing.Icon)(resources.GetObject("NtfMain.Icon")));
+            this.NtfMain.Text = "Get My Bru Panel";
+            this.NtfMain.Visible = true;
+            // 
+            // MtxMain
+            // 
+            this.MtxMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.MtxMain.Depth = 0;
+            this.MtxMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openSelectorToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.MtxMain.MouseState = MaterialSkin.MouseState.HOVER;
+            this.MtxMain.Name = "MtxMain";
+            this.MtxMain.Size = new System.Drawing.Size(181, 70);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // openSelectorToolStripMenuItem
+            // 
+            this.openSelectorToolStripMenuItem.Name = "openSelectorToolStripMenuItem";
+            this.openSelectorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openSelectorToolStripMenuItem.Text = "Open Selector";
+            this.openSelectorToolStripMenuItem.Click += new System.EventHandler(this.openSelectorToolStripMenuItem_Click);
+            // 
             // FmSelectSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -333,6 +371,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PcxWii)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSettings)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxExit)).EndInit();
+            this.MtxMain.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -356,5 +395,9 @@
         private System.Windows.Forms.PictureBox PcxExit;
         private MaterialSkin.Controls.MaterialLabel LblExit;
         private MaterialSkin.Controls.MaterialLabel LblVersion;
+        private System.Windows.Forms.NotifyIcon NtfMain;
+        private MaterialSkin.Controls.MaterialContextMenuStrip MtxMain;
+        private System.Windows.Forms.ToolStripMenuItem openSelectorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }
