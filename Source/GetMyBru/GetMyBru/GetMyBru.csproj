@@ -32,7 +32,13 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon256.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -60,11 +66,32 @@
     <Compile Include="GetMyBru.GUI\Switch\FmSwitchMain.Designer.cs">
       <DependentUpon>FmSwitchMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="GetMyBru.GUI\WiiU\FmWiiUMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetMyBru.GUI\WiiU\FmWiiUMain.Designer.cs">
+      <DependentUpon>FmWiiUMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetMyBru.GUI\Wii\FmWiiMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetMyBru.GUI\Wii\FmWiiMain.Designer.cs">
+      <DependentUpon>FmWiiMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="GetMyBru.Services\SvcUpdate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GetMyBru.GUI\FmSelectSystem.resx">
+      <DependentUpon>FmSelectSystem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GetMyBru.GUI\Switch\FmSwitchMain.resx">
       <DependentUpon>FmSwitchMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetMyBru.GUI\WiiU\FmWiiUMain.resx">
+      <DependentUpon>FmWiiUMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetMyBru.GUI\Wii\FmWiiMain.resx">
+      <DependentUpon>FmWiiMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -75,6 +102,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -88,9 +116,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="GetMyBru.GUI\WiiU\" />
-    <Folder Include="GetMyBru.GUI\Wii\" />
+    <Content Include="Icon256.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,6 +1,6 @@
 ﻿namespace GetMyBru.GetMyBru.GUI
 {
-    partial class FmSwitchMain
+    partial class FmWiiUMain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FmSwitchMain));
-            this.TbPage = new MaterialSkin.Controls.MaterialTabControl();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FmWiiUMain));
             this.TbSel = new MaterialSkin.Controls.MaterialTabSelector();
+            this.TbPage = new MaterialSkin.Controls.MaterialTabControl();
             this.TbHome = new System.Windows.Forms.TabPage();
             this.TbLoad = new System.Windows.Forms.TabPage();
             this.TbGame = new System.Windows.Forms.TabPage();
@@ -38,28 +38,8 @@
             this.TbTools = new System.Windows.Forms.TabPage();
             this.TbConc = new System.Windows.Forms.TabPage();
             this.TbAdv = new System.Windows.Forms.TabPage();
-            this.TbThemes = new System.Windows.Forms.TabPage();
             this.TbPage.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // TbPage
-            // 
-            this.TbPage.Controls.Add(this.TbHome);
-            this.TbPage.Controls.Add(this.TbLoad);
-            this.TbPage.Controls.Add(this.TbGame);
-            this.TbPage.Controls.Add(this.TbEmu);
-            this.TbPage.Controls.Add(this.TbTools);
-            this.TbPage.Controls.Add(this.TbConc);
-            this.TbPage.Controls.Add(this.TbAdv);
-            this.TbPage.Controls.Add(this.TbThemes);
-            this.TbPage.Depth = 0;
-            this.TbPage.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.TbPage.Location = new System.Drawing.Point(0, 104);
-            this.TbPage.MouseState = MaterialSkin.MouseState.HOVER;
-            this.TbPage.Name = "TbPage";
-            this.TbPage.SelectedIndex = 0;
-            this.TbPage.Size = new System.Drawing.Size(1011, 642);
-            this.TbPage.TabIndex = 0;
             // 
             // TbSel
             // 
@@ -70,8 +50,25 @@
             this.TbSel.MouseState = MaterialSkin.MouseState.HOVER;
             this.TbSel.Name = "TbSel";
             this.TbSel.Size = new System.Drawing.Size(1011, 41);
-            this.TbSel.TabIndex = 1;
-            this.TbSel.Text = "materialTabSelector1";
+            this.TbSel.TabIndex = 3;
+            // 
+            // TbPage
+            // 
+            this.TbPage.Controls.Add(this.TbHome);
+            this.TbPage.Controls.Add(this.TbLoad);
+            this.TbPage.Controls.Add(this.TbGame);
+            this.TbPage.Controls.Add(this.TbEmu);
+            this.TbPage.Controls.Add(this.TbTools);
+            this.TbPage.Controls.Add(this.TbConc);
+            this.TbPage.Controls.Add(this.TbAdv);
+            this.TbPage.Depth = 0;
+            this.TbPage.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.TbPage.Location = new System.Drawing.Point(0, 104);
+            this.TbPage.MouseState = MaterialSkin.MouseState.HOVER;
+            this.TbPage.Name = "TbPage";
+            this.TbPage.SelectedIndex = 0;
+            this.TbPage.Size = new System.Drawing.Size(1011, 642);
+            this.TbPage.TabIndex = 2;
             // 
             // TbHome
             // 
@@ -136,16 +133,7 @@
             this.TbAdv.Text = "Advanced";
             this.TbAdv.UseVisualStyleBackColor = true;
             // 
-            // TbThemes
-            // 
-            this.TbThemes.Location = new System.Drawing.Point(4, 22);
-            this.TbThemes.Name = "TbThemes";
-            this.TbThemes.Size = new System.Drawing.Size(1003, 616);
-            this.TbThemes.TabIndex = 7;
-            this.TbThemes.Text = "Themes";
-            this.TbThemes.UseVisualStyleBackColor = true;
-            // 
-            // FmSwitchMain
+            // FmWiiUMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -155,11 +143,11 @@
             this.Controls.Add(this.TbPage);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "FmSwitchMain";
+            this.Name = "FmWiiUMain";
             this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FmSwitchMain";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FmSwitchMain_FormClosing);
+            this.Text = "FmWiiUMain";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FmWiiUMain_FormClosing);
             this.TbPage.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -167,8 +155,8 @@
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialTabControl TbPage;
         private MaterialSkin.Controls.MaterialTabSelector TbSel;
+        private MaterialSkin.Controls.MaterialTabControl TbPage;
         private System.Windows.Forms.TabPage TbHome;
         private System.Windows.Forms.TabPage TbLoad;
         private System.Windows.Forms.TabPage TbGame;
@@ -176,6 +164,5 @@
         private System.Windows.Forms.TabPage TbTools;
         private System.Windows.Forms.TabPage TbConc;
         private System.Windows.Forms.TabPage TbAdv;
-        private System.Windows.Forms.TabPage TbThemes;
     }
 }

@@ -11,15 +11,15 @@ using System.Windows.Forms;
 
 namespace GetMyBru.GetMyBru.GUI
 {
-    public partial class FmSwitchMain : MaterialForm
+    public partial class FmWiiUMain : MaterialForm
     {
-        public FmSwitchMain()
+        public FmWiiUMain()
         {
             InitializeComponent();
-            Program.EnableVisualsSwitch();
+            Program.EnableVisualsWii();
         }
 
-        private void FmSwitchMain_FormClosing(object sender, FormClosingEventArgs e)
+        private void FmWiiUMain_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
