@@ -37,7 +37,7 @@
             this.PcxSettings = new System.Windows.Forms.PictureBox();
             this.LblSettings = new MaterialSkin.Controls.MaterialLabel();
             this.PcxALogo = new System.Windows.Forms.PictureBox();
-            this.LlbInstall = new MaterialSkin.Controls.MaterialLabel();
+            this.LblInstall = new MaterialSkin.Controls.MaterialLabel();
             this.LblVersion = new MaterialSkin.Controls.MaterialLabel();
             this.TbPage = new MaterialSkin.Controls.MaterialTabControl();
             this.TbHome = new System.Windows.Forms.TabPage();
@@ -64,7 +64,7 @@
             this.PnlBottom.Controls.Add(this.PcxSettings);
             this.PnlBottom.Controls.Add(this.LblSettings);
             this.PnlBottom.Controls.Add(this.PcxALogo);
-            this.PnlBottom.Controls.Add(this.LlbInstall);
+            this.PnlBottom.Controls.Add(this.LblInstall);
             this.PnlBottom.Controls.Add(this.PnlSplitter);
             this.PnlBottom.Controls.Add(this.PcxWiiULogo);
             this.PnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -162,20 +162,20 @@
             this.PcxALogo.TabIndex = 11;
             this.PcxALogo.TabStop = false;
             // 
-            // LlbInstall
+            // LblInstall
             // 
-            this.LlbInstall.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.LlbInstall.AutoSize = true;
-            this.LlbInstall.BackColor = System.Drawing.Color.Transparent;
-            this.LlbInstall.Depth = 0;
-            this.LlbInstall.Font = new System.Drawing.Font("Roboto", 11F);
-            this.LlbInstall.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LlbInstall.Location = new System.Drawing.Point(949, 25);
-            this.LlbInstall.MouseState = MaterialSkin.MouseState.HOVER;
-            this.LlbInstall.Name = "LlbInstall";
-            this.LlbInstall.Size = new System.Drawing.Size(50, 19);
-            this.LlbInstall.TabIndex = 12;
-            this.LlbInstall.Text = "Install";
+            this.LblInstall.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.LblInstall.AutoSize = true;
+            this.LblInstall.BackColor = System.Drawing.Color.Transparent;
+            this.LblInstall.Depth = 0;
+            this.LblInstall.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LblInstall.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LblInstall.Location = new System.Drawing.Point(949, 25);
+            this.LblInstall.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LblInstall.Name = "LblInstall";
+            this.LblInstall.Size = new System.Drawing.Size(50, 19);
+            this.LblInstall.TabIndex = 12;
+            this.LblInstall.Text = "Install";
             // 
             // LblVersion
             // 
@@ -321,7 +321,7 @@
         private System.Windows.Forms.PictureBox PcxSettings;
         private MaterialSkin.Controls.MaterialLabel LblSettings;
         private System.Windows.Forms.PictureBox PcxALogo;
-        private MaterialSkin.Controls.MaterialLabel LlbInstall;
+        private MaterialSkin.Controls.MaterialLabel LblInstall;
         private MaterialSkin.Controls.MaterialLabel LblVersion;
         private MaterialSkin.Controls.MaterialTabControl TbPage;
         private System.Windows.Forms.TabPage TbHome;
