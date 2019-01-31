@@ -16,7 +16,7 @@ namespace GetMyBru.GetMyBru.GUI
         public FmWiiMain()
         {
             InitializeComponent();
-            Program.EnableVisualsWii();
+            Program.EnableVisualsDefault();
         }
 
         private void FmWiiMain_FormClosing(object sender, FormClosingEventArgs e)

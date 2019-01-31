@@ -17,7 +17,7 @@ namespace GetMyBru.GetMyBru.GUI
         public FmSwitchMain()
         {
             InitializeComponent();
-            Program.EnableVisualsSwitch();
+            Program.EnableVisualsDefault();
         }
 
         private void FmSwitchMain_FormClosing(object sender, FormClosingEventArgs e)
