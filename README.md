@@ -10,5 +10,6 @@ This application is written using C# and .NET 4.6.x.
 # Credits 
 * [WiiUBru](https://wiiubru.com/appstore/#/)
 * [SwitchBru](https://switchbru.com/appstore/#/)
+* [WiiBrew](https://wiibrew.org/wiki/Main_Page)
 * Google's Material Design Icon/s
 * [MaterialSkin](https://github.com/IgnaceMaes/MaterialSkin)
