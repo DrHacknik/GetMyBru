@@ -6,7 +6,7 @@ Download necessary Wii, Wii U or Switch Homebrew all in one place.
 This application is written using C# and .NET 4.6.x. 
 
 # Credits 
-* WiiUBru
-* SwitchBru
+* ![WiiUBru](https://wiiubru.com/appstore/#/)
+* ![SwitchBru](https://switchbru.com/appstore/#/)
 * Google's Material Design Icon/s
 * ![MaterialSkin](https://github.com/IgnaceMaes/MaterialSkin)
