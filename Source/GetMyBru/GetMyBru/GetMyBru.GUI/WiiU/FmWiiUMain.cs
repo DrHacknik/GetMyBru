@@ -23,5 +23,16 @@ namespace GetMyBru.GetMyBru.GUI
         {
             Application.Exit();
         }
+
+        private void FmWiiUMain_Load(object sender, EventArgs e)
+        {
+            LblVersion.Text = "Version: " + Application.ProductVersion;
+            return;
+        }
+
+        private void LblExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
