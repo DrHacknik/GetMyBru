@@ -1,4 +1,5 @@
-﻿using MaterialSkin.Controls;
+﻿using GetMyBru.GetMyBru.Core.Net.Parser;
+using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,6 +36,9 @@ namespace GetMyBru.GetMyBru.GUI
         private void FmSwitchMain_Load(object sender, EventArgs e)
         {
             LblVersion.Text = "Version: " + Application.ProductVersion;
+
+            BruParser.ParseJSONSwitch();
+            //MessageBox.Show("Packages RAW Data returned:" + Environment.NewLine + BruParser.PackagesRawList, "Packages:", MessageBoxButtons.OK, MessageBoxIcon.Information);
             return;
         }
     }
