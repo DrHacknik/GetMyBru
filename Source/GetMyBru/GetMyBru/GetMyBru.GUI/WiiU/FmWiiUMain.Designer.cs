@@ -221,57 +221,57 @@
             // 
             // TbLoad
             // 
+            this.TbLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.TbLoad.Location = new System.Drawing.Point(4, 22);
             this.TbLoad.Name = "TbLoad";
-            this.TbLoad.Size = new System.Drawing.Size(1003, 545);
+            this.TbLoad.Size = new System.Drawing.Size(1003, 554);
             this.TbLoad.TabIndex = 1;
             this.TbLoad.Text = "Loaders";
-            this.TbLoad.UseVisualStyleBackColor = true;
             // 
             // TbGame
             // 
+            this.TbGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.TbGame.Location = new System.Drawing.Point(4, 22);
             this.TbGame.Name = "TbGame";
-            this.TbGame.Size = new System.Drawing.Size(1003, 545);
+            this.TbGame.Size = new System.Drawing.Size(1003, 554);
             this.TbGame.TabIndex = 2;
             this.TbGame.Text = "Games";
-            this.TbGame.UseVisualStyleBackColor = true;
             // 
             // TbEmu
             // 
+            this.TbEmu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.TbEmu.Location = new System.Drawing.Point(4, 22);
             this.TbEmu.Name = "TbEmu";
-            this.TbEmu.Size = new System.Drawing.Size(1003, 545);
+            this.TbEmu.Size = new System.Drawing.Size(1003, 554);
             this.TbEmu.TabIndex = 3;
             this.TbEmu.Text = "Emulators";
-            this.TbEmu.UseVisualStyleBackColor = true;
             // 
             // TbTools
             // 
+            this.TbTools.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.TbTools.Location = new System.Drawing.Point(4, 22);
             this.TbTools.Name = "TbTools";
-            this.TbTools.Size = new System.Drawing.Size(1003, 545);
+            this.TbTools.Size = new System.Drawing.Size(1003, 554);
             this.TbTools.TabIndex = 4;
             this.TbTools.Text = "Tools";
-            this.TbTools.UseVisualStyleBackColor = true;
             // 
             // TbConc
             // 
+            this.TbConc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.TbConc.Location = new System.Drawing.Point(4, 22);
             this.TbConc.Name = "TbConc";
-            this.TbConc.Size = new System.Drawing.Size(1003, 545);
+            this.TbConc.Size = new System.Drawing.Size(1003, 554);
             this.TbConc.TabIndex = 5;
             this.TbConc.Text = "Concepts";
-            this.TbConc.UseVisualStyleBackColor = true;
             // 
             // TbAdv
             // 
+            this.TbAdv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.TbAdv.Location = new System.Drawing.Point(4, 22);
             this.TbAdv.Name = "TbAdv";
-            this.TbAdv.Size = new System.Drawing.Size(1003, 545);
+            this.TbAdv.Size = new System.Drawing.Size(1003, 554);
             this.TbAdv.TabIndex = 6;
             this.TbAdv.Text = "Advanced";
-            this.TbAdv.UseVisualStyleBackColor = true;
             // 
             // TbSel
             // 

@@ -15,6 +15,11 @@ namespace GetMyBru.GetMyBru.GUI
 {
     public partial class FmSelectSystem : MaterialForm
     {
+        public static bool SafeExit = true;
+        private Form FmWii = new FmWiiMain();
+        private Form FmWiiU = new FmWiiUMain();
+        private Form FmSwitch = new FmSwitchMain();
+
         public FmSelectSystem()
         {
             Program.EnableVisualsDefault();
@@ -23,23 +28,21 @@ namespace GetMyBru.GetMyBru.GUI
 
         private void LblOk_Click(object sender, EventArgs e)
         {
+            SafeExit = true;
             if (RdSwitch.Checked == true)
             {
-                Form FmSwitch = new FmSwitchMain();
                 FmSwitch.Show();
                 this.Hide();
                 return;
             }
             else if (RdWii.Checked == true)
             {
-                Form FmWii = new FmWiiMain();
                 FmWii.Show();
                 this.Hide();
                 return;
             }
             else if (RdWiiU.Checked == true)
             {
-                Form FmWiiU = new FmWiiUMain();
                 FmWiiU.Show();
                 this.Hide();
                 return;
@@ -65,9 +68,24 @@ namespace GetMyBru.GetMyBru.GUI
 
         private void openSelectorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form FmMain = new FmSelectSystem();
-            FmMain.Show();
-            return;
+            SafeExit = false;
+            if (SafeExit == false)
+            {
+                this.Hide();
+                Form FmMain = new FmSelectSystem();
+                FmMain.Show();
+                return;
+            }
+            else
+            {
+                this.Hide();
+                FmWii.Close();
+                FmWiiU.Close();
+                FmSwitch.Close();
+                Form FmMain = new FmSelectSystem();
+                FmMain.Show();
+                return;
+            }
         }
     }
 }

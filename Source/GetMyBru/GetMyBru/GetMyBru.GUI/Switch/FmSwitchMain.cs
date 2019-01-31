@@ -21,7 +21,21 @@ namespace GetMyBru.GetMyBru.GUI
 
         private void FmSwitchMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            if (FmSelectSystem.SafeExit == false)
+            {
+                this.Close();
+                return;
+            }
+            else
+            {
+                Application.Exit();
+            }
+        }
+
+        private void FmSwitchMain_Load(object sender, EventArgs e)
+        {
+            LblVersion.Text = "Version: " + Application.ProductVersion;
+            return;
         }
     }
 }

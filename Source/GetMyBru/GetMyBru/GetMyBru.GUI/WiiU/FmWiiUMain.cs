@@ -21,7 +21,15 @@ namespace GetMyBru.GetMyBru.GUI
 
         private void FmWiiUMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            if (FmSelectSystem.SafeExit == false)
+            {
+                this.Close();
+                return;
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
 
         private void FmWiiUMain_Load(object sender, EventArgs e)

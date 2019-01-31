@@ -194,66 +194,66 @@
             // 
             // TbThemes
             // 
+            this.TbThemes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.TbThemes.Location = new System.Drawing.Point(4, 22);
             this.TbThemes.Name = "TbThemes";
-            this.TbThemes.Size = new System.Drawing.Size(1003, 616);
+            this.TbThemes.Size = new System.Drawing.Size(1003, 556);
             this.TbThemes.TabIndex = 7;
             this.TbThemes.Text = "Themes";
-            this.TbThemes.UseVisualStyleBackColor = true;
             // 
             // TbAdv
             // 
+            this.TbAdv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.TbAdv.Location = new System.Drawing.Point(4, 22);
             this.TbAdv.Name = "TbAdv";
-            this.TbAdv.Size = new System.Drawing.Size(1003, 616);
+            this.TbAdv.Size = new System.Drawing.Size(1003, 556);
             this.TbAdv.TabIndex = 6;
             this.TbAdv.Text = "Advanced";
-            this.TbAdv.UseVisualStyleBackColor = true;
             // 
             // TbConc
             // 
+            this.TbConc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.TbConc.Location = new System.Drawing.Point(4, 22);
             this.TbConc.Name = "TbConc";
-            this.TbConc.Size = new System.Drawing.Size(1003, 616);
+            this.TbConc.Size = new System.Drawing.Size(1003, 556);
             this.TbConc.TabIndex = 5;
             this.TbConc.Text = "Concepts";
-            this.TbConc.UseVisualStyleBackColor = true;
             // 
             // TbTools
             // 
+            this.TbTools.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.TbTools.Location = new System.Drawing.Point(4, 22);
             this.TbTools.Name = "TbTools";
-            this.TbTools.Size = new System.Drawing.Size(1003, 616);
+            this.TbTools.Size = new System.Drawing.Size(1003, 556);
             this.TbTools.TabIndex = 4;
             this.TbTools.Text = "Tools";
-            this.TbTools.UseVisualStyleBackColor = true;
             // 
             // TbEmu
             // 
+            this.TbEmu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.TbEmu.Location = new System.Drawing.Point(4, 22);
             this.TbEmu.Name = "TbEmu";
-            this.TbEmu.Size = new System.Drawing.Size(1003, 616);
+            this.TbEmu.Size = new System.Drawing.Size(1003, 556);
             this.TbEmu.TabIndex = 3;
             this.TbEmu.Text = "Emulators";
-            this.TbEmu.UseVisualStyleBackColor = true;
             // 
             // TbGame
             // 
+            this.TbGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.TbGame.Location = new System.Drawing.Point(4, 22);
             this.TbGame.Name = "TbGame";
-            this.TbGame.Size = new System.Drawing.Size(1003, 616);
+            this.TbGame.Size = new System.Drawing.Size(1003, 556);
             this.TbGame.TabIndex = 2;
             this.TbGame.Text = "Games";
-            this.TbGame.UseVisualStyleBackColor = true;
             // 
             // TbLoad
             // 
+            this.TbLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.TbLoad.Location = new System.Drawing.Point(4, 22);
             this.TbLoad.Name = "TbLoad";
-            this.TbLoad.Size = new System.Drawing.Size(1003, 616);
+            this.TbLoad.Size = new System.Drawing.Size(1003, 556);
             this.TbLoad.TabIndex = 1;
             this.TbLoad.Text = "Loaders";
-            this.TbLoad.UseVisualStyleBackColor = true;
             // 
             // TbHome
             // 
@@ -311,6 +311,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FmSwitchMain";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FmSwitchMain_FormClosing);
+            this.Load += new System.EventHandler(this.FmSwitchMain_Load);
             this.PnlBottom.ResumeLayout(false);
             this.PnlBottom.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PcxExit)).EndInit();
