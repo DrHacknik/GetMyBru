@@ -7,6 +7,9 @@ AIO Homebrew downloader for Wii, Wii U and Switch.
 Download necessary Wii, Wii U or Switch Homebrew all in one place. 
 This application is written using C# and .NET 4.6.x. 
 
+This Software is licensed under the GNU GPL v3 License Agreement. 
+A copy of the License is included with the Source inside in the Repository.
+
 
 # Screenshots 
 ![ScreenMain](Common/Screenshots/GetMyBru_KQUhOMYpdt.png)
