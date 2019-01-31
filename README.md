@@ -12,8 +12,8 @@ A copy of the License is included with the Source inside in the Repository.
 
 
 # Screenshots 
-![ScreenMain](Common/Screenshots/GetMyBru_KQUhOMYpdt.png)
-![ScreenMain](Common/Screenshots/GetMyBru_o22isUGdeZ.png)
+![ScreenMain](Common/Screenshots/GetMyBru_YvRCIBonyH.png)
+![ScreenMain](Common/Screenshots/GetMyBru_3Zd9NtQ9ok.png)
 # Credits 
 * [WiiUBru](https://wiiubru.com/appstore/#/)
 * [SwitchBru](https://switchbru.com/appstore/#/)
