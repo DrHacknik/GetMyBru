@@ -19,39 +19,12 @@ namespace GetMyBru.GetMyBru.GUI
         private Form FmWii = new FmWiiMain();
         private Form FmWiiU = new FmWiiUMain();
         private Form FmSwitch = new FmSwitchMain();
+        private bool SettingsActive = false;
 
         public FmSelectSystem()
         {
             Program.EnableVisualsDefault();
             InitializeComponent();
-        }
-
-        private void LblOk_Click(object sender, EventArgs e)
-        {
-            SafeExit = true;
-            if (RdSwitch.Checked == true)
-            {
-                FmSwitch.Show();
-                this.Hide();
-                return;
-            }
-            else if (RdWii.Checked == true)
-            {
-                FmWii.Show();
-                this.Hide();
-                return;
-            }
-            else if (RdWiiU.Checked == true)
-            {
-                FmWiiU.Show();
-                this.Hide();
-                return;
-            }
-        }
-
-        private void LblExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
 
         private void FmSelectSystem_Load(object sender, EventArgs e)
@@ -84,6 +57,94 @@ namespace GetMyBru.GetMyBru.GUI
                 FmSwitch.Close();
                 Form FmMain = new FmSelectSystem();
                 FmMain.Show();
+                return;
+            }
+        }
+
+        private void LblOk_Click(object sender, EventArgs e)
+        {
+            if (SettingsActive == true)
+            {
+                //SaveSettings();
+                SettingsActive = false;
+                return;
+            }
+            else if (SettingsActive == false)
+            {
+                SafeExit = true;
+                if (RdSwitch.Checked == true)
+                {
+                    FmSwitch.Show();
+                    this.Hide();
+                    return;
+                }
+                else if (RdWii.Checked == true)
+                {
+                    FmWii.Show();
+                    this.Hide();
+                    return;
+                }
+                else if (RdWiiU.Checked == true)
+                {
+                    FmWiiU.Show();
+                    this.Hide();
+                    return;
+                }
+            }
+        }
+
+        private void LblExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void LblSettings_Click(object sender, EventArgs e)
+        {
+            if (SettingsActive == null)
+            {
+                SettingsActive = true;
+            }
+            else if (SettingsActive == false)
+            {
+                SettingsActive = true;
+            }
+            else if (SettingsActive == true)
+            {
+                SettingsActive = false;
+            }
+        }
+
+        private void TmrCheckVal_Tick(object sender, EventArgs e)
+        {
+            SetLocationButtons();
+        }
+
+        private void SetLocationButtons()
+        {
+            if (SettingsActive == false)
+            {
+                LblOk.Text = "Ok";
+                LblSettings.Text = "Settings";
+                LblOk.Location = new Point(626, 25);
+                PcxButtonA.Location = new Point(610, 26);
+                LblSettings.Location = new Point(539, 25);
+                PcxButtonB.Location = new Point(523, 26);
+                LblExit.Location = new Point(478, 25);
+                PcxButtonX.Location = new Point(459, 26);
+                PnlSettings.Visible = false;
+                return;
+            }
+            if (SettingsActive == true)
+            {
+                LblOk.Text = "Save";
+                LblSettings.Text = "Close Settings";
+                LblOk.Location = new Point(626, 25);
+                PcxButtonA.Location = new Point(610, 26);
+                LblSettings.Location = new Point(497, 25);
+                PcxButtonB.Location = new Point(481, 26);
+                LblExit.Location = new Point(436, 25);
+                PcxButtonX.Location = new Point(417, 26);
+                PnlSettings.Visible = true;
                 return;
             }
         }
