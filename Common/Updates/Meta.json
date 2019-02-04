@@ -1,14 +1,8 @@
 { 
   "UpdateMaster" : { 
-    "BuildID" : "1024",
-    "BuildVer" : "1.0.8",
-    "BuildAuthor" : "Dr.Hacknik",
-    "BuildArc" : "zip"
+    "BuildURL" : "https://ci.appveyor.com/project/zoltx23/getmybru"
   },
   "UpdateCanary" : { 
-    "BuildID" : "1024",
-    "BuildVer" : "1.0.8",
-    "BuildAuthor" : "Dr.Hacknik",
-    "BuildArc" : "zip"
+    "BuildURL" : "https://ci.appveyor.com/project/zoltx23/getmybrucanary"
   }
 } 
