@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace GetMyBru.GetMyBru.Core.Net.Parser
 {
@@ -15,7 +16,7 @@ namespace GetMyBru.GetMyBru.Core.Net.Parser
         private static string cd = Environment.CurrentDirectory;
         public static string PackagesRaw;
 
-        public static void ParseJSONSwitch()
+        public static void PrepareJSON()
         {
             try
             {
@@ -27,20 +28,32 @@ namespace GetMyBru.GetMyBru.Core.Net.Parser
                 {
                     JSONData.DownloadFile("https://www.switchbru.com/appstore/repo.json", cd + "\\Data\\Cache\\Switch\\repo.json");
                 }
+             }
+            catch (Exception ex)
+            {
+                Messagebox.Show("Error, exception is as follows: " + ex.Message, "Error:", MessageboxButtons.Ok, Messagebox.Icon.Error)
+                return; 
+            }
+        }
+        public static void ParseJSONSwitch()
+        {
+            try
+            {
                 using (StreamReader ReadJson = new StreamReader(cd + "\\Data\\Cache\\Switch\\repo.json"))
                 {
                     string json = ReadJson.ReadToEnd();
                     PackagesRawList = json;
                     //PackagesRaw = JsonConvert.DeserializeObject(json);
                 }
-            }
-            catch
-            {
+                //dynamic Packages = JsonConvert.DeserializeObject(Environment.CurrentDirectory + "\\Data\\Cache\\Switch\\repo.json".ToString());
+                //PackagesRawList = Packages.Packages;
                 return;
             }
-            //dynamic Packages = JsonConvert.DeserializeObject(Environment.CurrentDirectory + "\\Data\\Cache\\Switch\\repo.json".ToString());
-            //PackagesRawList = Packages.Packages;
-            return;
+            catch (Exception ex)
+            {
+                Messagebox.Show("Error, exception is as follows: " + ex.Message, "Error:", MessageboxButtons.Ok, Messagebox.Icon.Error)
+                return; 
+            }
         }
     }
 }
