@@ -100,9 +100,9 @@ namespace GetMyBru.GetMyBru.GUI
 
         private void LblSettings_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Please do keep in mind that this feature is not implemented yet.", "Do note:", MessageBoxButtons.Ok, MessageBox.Icon.Information); 
-            return; 
-            
+            MessageBox.Show("Please do keep in mind that this feature is not implemented yet.", "Do note:", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            return;
+
             if (SettingsActive == null)
             {
                 SettingsActive = true;

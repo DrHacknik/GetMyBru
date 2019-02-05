@@ -28,13 +28,14 @@ namespace GetMyBru.GetMyBru.Core.Net.Parser
                 {
                     JSONData.DownloadFile("https://www.switchbru.com/appstore/repo.json", cd + "\\Data\\Cache\\Switch\\repo.json");
                 }
-             }
+            }
             catch (Exception ex)
             {
-                MessageBox.Show("Error, exception is as follows: " + ex.Message, "Error:", MessageboxButtons.Ok, MessageBox.Icon.Error);
-                return; 
+                MessageBox.Show("Error, exception is as follows: " + ex.Message, "Error:", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
         }
+
         public static void ParseJSONSwitch()
         {
             try
@@ -51,8 +52,8 @@ namespace GetMyBru.GetMyBru.Core.Net.Parser
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error, exception is as follows: " + ex.Message, "Error:", MessageboxButtons.Ok, MessageBox.Icon.Error);
-                return; 
+                MessageBox.Show("Error, exception is as follows: " + ex.Message, "Error:", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
         }
     }
