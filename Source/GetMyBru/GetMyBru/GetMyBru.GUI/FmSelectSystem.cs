@@ -10,6 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using GetMyBru.GetMyBru.GUI;
+using System.IO;
+using GetMyBru.GetMyBru.Core.Net.Parser;
 
 namespace GetMyBru.GetMyBru.GUI
 {
@@ -20,11 +22,23 @@ namespace GetMyBru.GetMyBru.GUI
         private Form FmWiiU = new FmWiiUMain();
         private Form FmSwitch = new FmSwitchMain();
         private bool SettingsActive = false;
+        private string cd = Environment.CurrentDirectory;
 
         public FmSelectSystem()
         {
             Program.EnableVisualsDefault();
             InitializeComponent();
+            CheckFirstTime();
+            BruParser.PrepareJSON();
+        }
+
+        private void CheckFirstTime()
+        {
+            if (Properties.Settings.Default.FirstTime == true)
+            {
+                MessageBox.Show("This is the first time you have used this program. " + Environment.NewLine + "We'll need you to change some settings to your liking before we go on.", "Wait a min~", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                SettingsActive = true;
+            }
         }
 
         private void FmSelectSystem_Load(object sender, EventArgs e)
@@ -65,7 +79,7 @@ namespace GetMyBru.GetMyBru.GUI
         {
             if (SettingsActive == true)
             {
-                //SaveSettings();
+                SaveSettings();
                 SettingsActive = false;
                 return;
             }
@@ -106,6 +120,7 @@ namespace GetMyBru.GetMyBru.GUI
             if (SettingsActive == false)
             {
                 SettingsActive = true;
+                LoadSettings();
             }
             else if (SettingsActive == true)
             {
@@ -131,6 +146,8 @@ namespace GetMyBru.GetMyBru.GUI
                 LblExit.Location = new Point(478, 25);
                 PcxButtonX.Location = new Point(459, 26);
                 PnlSettings.Visible = false;
+
+                LoadSettings();
                 return;
             }
             if (SettingsActive == true)
@@ -162,11 +179,18 @@ namespace GetMyBru.GetMyBru.GUI
             {
                 Properties.Settings.Default.Clean = true;
             }
-            else if (ChckAutoUpdate.Checked == false)
+            else if (ChckClean.Checked == false)
             {
                 Properties.Settings.Default.Clean = false;
             }
-
+            if (ChckNotif.Checked == true)
+            {
+                Properties.Settings.Default.Notif = true;
+            }
+            else if (ChckNotif.Checked == false)
+            {
+                Properties.Settings.Default.Notif = false;
+            }
             if (RdCanary.Checked == true)
             {
                 Properties.Settings.Default.Branch = "Canary";
@@ -176,13 +200,64 @@ namespace GetMyBru.GetMyBru.GUI
                 Properties.Settings.Default.Branch = "Stable";
             }
 
+            if (Properties.Settings.Default.FirstTime == true)
+            {
+                Properties.Settings.Default.FirstTime = false;
+            }
+            Properties.Settings.Default.Save();
             //Write values to JSON
+
+            if (!Directory.Exists(cd + "\\Data"))
+            {
+                Directory.CreateDirectory(cd + "\\Data");
+            }
+
+            if (!File.Exists(cd + "\\Data\\Config.json"))
+            {
+                File.WriteAllText(cd + "\\Data\\Config.json", "{ }");
+                return;
+            }
             return;
         }
 
-        public static void LoadSettings()
+        private void LoadSettings()
         {
             //Load settings by parsing from JSON, and then storing them into the Applications settings.
+
+            //Load settings from the Applications config
+            if (Properties.Settings.Default.Branch == "Stable")
+            {
+                RdStable.Checked = true;
+            }
+            else if (Properties.Settings.Default.Branch == "Canary")
+            {
+                RdCanary.Checked = true;
+            }
+            if (Properties.Settings.Default.AutoUpdate == true)
+            {
+                ChckAutoUpdate.Checked = true;
+            }
+            else if (Properties.Settings.Default.AutoUpdate == true)
+            {
+                ChckAutoUpdate.Checked = false;
+            }
+            if (Properties.Settings.Default.Clean == true)
+            {
+                ChckClean.Checked = true;
+            }
+            else if (Properties.Settings.Default.Clean == false)
+            {
+                ChckClean.Checked = false;
+            }
+            if (Properties.Settings.Default.Notif == true)
+            {
+                ChckNotif.Checked = true;
+            }
+            else if (Properties.Settings.Default.Notif == false)
+            {
+                ChckNotif.Checked = false;
+            }
+            return;
         }
     }
 }

@@ -67,6 +67,7 @@
             this.LblBranch = new MaterialSkin.Controls.MaterialLabel();
             this.RdCanary = new MaterialSkin.Controls.MaterialRadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ChckNotif = new MaterialSkin.Controls.MaterialCheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSwitch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxWiiU)).BeginInit();
             this.MtxMain.SuspendLayout();
@@ -414,6 +415,7 @@
             // 
             // PnlSettings
             // 
+            this.PnlSettings.Controls.Add(this.ChckNotif);
             this.PnlSettings.Controls.Add(this.panel1);
             this.PnlSettings.Controls.Add(this.LblBranch);
             this.PnlSettings.Controls.Add(this.RdCanary);
@@ -524,7 +526,7 @@
             this.RdStable.Checked = true;
             this.RdStable.Depth = 0;
             this.RdStable.Font = new System.Drawing.Font("Roboto", 10F);
-            this.RdStable.Location = new System.Drawing.Point(36, 204);
+            this.RdStable.Location = new System.Drawing.Point(36, 198);
             this.RdStable.Margin = new System.Windows.Forms.Padding(0);
             this.RdStable.MouseLocation = new System.Drawing.Point(-1, -1);
             this.RdStable.MouseState = MaterialSkin.MouseState.HOVER;
@@ -554,7 +556,7 @@
             this.RdCanary.AutoSize = true;
             this.RdCanary.Depth = 0;
             this.RdCanary.Font = new System.Drawing.Font("Roboto", 10F);
-            this.RdCanary.Location = new System.Drawing.Point(36, 234);
+            this.RdCanary.Location = new System.Drawing.Point(36, 228);
             this.RdCanary.Margin = new System.Windows.Forms.Padding(0);
             this.RdCanary.MouseLocation = new System.Drawing.Point(-1, -1);
             this.RdCanary.MouseState = MaterialSkin.MouseState.HOVER;
@@ -574,6 +576,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(622, 2);
             this.panel1.TabIndex = 12;
+            // 
+            // ChckNotif
+            // 
+            this.ChckNotif.AutoSize = true;
+            this.ChckNotif.BackColor = System.Drawing.Color.Transparent;
+            this.ChckNotif.Depth = 0;
+            this.ChckNotif.Font = new System.Drawing.Font("Roboto", 10F);
+            this.ChckNotif.ForeColor = System.Drawing.Color.White;
+            this.ChckNotif.Location = new System.Drawing.Point(37, 301);
+            this.ChckNotif.Margin = new System.Windows.Forms.Padding(0);
+            this.ChckNotif.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.ChckNotif.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ChckNotif.Name = "ChckNotif";
+            this.ChckNotif.Ripple = true;
+            this.ChckNotif.Size = new System.Drawing.Size(195, 30);
+            this.ChckNotif.TabIndex = 13;
+            this.ChckNotif.Text = "Enable Push Notifications?";
+            this.ChckNotif.UseVisualStyleBackColor = false;
             // 
             // FmSelectSystem
             // 
@@ -658,5 +678,6 @@
         private MaterialSkin.Controls.MaterialLabel LblBranch;
         private MaterialSkin.Controls.MaterialRadioButton RdCanary;
         private System.Windows.Forms.Panel panel1;
+        private MaterialSkin.Controls.MaterialCheckBox ChckNotif;
     }
 }
