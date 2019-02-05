@@ -100,14 +100,10 @@ namespace GetMyBru.GetMyBru.GUI
 
         private void LblSettings_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Please do keep in mind that this feature is not implemented yet.", "Do note:", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            return;
+            //MessageBox.Show("Please do keep in mind that this feature is not implemented yet.", "Do note:", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //return;
 
-            if (SettingsActive == null)
-            {
-                SettingsActive = true;
-            }
-            else if (SettingsActive == false)
+            if (SettingsActive == false)
             {
                 SettingsActive = true;
             }
@@ -150,6 +146,43 @@ namespace GetMyBru.GetMyBru.GUI
                 PnlSettings.Visible = true;
                 return;
             }
+        }
+
+        private void SaveSettings()
+        {
+            if (ChckAutoUpdate.Checked == true)
+            {
+                Properties.Settings.Default.AutoUpdate = true;
+            }
+            else if (ChckAutoUpdate.Checked == false)
+            {
+                Properties.Settings.Default.AutoUpdate = false;
+            }
+            if (ChckClean.Checked == true)
+            {
+                Properties.Settings.Default.Clean = true;
+            }
+            else if (ChckAutoUpdate.Checked == false)
+            {
+                Properties.Settings.Default.Clean = false;
+            }
+
+            if (RdCanary.Checked == true)
+            {
+                Properties.Settings.Default.Branch = "Canary";
+            }
+            else if (RdStable.Checked == true)
+            {
+                Properties.Settings.Default.Branch = "Stable";
+            }
+
+            //Write values to JSON
+            return;
+        }
+
+        public static void LoadSettings()
+        {
+            //Load settings by parsing from JSON, and then storing them into the Applications settings.
         }
     }
 }

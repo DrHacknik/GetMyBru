@@ -51,12 +51,22 @@
             this.LblSettings = new MaterialSkin.Controls.MaterialLabel();
             this.PcxALogo = new System.Windows.Forms.PictureBox();
             this.LblOk = new MaterialSkin.Controls.MaterialLabel();
-            this.PnlSplitter = new System.Windows.Forms.Panel();
+            this.PnlSplitterFooter = new System.Windows.Forms.Panel();
             this.PcxSwitchLogo = new System.Windows.Forms.PictureBox();
             this.PcxWii = new System.Windows.Forms.PictureBox();
             this.RdWii = new MaterialSkin.Controls.MaterialRadioButton();
             this.PnlSettings = new System.Windows.Forms.Panel();
+            this.ChckClean = new MaterialSkin.Controls.MaterialCheckBox();
+            this.PnlSplitterHeader = new System.Windows.Forms.Panel();
+            this.PcxSettingsIcon = new System.Windows.Forms.PictureBox();
+            this.LblSettingsHeader = new MaterialSkin.Controls.MaterialLabel();
+            this.ChckAutoUpdate = new MaterialSkin.Controls.MaterialCheckBox();
             this.TmrCheckVal = new System.Windows.Forms.Timer(this.components);
+            this.PnlSplitterMid = new System.Windows.Forms.Panel();
+            this.RdStable = new MaterialSkin.Controls.MaterialRadioButton();
+            this.LblBranch = new MaterialSkin.Controls.MaterialLabel();
+            this.RdCanary = new MaterialSkin.Controls.MaterialRadioButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSwitch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxWiiU)).BeginInit();
             this.MtxMain.SuspendLayout();
@@ -69,6 +79,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.PcxALogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSwitchLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxWii)).BeginInit();
+            this.PnlSettings.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PcxSettingsIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // LblHeader
@@ -205,7 +217,7 @@
             this.PnlBottom.Controls.Add(this.LblSettings);
             this.PnlBottom.Controls.Add(this.PcxALogo);
             this.PnlBottom.Controls.Add(this.LblOk);
-            this.PnlBottom.Controls.Add(this.PnlSplitter);
+            this.PnlBottom.Controls.Add(this.PnlSplitterFooter);
             this.PnlBottom.Controls.Add(this.PcxSwitchLogo);
             this.PnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.PnlBottom.Location = new System.Drawing.Point(0, 418);
@@ -348,15 +360,15 @@
             this.LblOk.Text = "Ok";
             this.LblOk.Click += new System.EventHandler(this.LblOk_Click);
             // 
-            // PnlSplitter
+            // PnlSplitterFooter
             // 
-            this.PnlSplitter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.PnlSplitterFooter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PnlSplitter.BackColor = System.Drawing.Color.White;
-            this.PnlSplitter.Location = new System.Drawing.Point(12, 8);
-            this.PnlSplitter.Name = "PnlSplitter";
-            this.PnlSplitter.Size = new System.Drawing.Size(647, 2);
-            this.PnlSplitter.TabIndex = 4;
+            this.PnlSplitterFooter.BackColor = System.Drawing.Color.White;
+            this.PnlSplitterFooter.Location = new System.Drawing.Point(12, 8);
+            this.PnlSplitterFooter.Name = "PnlSplitterFooter";
+            this.PnlSplitterFooter.Size = new System.Drawing.Size(647, 2);
+            this.PnlSplitterFooter.TabIndex = 4;
             // 
             // PcxSwitchLogo
             // 
@@ -402,7 +414,16 @@
             // 
             // PnlSettings
             // 
-            this.PnlSettings.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PnlSettings.BackgroundImage")));
+            this.PnlSettings.Controls.Add(this.panel1);
+            this.PnlSettings.Controls.Add(this.LblBranch);
+            this.PnlSettings.Controls.Add(this.RdCanary);
+            this.PnlSettings.Controls.Add(this.RdStable);
+            this.PnlSettings.Controls.Add(this.PnlSplitterMid);
+            this.PnlSettings.Controls.Add(this.ChckClean);
+            this.PnlSettings.Controls.Add(this.PnlSplitterHeader);
+            this.PnlSettings.Controls.Add(this.PcxSettingsIcon);
+            this.PnlSettings.Controls.Add(this.LblSettingsHeader);
+            this.PnlSettings.Controls.Add(this.ChckAutoUpdate);
             this.PnlSettings.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.PnlSettings.Location = new System.Drawing.Point(0, 64);
             this.PnlSettings.Name = "PnlSettings";
@@ -410,10 +431,149 @@
             this.PnlSettings.TabIndex = 8;
             this.PnlSettings.Visible = false;
             // 
+            // ChckClean
+            // 
+            this.ChckClean.AutoSize = true;
+            this.ChckClean.BackColor = System.Drawing.Color.Transparent;
+            this.ChckClean.Depth = 0;
+            this.ChckClean.Font = new System.Drawing.Font("Roboto", 10F);
+            this.ChckClean.ForeColor = System.Drawing.Color.White;
+            this.ChckClean.Location = new System.Drawing.Point(36, 109);
+            this.ChckClean.Margin = new System.Windows.Forms.Padding(0);
+            this.ChckClean.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.ChckClean.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ChckClean.Name = "ChckClean";
+            this.ChckClean.Ripple = true;
+            this.ChckClean.Size = new System.Drawing.Size(217, 30);
+            this.ChckClean.TabIndex = 2;
+            this.ChckClean.Text = "Cleanup Cache when all done?";
+            this.ChckClean.UseVisualStyleBackColor = false;
+            // 
+            // PnlSplitterHeader
+            // 
+            this.PnlSplitterHeader.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PnlSplitterHeader.BackColor = System.Drawing.Color.White;
+            this.PnlSplitterHeader.Location = new System.Drawing.Point(12, 61);
+            this.PnlSplitterHeader.Name = "PnlSplitterHeader";
+            this.PnlSplitterHeader.Size = new System.Drawing.Size(647, 2);
+            this.PnlSplitterHeader.TabIndex = 5;
+            // 
+            // PcxSettingsIcon
+            // 
+            this.PcxSettingsIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PcxSettingsIcon.BackColor = System.Drawing.Color.Transparent;
+            this.PcxSettingsIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxSettingsIcon.BackgroundImage")));
+            this.PcxSettingsIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PcxSettingsIcon.Location = new System.Drawing.Point(22, 14);
+            this.PcxSettingsIcon.Name = "PcxSettingsIcon";
+            this.PcxSettingsIcon.Size = new System.Drawing.Size(36, 32);
+            this.PcxSettingsIcon.TabIndex = 4;
+            this.PcxSettingsIcon.TabStop = false;
+            // 
+            // LblSettingsHeader
+            // 
+            this.LblSettingsHeader.AutoSize = true;
+            this.LblSettingsHeader.Depth = 0;
+            this.LblSettingsHeader.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LblSettingsHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LblSettingsHeader.Location = new System.Drawing.Point(64, 21);
+            this.LblSettingsHeader.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LblSettingsHeader.Name = "LblSettingsHeader";
+            this.LblSettingsHeader.Size = new System.Drawing.Size(133, 19);
+            this.LblSettingsHeader.TabIndex = 1;
+            this.LblSettingsHeader.Text = "GetMyBru Settings";
+            // 
+            // ChckAutoUpdate
+            // 
+            this.ChckAutoUpdate.AutoSize = true;
+            this.ChckAutoUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.ChckAutoUpdate.Depth = 0;
+            this.ChckAutoUpdate.Font = new System.Drawing.Font("Roboto", 10F);
+            this.ChckAutoUpdate.ForeColor = System.Drawing.Color.White;
+            this.ChckAutoUpdate.Location = new System.Drawing.Point(36, 79);
+            this.ChckAutoUpdate.Margin = new System.Windows.Forms.Padding(0);
+            this.ChckAutoUpdate.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.ChckAutoUpdate.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ChckAutoUpdate.Name = "ChckAutoUpdate";
+            this.ChckAutoUpdate.Ripple = true;
+            this.ChckAutoUpdate.Size = new System.Drawing.Size(200, 30);
+            this.ChckAutoUpdate.TabIndex = 1;
+            this.ChckAutoUpdate.Text = "Enable Automatic Updates?";
+            this.ChckAutoUpdate.UseVisualStyleBackColor = false;
+            // 
             // TmrCheckVal
             // 
             this.TmrCheckVal.Enabled = true;
             this.TmrCheckVal.Tick += new System.EventHandler(this.TmrCheckVal_Tick);
+            // 
+            // PnlSplitterMid
+            // 
+            this.PnlSplitterMid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PnlSplitterMid.BackColor = System.Drawing.Color.Gray;
+            this.PnlSplitterMid.Location = new System.Drawing.Point(22, 157);
+            this.PnlSplitterMid.Name = "PnlSplitterMid";
+            this.PnlSplitterMid.Size = new System.Drawing.Size(622, 2);
+            this.PnlSplitterMid.TabIndex = 9;
+            // 
+            // RdStable
+            // 
+            this.RdStable.AutoSize = true;
+            this.RdStable.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RdStable.Checked = true;
+            this.RdStable.Depth = 0;
+            this.RdStable.Font = new System.Drawing.Font("Roboto", 10F);
+            this.RdStable.Location = new System.Drawing.Point(36, 204);
+            this.RdStable.Margin = new System.Windows.Forms.Padding(0);
+            this.RdStable.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.RdStable.MouseState = MaterialSkin.MouseState.HOVER;
+            this.RdStable.Name = "RdStable";
+            this.RdStable.Ripple = true;
+            this.RdStable.Size = new System.Drawing.Size(221, 30);
+            this.RdStable.TabIndex = 3;
+            this.RdStable.TabStop = true;
+            this.RdStable.Text = "Use the Stable Branch (Master)";
+            this.RdStable.UseVisualStyleBackColor = true;
+            // 
+            // LblBranch
+            // 
+            this.LblBranch.AutoSize = true;
+            this.LblBranch.Depth = 0;
+            this.LblBranch.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LblBranch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LblBranch.Location = new System.Drawing.Point(33, 167);
+            this.LblBranch.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LblBranch.Name = "LblBranch";
+            this.LblBranch.Size = new System.Drawing.Size(172, 19);
+            this.LblBranch.TabIndex = 11;
+            this.LblBranch.Text = "Select an Update Branch";
+            // 
+            // RdCanary
+            // 
+            this.RdCanary.AutoSize = true;
+            this.RdCanary.Depth = 0;
+            this.RdCanary.Font = new System.Drawing.Font("Roboto", 10F);
+            this.RdCanary.Location = new System.Drawing.Point(36, 234);
+            this.RdCanary.Margin = new System.Windows.Forms.Padding(0);
+            this.RdCanary.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.RdCanary.MouseState = MaterialSkin.MouseState.HOVER;
+            this.RdCanary.Name = "RdCanary";
+            this.RdCanary.Ripple = true;
+            this.RdCanary.Size = new System.Drawing.Size(236, 30);
+            this.RdCanary.TabIndex = 4;
+            this.RdCanary.Text = "Use the Unstable Branch (Canary)";
+            this.RdCanary.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.Location = new System.Drawing.Point(22, 280);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(622, 2);
+            this.panel1.TabIndex = 12;
             // 
             // FmSelectSystem
             // 
@@ -452,6 +612,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.PcxALogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSwitchLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxWii)).EndInit();
+            this.PnlSettings.ResumeLayout(false);
+            this.PnlSettings.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PcxSettingsIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -476,7 +639,7 @@
         private MaterialSkin.Controls.MaterialLabel LblSettings;
         private System.Windows.Forms.PictureBox PcxALogo;
         private MaterialSkin.Controls.MaterialLabel LblOk;
-        private System.Windows.Forms.Panel PnlSplitter;
+        private System.Windows.Forms.Panel PnlSplitterFooter;
         private System.Windows.Forms.PictureBox PcxSwitchLogo;
         private System.Windows.Forms.PictureBox PcxButtonX;
         private System.Windows.Forms.PictureBox PcxButtonB;
@@ -485,5 +648,15 @@
         private MaterialSkin.Controls.MaterialRadioButton RdWii;
         private System.Windows.Forms.Panel PnlSettings;
         private System.Windows.Forms.Timer TmrCheckVal;
+        private MaterialSkin.Controls.MaterialLabel LblSettingsHeader;
+        private MaterialSkin.Controls.MaterialCheckBox ChckAutoUpdate;
+        private System.Windows.Forms.Panel PnlSplitterHeader;
+        private System.Windows.Forms.PictureBox PcxSettingsIcon;
+        private MaterialSkin.Controls.MaterialCheckBox ChckClean;
+        private System.Windows.Forms.Panel PnlSplitterMid;
+        private MaterialSkin.Controls.MaterialRadioButton RdStable;
+        private MaterialSkin.Controls.MaterialLabel LblBranch;
+        private MaterialSkin.Controls.MaterialRadioButton RdCanary;
+        private System.Windows.Forms.Panel panel1;
     }
 }
