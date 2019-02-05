@@ -31,7 +31,7 @@ namespace GetMyBru.GetMyBru.Core.Net.Parser
              }
             catch (Exception ex)
             {
-                MessageBox.Show("Error, exception is as follows: " + ex.Message, "Error:", MessageboxButtons.Ok, Messagebox.Icon.Error);
+                MessageBox.Show("Error, exception is as follows: " + ex.Message, "Error:", MessageboxButtons.Ok, MessageBox.Icon.Error);
                 return; 
             }
         }
@@ -51,7 +51,7 @@ namespace GetMyBru.GetMyBru.Core.Net.Parser
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error, exception is as follows: " + ex.Message, "Error:", MessageboxButtons.Ok, Messagebox.Icon.Error);
+                MessageBox.Show("Error, exception is as follows: " + ex.Message, "Error:", MessageboxButtons.Ok, MessageBox.Icon.Error);
                 return; 
             }
         }
