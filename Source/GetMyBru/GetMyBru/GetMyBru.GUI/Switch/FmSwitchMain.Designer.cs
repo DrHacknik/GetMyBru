@@ -308,10 +308,10 @@
             this.LblInfoBody.Depth = 0;
             this.LblInfoBody.Font = new System.Drawing.Font("Roboto", 11F);
             this.LblInfoBody.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LblInfoBody.Location = new System.Drawing.Point(254, 87);
+            this.LblInfoBody.Location = new System.Drawing.Point(227, 75);
             this.LblInfoBody.MouseState = MaterialSkin.MouseState.HOVER;
             this.LblInfoBody.Name = "LblInfoBody";
-            this.LblInfoBody.Size = new System.Drawing.Size(594, 139);
+            this.LblInfoBody.Size = new System.Drawing.Size(622, 151);
             this.LblInfoBody.TabIndex = 2;
             this.LblInfoBody.Text = "%APPDESCBODY%";
             // 
@@ -320,10 +320,10 @@
             this.LblInfoHeader.Depth = 0;
             this.LblInfoHeader.Font = new System.Drawing.Font("Roboto", 11F);
             this.LblInfoHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LblInfoHeader.Location = new System.Drawing.Point(253, 45);
+            this.LblInfoHeader.Location = new System.Drawing.Point(226, 33);
             this.LblInfoHeader.MouseState = MaterialSkin.MouseState.HOVER;
             this.LblInfoHeader.Name = "LblInfoHeader";
-            this.LblInfoHeader.Size = new System.Drawing.Size(594, 42);
+            this.LblInfoHeader.Size = new System.Drawing.Size(622, 42);
             this.LblInfoHeader.TabIndex = 1;
             this.LblInfoHeader.Text = "%APPTITLE%";
             // 
@@ -333,7 +333,7 @@
             this.PcxInfoIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.PcxInfoIcon.Location = new System.Drawing.Point(25, 33);
             this.PcxInfoIcon.Name = "PcxInfoIcon";
-            this.PcxInfoIcon.Size = new System.Drawing.Size(213, 193);
+            this.PcxInfoIcon.Size = new System.Drawing.Size(195, 193);
             this.PcxInfoIcon.TabIndex = 0;
             this.PcxInfoIcon.TabStop = false;
             // 
