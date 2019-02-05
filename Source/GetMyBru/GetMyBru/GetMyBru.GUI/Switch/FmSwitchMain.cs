@@ -14,6 +14,8 @@ namespace GetMyBru.GetMyBru.GUI
 {
     public partial class FmSwitchMain : MaterialForm
     {
+        private bool AppInView = false;
+
         public FmSwitchMain()
         {
             InitializeComponent();
@@ -45,6 +47,46 @@ namespace GetMyBru.GetMyBru.GUI
         private void LblExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void TmrCheckVal_Tick(object sender, EventArgs e)
+        {
+            if (AppInView == true)
+            {
+                ShowAppInfo();
+                return;
+            }
+            else if (AppInView == false)
+            {
+                HideAppInfo();
+                return;
+            }
+        }
+
+        private void ShowAppInfo()
+        {
+            PnlInfo.Visible = true;
+            return;
+        }
+
+        private void HideAppInfo()
+        {
+            PnlInfo.Visible = false;
+            return;
+        }
+
+        private void LblView_Click(object sender, EventArgs e)
+        {
+            if (AppInView == false)
+            {
+                LblView.Text = "Close Info";
+                AppInView = true;
+            }
+            else if (AppInView == true)
+            {
+                LblView.Text = "View App";
+                AppInView = false;
+            }
         }
     }
 }
