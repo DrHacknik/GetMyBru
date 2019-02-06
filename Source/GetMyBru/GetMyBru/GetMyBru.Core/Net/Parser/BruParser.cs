@@ -15,7 +15,7 @@ namespace GetMyBru.GetMyBru.Core.Net.Parser
         public static string PackagesRawList;
         private static string cd = Environment.CurrentDirectory;
         public static string PackagesRaw;
-
+        public static string System; 
         public static void PrepareJSON()
         {
             try
@@ -24,10 +24,26 @@ namespace GetMyBru.GetMyBru.Core.Net.Parser
                 {
                     Directory.CreateDirectory(cd + "\\Data\\Cache\\Switch");
                 }
-                using (var JSONData = new WebClient())
+                
+                if (System == "Switch")
                 {
-                    JSONData.DownloadFile("https://www.switchbru.com/appstore/repo.json", cd + "\\Data\\Cache\\Switch\\repo.json");
+                    using (var JSONData = new WebClient())
+                    {
+                        JSONData.DownloadFile("https://www.switchbru.com/appstore/repo.json", cd + "\\Data\\Cache\\Switch\\repo.json");
+                    }   
                 }
+                else if (System == "WiiU")
+                {
+                    using (var JSONData = new WebClient())
+                    {
+                        JSONData.DownloadFile("https://www.wiiubru.com/appstore/repo.json", cd + "\\Data\\Cache\\WiiU\\repo.json");
+                    }   
+                }
+                else if (System == "Wii")
+                {
+                    return; 
+                }
+               
             }
             catch (Exception ex)
             {
