@@ -116,16 +116,24 @@ namespace GetMyBru.GetMyBru.GUI
         {
             //MessageBox.Show("Please do keep in mind that this feature is not implemented yet.", "Do note:", MessageBoxButtons.OK, MessageBoxIcon.Information);
             //return;
-
-            if (SettingsActive == false)
+            
+            if (Properties.Settings.Default.FirstTime == true)
             {
-                SettingsActive = true;
-                LoadSettings();
+               MessageBox.Show("You haven't saved the settings for first use. Please do so.", "Wait a min~", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+               return; 
             }
-            else if (SettingsActive == true)
+            else
             {
-                SettingsActive = false;
-            }
+                if (SettingsActive == false)
+                {
+                    SettingsActive = true;
+                    LoadSettings();
+                }
+                else if (SettingsActive == true)
+                {
+                    SettingsActive = false;
+                }
+            } 
         }
 
         private void TmrCheckVal_Tick(object sender, EventArgs e)
