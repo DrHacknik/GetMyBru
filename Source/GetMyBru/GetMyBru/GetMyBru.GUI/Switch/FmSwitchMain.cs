@@ -65,6 +65,7 @@ namespace GetMyBru.GetMyBru.GUI
 
         private void ShowAppInfo()
         {
+            //Currently this only shows on the 'Home' Tab. I'll need to fix this.
             PnlInfo.Visible = true;
             return;
         }
