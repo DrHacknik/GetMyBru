@@ -24,6 +24,10 @@ namespace GetMyBru.GetMyBru.GUI
         private Form FmSwitch = new FmSwitchMain();
         private bool SettingsActive = false;
         private string cd = Environment.CurrentDirectory;
+        public static string NotifTitle;
+        public static string NotifText;
+        public static int NotifTime = 40000;
+        public static bool ShowToast;
 
         public FmSelectSystem()
         {
@@ -142,6 +146,14 @@ namespace GetMyBru.GetMyBru.GUI
         private void TmrCheckVal_Tick(object sender, EventArgs e)
         {
             SetLocationButtons();
+            if (ShowToast == true)
+            {
+                NtfMain.BalloonTipTitle = NotifTitle;
+                NtfMain.BalloonTipText = NotifText;
+                NtfMain.ShowBalloonTip(NotifTime);
+                ShowToast = false;
+                return;
+            }
         }
 
         private void SetLocationButtons()
@@ -223,7 +235,16 @@ namespace GetMyBru.GetMyBru.GUI
                 MessageBox.Show("The Drive text field contains invalid character/s. Please only input the drive letter!", "Error: Invalid character/s", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 TxtDrive.Focus();
                 SettingsActive = true;
+                NotifTitle = "GetMyBru";
+                NotifText = "Failed to save the settings to the Config";
+                NotifTime = 40000;
+                ShowToast = true;
             }
+
+            NotifTitle = "GetMyBru";
+            NotifText = "Saved the settings to the Config";
+            NotifTime = 40000;
+            ShowToast = true;
         }
 
         private void LoadSettings()

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GetMyBru.GetMyBru.GUI;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -14,11 +15,26 @@ namespace GetMyBru.GetMyBru.Services
 
         public static void GetUpdate()
         {
-            using (var JSONData = new WebClient())
+            try
             {
-                JSONData.DownloadFile("https://github.com/DrHacknik/GetMyBru/raw/master/Common/Updates/Meta.json", cd + "\\Data\\Cache\\Update\\Update.json");
+                using (var JSONData = new WebClient())
+                {
+                    JSONData.DownloadFile("https://github.com/DrHacknik/GetMyBru/raw/master/Common/Updates/Meta.json", cd + "\\Data\\Cache\\Update\\Update.json");
+                }
+                FmSelectSystem.NotifTitle = "GetMyBru - Update Check";
+                FmSelectSystem.NotifText = "Loaded update Information";
+                FmSelectSystem.NotifTime = 40000;
+                FmSelectSystem.ShowToast = true;
+                ParseUpdate();
             }
-            ParseUpdate();
+            catch (Exception ex)
+            {
+                FmSelectSystem.NotifTitle = "GetMyBru - Update Check";
+                FmSelectSystem.NotifText = ex.Message;
+                FmSelectSystem.NotifTime = 40000;
+                FmSelectSystem.ShowToast = true;
+                return;
+            }
         }
 
         private static void ParseUpdate()

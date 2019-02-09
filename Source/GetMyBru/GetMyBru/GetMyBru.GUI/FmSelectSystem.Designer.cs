@@ -665,7 +665,6 @@
         private System.Windows.Forms.PictureBox PcxWiiU;
         private MaterialSkin.Controls.MaterialRadioButton RdSwitch;
         private MaterialSkin.Controls.MaterialRadioButton RdWiiU;
-        private System.Windows.Forms.NotifyIcon NtfMain;
         private MaterialSkin.Controls.MaterialContextMenuStrip MtxMain;
         private System.Windows.Forms.ToolStripMenuItem openSelectorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
@@ -698,5 +697,6 @@
         private System.Windows.Forms.Panel panel1;
         private MaterialSkin.Controls.MaterialCheckBox ChckNotif;
         private MaterialSkin.Controls.MaterialSingleLineTextField TxtDrive;
+        public System.Windows.Forms.NotifyIcon NtfMain;
     }
 }
