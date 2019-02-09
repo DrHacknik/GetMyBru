@@ -48,23 +48,22 @@
             this.TbGame = new System.Windows.Forms.TabPage();
             this.TbLoad = new System.Windows.Forms.TabPage();
             this.TbHome = new System.Windows.Forms.TabPage();
+            this.TbPage = new MaterialSkin.Controls.MaterialTabControl();
+            this.TbSel = new MaterialSkin.Controls.MaterialTabSelector();
+            this.TmrCheckVal = new System.Windows.Forms.Timer(this.components);
             this.PnlInfo = new System.Windows.Forms.Panel();
             this.LblInfo = new MaterialSkin.Controls.MaterialLabel();
             this.LblInfoBody = new MaterialSkin.Controls.MaterialLabel();
             this.LblInfoHeader = new MaterialSkin.Controls.MaterialLabel();
             this.PcxInfoIcon = new System.Windows.Forms.PictureBox();
-            this.TbPage = new MaterialSkin.Controls.MaterialTabControl();
-            this.TbSel = new MaterialSkin.Controls.MaterialTabSelector();
-            this.TmrCheckVal = new System.Windows.Forms.Timer(this.components);
             this.PnlBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PcxExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSettings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxALogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSwitchLogo)).BeginInit();
-            this.TbHome.SuspendLayout();
+            this.TbPage.SuspendLayout();
             this.PnlInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PcxInfoIcon)).BeginInit();
-            this.TbPage.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlBottom
@@ -270,12 +269,47 @@
             // TbHome
             // 
             this.TbHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.TbHome.Controls.Add(this.PnlInfo);
             this.TbHome.Location = new System.Drawing.Point(4, 22);
             this.TbHome.Name = "TbHome";
             this.TbHome.Size = new System.Drawing.Size(1003, 556);
             this.TbHome.TabIndex = 0;
             this.TbHome.Text = "Home";
+            // 
+            // TbPage
+            // 
+            this.TbPage.Controls.Add(this.TbHome);
+            this.TbPage.Controls.Add(this.TbLoad);
+            this.TbPage.Controls.Add(this.TbGame);
+            this.TbPage.Controls.Add(this.TbEmu);
+            this.TbPage.Controls.Add(this.TbTools);
+            this.TbPage.Controls.Add(this.TbConc);
+            this.TbPage.Controls.Add(this.TbAdv);
+            this.TbPage.Controls.Add(this.TbThemes);
+            this.TbPage.Depth = 0;
+            this.TbPage.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.TbPage.Location = new System.Drawing.Point(0, 101);
+            this.TbPage.MouseState = MaterialSkin.MouseState.HOVER;
+            this.TbPage.Name = "TbPage";
+            this.TbPage.SelectedIndex = 0;
+            this.TbPage.Size = new System.Drawing.Size(1011, 582);
+            this.TbPage.TabIndex = 6;
+            // 
+            // TbSel
+            // 
+            this.TbSel.BaseTabControl = this.TbPage;
+            this.TbSel.Depth = 0;
+            this.TbSel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.TbSel.Location = new System.Drawing.Point(0, 60);
+            this.TbSel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.TbSel.Name = "TbSel";
+            this.TbSel.Size = new System.Drawing.Size(1011, 41);
+            this.TbSel.TabIndex = 8;
+            this.TbSel.Text = "materialTabSelector1";
+            // 
+            // TmrCheckVal
+            // 
+            this.TmrCheckVal.Enabled = true;
+            this.TmrCheckVal.Tick += new System.EventHandler(this.TmrCheckVal_Tick);
             // 
             // PnlInfo
             // 
@@ -285,10 +319,10 @@
             this.PnlInfo.Controls.Add(this.LblInfoBody);
             this.PnlInfo.Controls.Add(this.LblInfoHeader);
             this.PnlInfo.Controls.Add(this.PcxInfoIcon);
-            this.PnlInfo.Location = new System.Drawing.Point(67, 71);
+            this.PnlInfo.Location = new System.Drawing.Point(71, 166);
             this.PnlInfo.Name = "PnlInfo";
             this.PnlInfo.Size = new System.Drawing.Size(869, 415);
-            this.PnlInfo.TabIndex = 10;
+            this.PnlInfo.TabIndex = 11;
             this.PnlInfo.Visible = false;
             // 
             // LblInfo
@@ -337,48 +371,13 @@
             this.PcxInfoIcon.TabIndex = 0;
             this.PcxInfoIcon.TabStop = false;
             // 
-            // TbPage
-            // 
-            this.TbPage.Controls.Add(this.TbHome);
-            this.TbPage.Controls.Add(this.TbLoad);
-            this.TbPage.Controls.Add(this.TbGame);
-            this.TbPage.Controls.Add(this.TbEmu);
-            this.TbPage.Controls.Add(this.TbTools);
-            this.TbPage.Controls.Add(this.TbConc);
-            this.TbPage.Controls.Add(this.TbAdv);
-            this.TbPage.Controls.Add(this.TbThemes);
-            this.TbPage.Depth = 0;
-            this.TbPage.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.TbPage.Location = new System.Drawing.Point(0, 101);
-            this.TbPage.MouseState = MaterialSkin.MouseState.HOVER;
-            this.TbPage.Name = "TbPage";
-            this.TbPage.SelectedIndex = 0;
-            this.TbPage.Size = new System.Drawing.Size(1011, 582);
-            this.TbPage.TabIndex = 6;
-            // 
-            // TbSel
-            // 
-            this.TbSel.BaseTabControl = this.TbPage;
-            this.TbSel.Depth = 0;
-            this.TbSel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.TbSel.Location = new System.Drawing.Point(0, 60);
-            this.TbSel.MouseState = MaterialSkin.MouseState.HOVER;
-            this.TbSel.Name = "TbSel";
-            this.TbSel.Size = new System.Drawing.Size(1011, 41);
-            this.TbSel.TabIndex = 8;
-            this.TbSel.Text = "materialTabSelector1";
-            // 
-            // TmrCheckVal
-            // 
-            this.TmrCheckVal.Enabled = true;
-            this.TmrCheckVal.Tick += new System.EventHandler(this.TmrCheckVal_Tick);
-            // 
             // FmSwitchMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(1011, 746);
+            this.Controls.Add(this.PnlInfo);
             this.Controls.Add(this.TbSel);
             this.Controls.Add(this.TbPage);
             this.Controls.Add(this.PnlBottom);
@@ -396,10 +395,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.PcxSettings)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxALogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSwitchLogo)).EndInit();
-            this.TbHome.ResumeLayout(false);
+            this.TbPage.ResumeLayout(false);
             this.PnlInfo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PcxInfoIcon)).EndInit();
-            this.TbPage.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -426,11 +424,11 @@
         private System.Windows.Forms.TabPage TbHome;
         private MaterialSkin.Controls.MaterialTabControl TbPage;
         private MaterialSkin.Controls.MaterialTabSelector TbSel;
-        private System.Windows.Forms.Panel PnlInfo;
-        private System.Windows.Forms.PictureBox PcxInfoIcon;
-        private MaterialSkin.Controls.MaterialLabel LblInfoHeader;
-        private MaterialSkin.Controls.MaterialLabel LblInfoBody;
-        private MaterialSkin.Controls.MaterialLabel LblInfo;
         private System.Windows.Forms.Timer TmrCheckVal;
+        private System.Windows.Forms.Panel PnlInfo;
+        private MaterialSkin.Controls.MaterialLabel LblInfo;
+        private MaterialSkin.Controls.MaterialLabel LblInfoBody;
+        private MaterialSkin.Controls.MaterialLabel LblInfoHeader;
+        private System.Windows.Forms.PictureBox PcxInfoIcon;
     }
 }

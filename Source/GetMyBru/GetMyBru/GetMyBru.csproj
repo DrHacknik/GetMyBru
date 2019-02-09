@@ -55,7 +55,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GetMyBru.Core\CacheCheck.cs" />
     <Compile Include="GetMyBru.Core\Config\ConfigParser.cs" />
+    <Compile Include="GetMyBru.Core\Net\Parser\AppveyorParser.cs" />
     <Compile Include="GetMyBru.Core\Net\Parser\BruParser.cs" />
     <Compile Include="GetMyBru.GUI\FmSelectSystem.cs">
       <SubType>Form</SubType>

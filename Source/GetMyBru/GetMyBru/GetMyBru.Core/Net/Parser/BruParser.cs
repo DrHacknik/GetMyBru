@@ -8,14 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GetMyBru.GetMyBru.Core.Net.Parser
+namespace GetMyBru.GetMyBru.Core
 {
     internal class BruParser
     {
         public static string PackagesRawList;
         private static string cd = Environment.CurrentDirectory;
         public static string PackagesRaw;
-        public static string System; 
+        public static string System;
+
         public static void PrepareJSON()
         {
             try
@@ -24,26 +25,25 @@ namespace GetMyBru.GetMyBru.Core.Net.Parser
                 {
                     Directory.CreateDirectory(cd + "\\Data\\Cache\\Switch");
                 }
-                
+
                 if (System == "Switch")
                 {
                     using (var JSONData = new WebClient())
                     {
                         JSONData.DownloadFile("https://www.switchbru.com/appstore/repo.json", cd + "\\Data\\Cache\\Switch\\repo.json");
-                    }   
+                    }
                 }
                 else if (System == "WiiU")
                 {
                     using (var JSONData = new WebClient())
                     {
                         JSONData.DownloadFile("https://www.wiiubru.com/appstore/repo.json", cd + "\\Data\\Cache\\WiiU\\repo.json");
-                    }   
+                    }
                 }
                 else if (System == "Wii")
                 {
-                    return; 
+                    return;
                 }
-               
             }
             catch (Exception ex)
             {

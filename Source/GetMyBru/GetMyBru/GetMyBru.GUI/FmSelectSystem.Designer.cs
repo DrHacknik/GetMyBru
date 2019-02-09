@@ -56,18 +56,19 @@
             this.PcxWii = new System.Windows.Forms.PictureBox();
             this.RdWii = new MaterialSkin.Controls.MaterialRadioButton();
             this.PnlSettings = new System.Windows.Forms.Panel();
+            this.ChckNotif = new MaterialSkin.Controls.MaterialCheckBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.LblBranch = new MaterialSkin.Controls.MaterialLabel();
+            this.RdCanary = new MaterialSkin.Controls.MaterialRadioButton();
+            this.RdStable = new MaterialSkin.Controls.MaterialRadioButton();
+            this.PnlSplitterMid = new System.Windows.Forms.Panel();
             this.ChckClean = new MaterialSkin.Controls.MaterialCheckBox();
             this.PnlSplitterHeader = new System.Windows.Forms.Panel();
             this.PcxSettingsIcon = new System.Windows.Forms.PictureBox();
             this.LblSettingsHeader = new MaterialSkin.Controls.MaterialLabel();
             this.ChckAutoUpdate = new MaterialSkin.Controls.MaterialCheckBox();
             this.TmrCheckVal = new System.Windows.Forms.Timer(this.components);
-            this.PnlSplitterMid = new System.Windows.Forms.Panel();
-            this.RdStable = new MaterialSkin.Controls.MaterialRadioButton();
-            this.LblBranch = new MaterialSkin.Controls.MaterialLabel();
-            this.RdCanary = new MaterialSkin.Controls.MaterialRadioButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.ChckNotif = new MaterialSkin.Controls.MaterialCheckBox();
+            this.TxtDrive = new MaterialSkin.Controls.MaterialSingleLineTextField();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSwitch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxWiiU)).BeginInit();
             this.MtxMain.SuspendLayout();
@@ -415,6 +416,7 @@
             // 
             // PnlSettings
             // 
+            this.PnlSettings.Controls.Add(this.TxtDrive);
             this.PnlSettings.Controls.Add(this.ChckNotif);
             this.PnlSettings.Controls.Add(this.panel1);
             this.PnlSettings.Controls.Add(this.LblBranch);
@@ -432,6 +434,92 @@
             this.PnlSettings.Size = new System.Drawing.Size(674, 354);
             this.PnlSettings.TabIndex = 8;
             this.PnlSettings.Visible = false;
+            // 
+            // ChckNotif
+            // 
+            this.ChckNotif.AutoSize = true;
+            this.ChckNotif.BackColor = System.Drawing.Color.Transparent;
+            this.ChckNotif.Depth = 0;
+            this.ChckNotif.Font = new System.Drawing.Font("Roboto", 10F);
+            this.ChckNotif.ForeColor = System.Drawing.Color.White;
+            this.ChckNotif.Location = new System.Drawing.Point(37, 301);
+            this.ChckNotif.Margin = new System.Windows.Forms.Padding(0);
+            this.ChckNotif.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.ChckNotif.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ChckNotif.Name = "ChckNotif";
+            this.ChckNotif.Ripple = true;
+            this.ChckNotif.Size = new System.Drawing.Size(195, 30);
+            this.ChckNotif.TabIndex = 13;
+            this.ChckNotif.Text = "Enable Push Notifications?";
+            this.ChckNotif.UseVisualStyleBackColor = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.Location = new System.Drawing.Point(22, 280);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(622, 2);
+            this.panel1.TabIndex = 12;
+            // 
+            // LblBranch
+            // 
+            this.LblBranch.AutoSize = true;
+            this.LblBranch.Depth = 0;
+            this.LblBranch.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LblBranch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LblBranch.Location = new System.Drawing.Point(33, 167);
+            this.LblBranch.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LblBranch.Name = "LblBranch";
+            this.LblBranch.Size = new System.Drawing.Size(172, 19);
+            this.LblBranch.TabIndex = 11;
+            this.LblBranch.Text = "Select an Update Branch";
+            // 
+            // RdCanary
+            // 
+            this.RdCanary.AutoSize = true;
+            this.RdCanary.Depth = 0;
+            this.RdCanary.Font = new System.Drawing.Font("Roboto", 10F);
+            this.RdCanary.Location = new System.Drawing.Point(36, 228);
+            this.RdCanary.Margin = new System.Windows.Forms.Padding(0);
+            this.RdCanary.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.RdCanary.MouseState = MaterialSkin.MouseState.HOVER;
+            this.RdCanary.Name = "RdCanary";
+            this.RdCanary.Ripple = true;
+            this.RdCanary.Size = new System.Drawing.Size(236, 30);
+            this.RdCanary.TabIndex = 4;
+            this.RdCanary.Text = "Use the Unstable Branch (Canary)";
+            this.RdCanary.UseVisualStyleBackColor = true;
+            // 
+            // RdStable
+            // 
+            this.RdStable.AutoSize = true;
+            this.RdStable.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RdStable.Checked = true;
+            this.RdStable.Depth = 0;
+            this.RdStable.Font = new System.Drawing.Font("Roboto", 10F);
+            this.RdStable.Location = new System.Drawing.Point(36, 198);
+            this.RdStable.Margin = new System.Windows.Forms.Padding(0);
+            this.RdStable.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.RdStable.MouseState = MaterialSkin.MouseState.HOVER;
+            this.RdStable.Name = "RdStable";
+            this.RdStable.Ripple = true;
+            this.RdStable.Size = new System.Drawing.Size(221, 30);
+            this.RdStable.TabIndex = 3;
+            this.RdStable.TabStop = true;
+            this.RdStable.Text = "Use the Stable Branch (Master)";
+            this.RdStable.UseVisualStyleBackColor = true;
+            // 
+            // PnlSplitterMid
+            // 
+            this.PnlSplitterMid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PnlSplitterMid.BackColor = System.Drawing.Color.Gray;
+            this.PnlSplitterMid.Location = new System.Drawing.Point(22, 157);
+            this.PnlSplitterMid.Name = "PnlSplitterMid";
+            this.PnlSplitterMid.Size = new System.Drawing.Size(622, 2);
+            this.PnlSplitterMid.TabIndex = 9;
             // 
             // ChckClean
             // 
@@ -509,91 +597,21 @@
             this.TmrCheckVal.Enabled = true;
             this.TmrCheckVal.Tick += new System.EventHandler(this.TmrCheckVal_Tick);
             // 
-            // PnlSplitterMid
+            // TxtDrive
             // 
-            this.PnlSplitterMid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PnlSplitterMid.BackColor = System.Drawing.Color.Gray;
-            this.PnlSplitterMid.Location = new System.Drawing.Point(22, 157);
-            this.PnlSplitterMid.Name = "PnlSplitterMid";
-            this.PnlSplitterMid.Size = new System.Drawing.Size(622, 2);
-            this.PnlSplitterMid.TabIndex = 9;
-            // 
-            // RdStable
-            // 
-            this.RdStable.AutoSize = true;
-            this.RdStable.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.RdStable.Checked = true;
-            this.RdStable.Depth = 0;
-            this.RdStable.Font = new System.Drawing.Font("Roboto", 10F);
-            this.RdStable.Location = new System.Drawing.Point(36, 198);
-            this.RdStable.Margin = new System.Windows.Forms.Padding(0);
-            this.RdStable.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.RdStable.MouseState = MaterialSkin.MouseState.HOVER;
-            this.RdStable.Name = "RdStable";
-            this.RdStable.Ripple = true;
-            this.RdStable.Size = new System.Drawing.Size(221, 30);
-            this.RdStable.TabIndex = 3;
-            this.RdStable.TabStop = true;
-            this.RdStable.Text = "Use the Stable Branch (Master)";
-            this.RdStable.UseVisualStyleBackColor = true;
-            // 
-            // LblBranch
-            // 
-            this.LblBranch.AutoSize = true;
-            this.LblBranch.Depth = 0;
-            this.LblBranch.Font = new System.Drawing.Font("Roboto", 11F);
-            this.LblBranch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LblBranch.Location = new System.Drawing.Point(33, 167);
-            this.LblBranch.MouseState = MaterialSkin.MouseState.HOVER;
-            this.LblBranch.Name = "LblBranch";
-            this.LblBranch.Size = new System.Drawing.Size(172, 19);
-            this.LblBranch.TabIndex = 11;
-            this.LblBranch.Text = "Select an Update Branch";
-            // 
-            // RdCanary
-            // 
-            this.RdCanary.AutoSize = true;
-            this.RdCanary.Depth = 0;
-            this.RdCanary.Font = new System.Drawing.Font("Roboto", 10F);
-            this.RdCanary.Location = new System.Drawing.Point(36, 228);
-            this.RdCanary.Margin = new System.Windows.Forms.Padding(0);
-            this.RdCanary.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.RdCanary.MouseState = MaterialSkin.MouseState.HOVER;
-            this.RdCanary.Name = "RdCanary";
-            this.RdCanary.Ripple = true;
-            this.RdCanary.Size = new System.Drawing.Size(236, 30);
-            this.RdCanary.TabIndex = 4;
-            this.RdCanary.Text = "Use the Unstable Branch (Canary)";
-            this.RdCanary.UseVisualStyleBackColor = true;
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.Gray;
-            this.panel1.Location = new System.Drawing.Point(22, 280);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(622, 2);
-            this.panel1.TabIndex = 12;
-            // 
-            // ChckNotif
-            // 
-            this.ChckNotif.AutoSize = true;
-            this.ChckNotif.BackColor = System.Drawing.Color.Transparent;
-            this.ChckNotif.Depth = 0;
-            this.ChckNotif.Font = new System.Drawing.Font("Roboto", 10F);
-            this.ChckNotif.ForeColor = System.Drawing.Color.White;
-            this.ChckNotif.Location = new System.Drawing.Point(37, 301);
-            this.ChckNotif.Margin = new System.Windows.Forms.Padding(0);
-            this.ChckNotif.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.ChckNotif.MouseState = MaterialSkin.MouseState.HOVER;
-            this.ChckNotif.Name = "ChckNotif";
-            this.ChckNotif.Ripple = true;
-            this.ChckNotif.Size = new System.Drawing.Size(195, 30);
-            this.ChckNotif.TabIndex = 13;
-            this.ChckNotif.Text = "Enable Push Notifications?";
-            this.ChckNotif.UseVisualStyleBackColor = false;
+            this.TxtDrive.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtDrive.Depth = 0;
+            this.TxtDrive.Hint = "Please enter a drive letter. Ex: D";
+            this.TxtDrive.Location = new System.Drawing.Point(413, 304);
+            this.TxtDrive.MouseState = MaterialSkin.MouseState.HOVER;
+            this.TxtDrive.Name = "TxtDrive";
+            this.TxtDrive.PasswordChar = '\0';
+            this.TxtDrive.SelectedText = "";
+            this.TxtDrive.SelectionLength = 0;
+            this.TxtDrive.SelectionStart = 0;
+            this.TxtDrive.Size = new System.Drawing.Size(240, 23);
+            this.TxtDrive.TabIndex = 14;
+            this.TxtDrive.UseSystemPasswordChar = false;
             // 
             // FmSelectSystem
             // 
@@ -679,5 +697,6 @@
         private MaterialSkin.Controls.MaterialRadioButton RdCanary;
         private System.Windows.Forms.Panel panel1;
         private MaterialSkin.Controls.MaterialCheckBox ChckNotif;
+        private MaterialSkin.Controls.MaterialSingleLineTextField TxtDrive;
     }
 }

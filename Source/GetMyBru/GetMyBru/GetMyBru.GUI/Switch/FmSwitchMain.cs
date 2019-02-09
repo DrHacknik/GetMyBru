@@ -1,4 +1,4 @@
-﻿using GetMyBru.GetMyBru.Core.Net.Parser;
+﻿using GetMyBru.GetMyBru.Core;
 using MaterialSkin.Controls;
 using System;
 using System.Collections.Generic;
@@ -54,11 +54,13 @@ namespace GetMyBru.GetMyBru.GUI
             if (AppInView == true)
             {
                 ShowAppInfo();
+                TbSel.Enabled = false;
                 return;
             }
             else if (AppInView == false)
             {
                 HideAppInfo();
+                TbSel.Enabled = true;
                 return;
             }
         }

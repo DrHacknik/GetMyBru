@@ -11,7 +11,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using GetMyBru.GetMyBru.GUI;
 using System.IO;
-using GetMyBru.GetMyBru.Core.Net.Parser;
+using GetMyBru.GetMyBru.Core;
+using System.Text.RegularExpressions;
 
 namespace GetMyBru.GetMyBru.GUI
 {
@@ -44,6 +45,7 @@ namespace GetMyBru.GetMyBru.GUI
         private void FmSelectSystem_Load(object sender, EventArgs e)
         {
             LblVersion.Text = "Version: " + Application.ProductVersion;
+            CacheCheck.PerformCheck();
             this.Refresh();
             return;
         }
@@ -116,24 +118,25 @@ namespace GetMyBru.GetMyBru.GUI
         {
             //MessageBox.Show("Please do keep in mind that this feature is not implemented yet.", "Do note:", MessageBoxButtons.OK, MessageBoxIcon.Information);
             //return;
-            
+
             if (Properties.Settings.Default.FirstTime == true)
             {
-               MessageBox.Show("You haven't saved the settings for first use. Please do so.", "Wait a min~", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-               return; 
+                MessageBox.Show("You haven't saved the settings for first use. Please do so.", "Wait a min~", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
             }
             else
             {
                 if (SettingsActive == false)
                 {
                     SettingsActive = true;
+                    TxtDrive.Clear();
                     LoadSettings();
                 }
                 else if (SettingsActive == true)
                 {
                     SettingsActive = false;
                 }
-            } 
+            }
         }
 
         private void TmrCheckVal_Tick(object sender, EventArgs e)
@@ -215,17 +218,12 @@ namespace GetMyBru.GetMyBru.GUI
             Properties.Settings.Default.Save();
             //Write values to JSON
 
-            if (!Directory.Exists(cd + "\\Data"))
+            if (TxtDrive.Text.Contains(":") || TxtDrive.Text.Contains("\\") || TxtDrive.Text.Contains("/") || TxtDrive.Text.Contains(","))
             {
-                Directory.CreateDirectory(cd + "\\Data");
+                MessageBox.Show("The Drive text field contains invalid character/s. Please only input the drive letter!", "Error: Invalid character/s", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                TxtDrive.Focus();
+                SettingsActive = true;
             }
-
-            if (!File.Exists(cd + "\\Data\\Config.json"))
-            {
-                File.WriteAllText(cd + "\\Data\\Config.json", "{ }");
-                return;
-            }
-            return;
         }
 
         private void LoadSettings()
