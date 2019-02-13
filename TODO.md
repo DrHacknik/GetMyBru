@@ -1,7 +1,8 @@
 ## FmSelectSystem.cs 
 
 * ~~Add proper Settings management~~
-* Move all the directory preparation code to this Class. 
+* ~~Move all the directory preparation code to this Class.~~
+* Fix up and fully implement notification management. 
 
 ## FmSwitchMain.cs 
 
