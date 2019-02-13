@@ -1,6 +1,6 @@
 ## FmSelectSystem.cs 
 
-* Add proper Settings management 
+* ~~Add proper Settings management~~
 * Move all the directory preparation code to this Class. 
 
 ## FmSwitchMain.cs 
