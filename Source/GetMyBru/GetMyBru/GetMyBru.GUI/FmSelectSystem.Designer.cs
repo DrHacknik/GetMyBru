@@ -32,8 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FmSelectSystem));
             this.LblHeader = new MaterialSkin.Controls.MaterialLabel();
             this.LblBody = new MaterialSkin.Controls.MaterialLabel();
-            this.PcxSwitch = new System.Windows.Forms.PictureBox();
-            this.PcxWiiU = new System.Windows.Forms.PictureBox();
             this.RdSwitch = new MaterialSkin.Controls.MaterialRadioButton();
             this.RdWiiU = new MaterialSkin.Controls.MaterialRadioButton();
             this.NtfMain = new System.Windows.Forms.NotifyIcon(this.components);
@@ -41,21 +39,14 @@
             this.openSelectorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PnlBottom = new System.Windows.Forms.Panel();
-            this.PcxButtonX = new System.Windows.Forms.PictureBox();
-            this.PcxButtonB = new System.Windows.Forms.PictureBox();
-            this.PcxButtonA = new System.Windows.Forms.PictureBox();
             this.LblVersion = new MaterialSkin.Controls.MaterialLabel();
-            this.PcxExit = new System.Windows.Forms.PictureBox();
             this.LblExit = new MaterialSkin.Controls.MaterialLabel();
-            this.PcxSettings = new System.Windows.Forms.PictureBox();
             this.LblSettings = new MaterialSkin.Controls.MaterialLabel();
-            this.PcxALogo = new System.Windows.Forms.PictureBox();
             this.LblOk = new MaterialSkin.Controls.MaterialLabel();
             this.PnlSplitterFooter = new System.Windows.Forms.Panel();
-            this.PcxSwitchLogo = new System.Windows.Forms.PictureBox();
-            this.PcxWii = new System.Windows.Forms.PictureBox();
             this.RdWii = new MaterialSkin.Controls.MaterialRadioButton();
             this.PnlSettings = new System.Windows.Forms.Panel();
+            this.TxtDrive = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.ChckNotif = new MaterialSkin.Controls.MaterialCheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.LblBranch = new MaterialSkin.Controls.MaterialLabel();
@@ -64,15 +55,24 @@
             this.PnlSplitterMid = new System.Windows.Forms.Panel();
             this.ChckClean = new MaterialSkin.Controls.MaterialCheckBox();
             this.PnlSplitterHeader = new System.Windows.Forms.Panel();
-            this.PcxSettingsIcon = new System.Windows.Forms.PictureBox();
             this.LblSettingsHeader = new MaterialSkin.Controls.MaterialLabel();
             this.ChckAutoUpdate = new MaterialSkin.Controls.MaterialCheckBox();
             this.TmrCheckVal = new System.Windows.Forms.Timer(this.components);
-            this.TxtDrive = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            ((System.ComponentModel.ISupportInitialize)(this.PcxSwitch)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PcxWiiU)).BeginInit();
+            this.PcxSettingsIcon = new System.Windows.Forms.PictureBox();
+            this.PcxButtonX = new System.Windows.Forms.PictureBox();
+            this.PcxButtonB = new System.Windows.Forms.PictureBox();
+            this.PcxButtonA = new System.Windows.Forms.PictureBox();
+            this.PcxExit = new System.Windows.Forms.PictureBox();
+            this.PcxSettings = new System.Windows.Forms.PictureBox();
+            this.PcxALogo = new System.Windows.Forms.PictureBox();
+            this.PcxSwitchLogo = new System.Windows.Forms.PictureBox();
+            this.PcxWii = new System.Windows.Forms.PictureBox();
+            this.PcxWiiU = new System.Windows.Forms.PictureBox();
+            this.PcxSwitch = new System.Windows.Forms.PictureBox();
             this.MtxMain.SuspendLayout();
             this.PnlBottom.SuspendLayout();
+            this.PnlSettings.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PcxSettingsIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxButtonX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxButtonB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxButtonA)).BeginInit();
@@ -81,8 +81,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.PcxALogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSwitchLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxWii)).BeginInit();
-            this.PnlSettings.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PcxSettingsIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PcxWiiU)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PcxSwitch)).BeginInit();
             this.SuspendLayout();
             // 
             // LblHeader
@@ -113,32 +113,6 @@
     " own methods of obtaining homebrew and installing it \r\nonto an SD card or USB De" +
     "vice. ";
             // 
-            // PcxSwitch
-            // 
-            this.PcxSwitch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PcxSwitch.BackColor = System.Drawing.Color.Transparent;
-            this.PcxSwitch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxSwitch.BackgroundImage")));
-            this.PcxSwitch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxSwitch.Location = new System.Drawing.Point(53, 210);
-            this.PcxSwitch.Name = "PcxSwitch";
-            this.PcxSwitch.Size = new System.Drawing.Size(142, 131);
-            this.PcxSwitch.TabIndex = 6;
-            this.PcxSwitch.TabStop = false;
-            // 
-            // PcxWiiU
-            // 
-            this.PcxWiiU.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PcxWiiU.BackColor = System.Drawing.Color.Transparent;
-            this.PcxWiiU.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxWiiU.BackgroundImage")));
-            this.PcxWiiU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxWiiU.Location = new System.Drawing.Point(267, 210);
-            this.PcxWiiU.Name = "PcxWiiU";
-            this.PcxWiiU.Size = new System.Drawing.Size(142, 131);
-            this.PcxWiiU.TabIndex = 6;
-            this.PcxWiiU.TabStop = false;
-            // 
             // RdSwitch
             // 
             this.RdSwitch.AutoSize = true;
@@ -163,6 +137,7 @@
             this.RdWiiU.AutoSize = true;
             this.RdWiiU.BackColor = System.Drawing.Color.Transparent;
             this.RdWiiU.Depth = 0;
+            this.RdWiiU.Enabled = false;
             this.RdWiiU.Font = new System.Drawing.Font("Roboto", 10F);
             this.RdWiiU.Location = new System.Drawing.Point(304, 344);
             this.RdWiiU.Margin = new System.Windows.Forms.Padding(0);
@@ -227,42 +202,6 @@
             this.PnlBottom.Size = new System.Drawing.Size(674, 63);
             this.PnlBottom.TabIndex = 7;
             // 
-            // PcxButtonX
-            // 
-            this.PcxButtonX.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PcxButtonX.BackColor = System.Drawing.Color.Transparent;
-            this.PcxButtonX.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxButtonX.BackgroundImage")));
-            this.PcxButtonX.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxButtonX.Location = new System.Drawing.Point(459, 26);
-            this.PcxButtonX.Name = "PcxButtonX";
-            this.PcxButtonX.Size = new System.Drawing.Size(16, 16);
-            this.PcxButtonX.TabIndex = 20;
-            this.PcxButtonX.TabStop = false;
-            // 
-            // PcxButtonB
-            // 
-            this.PcxButtonB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PcxButtonB.BackColor = System.Drawing.Color.Transparent;
-            this.PcxButtonB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxButtonB.BackgroundImage")));
-            this.PcxButtonB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxButtonB.Location = new System.Drawing.Point(523, 26);
-            this.PcxButtonB.Name = "PcxButtonB";
-            this.PcxButtonB.Size = new System.Drawing.Size(16, 16);
-            this.PcxButtonB.TabIndex = 19;
-            this.PcxButtonB.TabStop = false;
-            // 
-            // PcxButtonA
-            // 
-            this.PcxButtonA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PcxButtonA.BackColor = System.Drawing.Color.Transparent;
-            this.PcxButtonA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxButtonA.BackgroundImage")));
-            this.PcxButtonA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxButtonA.Location = new System.Drawing.Point(610, 26);
-            this.PcxButtonA.Name = "PcxButtonA";
-            this.PcxButtonA.Size = new System.Drawing.Size(16, 16);
-            this.PcxButtonA.TabIndex = 18;
-            this.PcxButtonA.TabStop = false;
-            // 
             // LblVersion
             // 
             this.LblVersion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -277,18 +216,6 @@
             this.LblVersion.Size = new System.Drawing.Size(59, 19);
             this.LblVersion.TabIndex = 17;
             this.LblVersion.Text = "%VER%";
-            // 
-            // PcxExit
-            // 
-            this.PcxExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PcxExit.BackColor = System.Drawing.Color.Transparent;
-            this.PcxExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxExit.BackgroundImage")));
-            this.PcxExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxExit.Location = new System.Drawing.Point(777, 27);
-            this.PcxExit.Name = "PcxExit";
-            this.PcxExit.Size = new System.Drawing.Size(16, 16);
-            this.PcxExit.TabIndex = 15;
-            this.PcxExit.TabStop = false;
             // 
             // LblExit
             // 
@@ -306,18 +233,6 @@
             this.LblExit.Text = "Exit";
             this.LblExit.Click += new System.EventHandler(this.LblExit_Click);
             // 
-            // PcxSettings
-            // 
-            this.PcxSettings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PcxSettings.BackColor = System.Drawing.Color.Transparent;
-            this.PcxSettings.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxSettings.BackgroundImage")));
-            this.PcxSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxSettings.Location = new System.Drawing.Point(838, 27);
-            this.PcxSettings.Name = "PcxSettings";
-            this.PcxSettings.Size = new System.Drawing.Size(16, 16);
-            this.PcxSettings.TabIndex = 13;
-            this.PcxSettings.TabStop = false;
-            // 
             // LblSettings
             // 
             this.LblSettings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -333,18 +248,6 @@
             this.LblSettings.TabIndex = 14;
             this.LblSettings.Text = "Settings";
             this.LblSettings.Click += new System.EventHandler(this.LblSettings_Click);
-            // 
-            // PcxALogo
-            // 
-            this.PcxALogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PcxALogo.BackColor = System.Drawing.Color.Transparent;
-            this.PcxALogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxALogo.BackgroundImage")));
-            this.PcxALogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxALogo.Location = new System.Drawing.Point(933, 27);
-            this.PcxALogo.Name = "PcxALogo";
-            this.PcxALogo.Size = new System.Drawing.Size(16, 16);
-            this.PcxALogo.TabIndex = 11;
-            this.PcxALogo.TabStop = false;
             // 
             // LblOk
             // 
@@ -372,36 +275,12 @@
             this.PnlSplitterFooter.Size = new System.Drawing.Size(647, 2);
             this.PnlSplitterFooter.TabIndex = 4;
             // 
-            // PcxSwitchLogo
-            // 
-            this.PcxSwitchLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PcxSwitchLogo.BackColor = System.Drawing.Color.Transparent;
-            this.PcxSwitchLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxSwitchLogo.BackgroundImage")));
-            this.PcxSwitchLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxSwitchLogo.Location = new System.Drawing.Point(22, 19);
-            this.PcxSwitchLogo.Name = "PcxSwitchLogo";
-            this.PcxSwitchLogo.Size = new System.Drawing.Size(36, 32);
-            this.PcxSwitchLogo.TabIndex = 3;
-            this.PcxSwitchLogo.TabStop = false;
-            // 
-            // PcxWii
-            // 
-            this.PcxWii.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PcxWii.BackColor = System.Drawing.Color.Transparent;
-            this.PcxWii.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxWii.BackgroundImage")));
-            this.PcxWii.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxWii.Location = new System.Drawing.Point(480, 210);
-            this.PcxWii.Name = "PcxWii";
-            this.PcxWii.Size = new System.Drawing.Size(142, 131);
-            this.PcxWii.TabIndex = 6;
-            this.PcxWii.TabStop = false;
-            // 
             // RdWii
             // 
             this.RdWii.AutoSize = true;
             this.RdWii.BackColor = System.Drawing.Color.Transparent;
             this.RdWii.Depth = 0;
+            this.RdWii.Enabled = false;
             this.RdWii.Font = new System.Drawing.Font("Roboto", 10F);
             this.RdWii.Location = new System.Drawing.Point(525, 344);
             this.RdWii.Margin = new System.Windows.Forms.Padding(0);
@@ -434,6 +313,22 @@
             this.PnlSettings.Size = new System.Drawing.Size(674, 354);
             this.PnlSettings.TabIndex = 8;
             this.PnlSettings.Visible = false;
+            // 
+            // TxtDrive
+            // 
+            this.TxtDrive.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtDrive.Depth = 0;
+            this.TxtDrive.Hint = "Please enter a drive letter. Ex: D";
+            this.TxtDrive.Location = new System.Drawing.Point(413, 304);
+            this.TxtDrive.MouseState = MaterialSkin.MouseState.HOVER;
+            this.TxtDrive.Name = "TxtDrive";
+            this.TxtDrive.PasswordChar = '\0';
+            this.TxtDrive.SelectedText = "";
+            this.TxtDrive.SelectionLength = 0;
+            this.TxtDrive.SelectionStart = 0;
+            this.TxtDrive.Size = new System.Drawing.Size(240, 23);
+            this.TxtDrive.TabIndex = 14;
+            this.TxtDrive.UseSystemPasswordChar = false;
             // 
             // ChckNotif
             // 
@@ -549,18 +444,6 @@
             this.PnlSplitterHeader.Size = new System.Drawing.Size(647, 2);
             this.PnlSplitterHeader.TabIndex = 5;
             // 
-            // PcxSettingsIcon
-            // 
-            this.PcxSettingsIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PcxSettingsIcon.BackColor = System.Drawing.Color.Transparent;
-            this.PcxSettingsIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxSettingsIcon.BackgroundImage")));
-            this.PcxSettingsIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxSettingsIcon.Location = new System.Drawing.Point(22, 14);
-            this.PcxSettingsIcon.Name = "PcxSettingsIcon";
-            this.PcxSettingsIcon.Size = new System.Drawing.Size(36, 32);
-            this.PcxSettingsIcon.TabIndex = 4;
-            this.PcxSettingsIcon.TabStop = false;
-            // 
             // LblSettingsHeader
             // 
             this.LblSettingsHeader.AutoSize = true;
@@ -597,21 +480,140 @@
             this.TmrCheckVal.Enabled = true;
             this.TmrCheckVal.Tick += new System.EventHandler(this.TmrCheckVal_Tick);
             // 
-            // TxtDrive
+            // PcxSettingsIcon
             // 
-            this.TxtDrive.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtDrive.Depth = 0;
-            this.TxtDrive.Hint = "Please enter a drive letter. Ex: D";
-            this.TxtDrive.Location = new System.Drawing.Point(413, 304);
-            this.TxtDrive.MouseState = MaterialSkin.MouseState.HOVER;
-            this.TxtDrive.Name = "TxtDrive";
-            this.TxtDrive.PasswordChar = '\0';
-            this.TxtDrive.SelectedText = "";
-            this.TxtDrive.SelectionLength = 0;
-            this.TxtDrive.SelectionStart = 0;
-            this.TxtDrive.Size = new System.Drawing.Size(240, 23);
-            this.TxtDrive.TabIndex = 14;
-            this.TxtDrive.UseSystemPasswordChar = false;
+            this.PcxSettingsIcon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PcxSettingsIcon.BackColor = System.Drawing.Color.Transparent;
+            this.PcxSettingsIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxSettingsIcon.BackgroundImage")));
+            this.PcxSettingsIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PcxSettingsIcon.Location = new System.Drawing.Point(22, 14);
+            this.PcxSettingsIcon.Name = "PcxSettingsIcon";
+            this.PcxSettingsIcon.Size = new System.Drawing.Size(36, 32);
+            this.PcxSettingsIcon.TabIndex = 4;
+            this.PcxSettingsIcon.TabStop = false;
+            // 
+            // PcxButtonX
+            // 
+            this.PcxButtonX.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PcxButtonX.BackColor = System.Drawing.Color.Transparent;
+            this.PcxButtonX.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxButtonX.BackgroundImage")));
+            this.PcxButtonX.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PcxButtonX.Location = new System.Drawing.Point(459, 26);
+            this.PcxButtonX.Name = "PcxButtonX";
+            this.PcxButtonX.Size = new System.Drawing.Size(16, 16);
+            this.PcxButtonX.TabIndex = 20;
+            this.PcxButtonX.TabStop = false;
+            // 
+            // PcxButtonB
+            // 
+            this.PcxButtonB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PcxButtonB.BackColor = System.Drawing.Color.Transparent;
+            this.PcxButtonB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxButtonB.BackgroundImage")));
+            this.PcxButtonB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PcxButtonB.Location = new System.Drawing.Point(523, 26);
+            this.PcxButtonB.Name = "PcxButtonB";
+            this.PcxButtonB.Size = new System.Drawing.Size(16, 16);
+            this.PcxButtonB.TabIndex = 19;
+            this.PcxButtonB.TabStop = false;
+            // 
+            // PcxButtonA
+            // 
+            this.PcxButtonA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PcxButtonA.BackColor = System.Drawing.Color.Transparent;
+            this.PcxButtonA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxButtonA.BackgroundImage")));
+            this.PcxButtonA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PcxButtonA.Location = new System.Drawing.Point(610, 26);
+            this.PcxButtonA.Name = "PcxButtonA";
+            this.PcxButtonA.Size = new System.Drawing.Size(16, 16);
+            this.PcxButtonA.TabIndex = 18;
+            this.PcxButtonA.TabStop = false;
+            // 
+            // PcxExit
+            // 
+            this.PcxExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PcxExit.BackColor = System.Drawing.Color.Transparent;
+            this.PcxExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxExit.BackgroundImage")));
+            this.PcxExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PcxExit.Location = new System.Drawing.Point(777, 27);
+            this.PcxExit.Name = "PcxExit";
+            this.PcxExit.Size = new System.Drawing.Size(16, 16);
+            this.PcxExit.TabIndex = 15;
+            this.PcxExit.TabStop = false;
+            // 
+            // PcxSettings
+            // 
+            this.PcxSettings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PcxSettings.BackColor = System.Drawing.Color.Transparent;
+            this.PcxSettings.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxSettings.BackgroundImage")));
+            this.PcxSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PcxSettings.Location = new System.Drawing.Point(838, 27);
+            this.PcxSettings.Name = "PcxSettings";
+            this.PcxSettings.Size = new System.Drawing.Size(16, 16);
+            this.PcxSettings.TabIndex = 13;
+            this.PcxSettings.TabStop = false;
+            // 
+            // PcxALogo
+            // 
+            this.PcxALogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PcxALogo.BackColor = System.Drawing.Color.Transparent;
+            this.PcxALogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxALogo.BackgroundImage")));
+            this.PcxALogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PcxALogo.Location = new System.Drawing.Point(933, 27);
+            this.PcxALogo.Name = "PcxALogo";
+            this.PcxALogo.Size = new System.Drawing.Size(16, 16);
+            this.PcxALogo.TabIndex = 11;
+            this.PcxALogo.TabStop = false;
+            // 
+            // PcxSwitchLogo
+            // 
+            this.PcxSwitchLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PcxSwitchLogo.BackColor = System.Drawing.Color.Transparent;
+            this.PcxSwitchLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxSwitchLogo.BackgroundImage")));
+            this.PcxSwitchLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PcxSwitchLogo.Location = new System.Drawing.Point(22, 19);
+            this.PcxSwitchLogo.Name = "PcxSwitchLogo";
+            this.PcxSwitchLogo.Size = new System.Drawing.Size(36, 32);
+            this.PcxSwitchLogo.TabIndex = 3;
+            this.PcxSwitchLogo.TabStop = false;
+            // 
+            // PcxWii
+            // 
+            this.PcxWii.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PcxWii.BackColor = System.Drawing.Color.Transparent;
+            this.PcxWii.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxWii.BackgroundImage")));
+            this.PcxWii.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PcxWii.Location = new System.Drawing.Point(480, 210);
+            this.PcxWii.Name = "PcxWii";
+            this.PcxWii.Size = new System.Drawing.Size(142, 131);
+            this.PcxWii.TabIndex = 6;
+            this.PcxWii.TabStop = false;
+            // 
+            // PcxWiiU
+            // 
+            this.PcxWiiU.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PcxWiiU.BackColor = System.Drawing.Color.Transparent;
+            this.PcxWiiU.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxWiiU.BackgroundImage")));
+            this.PcxWiiU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PcxWiiU.Location = new System.Drawing.Point(267, 210);
+            this.PcxWiiU.Name = "PcxWiiU";
+            this.PcxWiiU.Size = new System.Drawing.Size(142, 131);
+            this.PcxWiiU.TabIndex = 6;
+            this.PcxWiiU.TabStop = false;
+            // 
+            // PcxSwitch
+            // 
+            this.PcxSwitch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PcxSwitch.BackColor = System.Drawing.Color.Transparent;
+            this.PcxSwitch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxSwitch.BackgroundImage")));
+            this.PcxSwitch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PcxSwitch.Location = new System.Drawing.Point(53, 210);
+            this.PcxSwitch.Name = "PcxSwitch";
+            this.PcxSwitch.Size = new System.Drawing.Size(142, 131);
+            this.PcxSwitch.TabIndex = 6;
+            this.PcxSwitch.TabStop = false;
             // 
             // FmSelectSystem
             // 
@@ -637,11 +639,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Get My Bru";
             this.Load += new System.EventHandler(this.FmSelectSystem_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.PcxSwitch)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PcxWiiU)).EndInit();
             this.MtxMain.ResumeLayout(false);
             this.PnlBottom.ResumeLayout(false);
             this.PnlBottom.PerformLayout();
+            this.PnlSettings.ResumeLayout(false);
+            this.PnlSettings.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PcxSettingsIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxButtonX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxButtonB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxButtonA)).EndInit();
@@ -650,9 +653,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.PcxALogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSwitchLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxWii)).EndInit();
-            this.PnlSettings.ResumeLayout(false);
-            this.PnlSettings.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PcxSettingsIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PcxWiiU)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PcxSwitch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
