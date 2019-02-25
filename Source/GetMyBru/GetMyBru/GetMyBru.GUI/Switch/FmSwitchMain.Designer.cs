@@ -32,14 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FmSwitchMain));
             this.PnlBottom = new System.Windows.Forms.Panel();
             this.LblVersion = new MaterialSkin.Controls.MaterialLabel();
-            this.PcxExit = new System.Windows.Forms.PictureBox();
             this.LblExit = new MaterialSkin.Controls.MaterialLabel();
-            this.PcxSettings = new System.Windows.Forms.PictureBox();
             this.LblView = new MaterialSkin.Controls.MaterialLabel();
-            this.PcxALogo = new System.Windows.Forms.PictureBox();
             this.LblInstall = new MaterialSkin.Controls.MaterialLabel();
             this.PnlSplitter = new System.Windows.Forms.Panel();
-            this.PcxSwitchLogo = new System.Windows.Forms.PictureBox();
             this.TbThemes = new System.Windows.Forms.TabPage();
             this.TbAdv = new System.Windows.Forms.TabPage();
             this.TbConc = new System.Windows.Forms.TabPage();
@@ -51,19 +47,16 @@
             this.TbPage = new MaterialSkin.Controls.MaterialTabControl();
             this.TbSel = new MaterialSkin.Controls.MaterialTabSelector();
             this.TmrCheckVal = new System.Windows.Forms.Timer(this.components);
-            this.PnlInfo = new System.Windows.Forms.Panel();
-            this.LblInfo = new MaterialSkin.Controls.MaterialLabel();
-            this.LblInfoBody = new MaterialSkin.Controls.MaterialLabel();
-            this.LblInfoHeader = new MaterialSkin.Controls.MaterialLabel();
-            this.PcxInfoIcon = new System.Windows.Forms.PictureBox();
+            this.PcxExit = new System.Windows.Forms.PictureBox();
+            this.PcxSettings = new System.Windows.Forms.PictureBox();
+            this.PcxALogo = new System.Windows.Forms.PictureBox();
+            this.PcxSwitchLogo = new System.Windows.Forms.PictureBox();
             this.PnlBottom.SuspendLayout();
+            this.TbPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PcxExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSettings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxALogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSwitchLogo)).BeginInit();
-            this.TbPage.SuspendLayout();
-            this.PnlInfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PcxInfoIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlBottom
@@ -98,18 +91,6 @@
             this.LblVersion.TabIndex = 17;
             this.LblVersion.Text = "%VER%";
             // 
-            // PcxExit
-            // 
-            this.PcxExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PcxExit.BackColor = System.Drawing.Color.Transparent;
-            this.PcxExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxExit.BackgroundImage")));
-            this.PcxExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxExit.Location = new System.Drawing.Point(775, 27);
-            this.PcxExit.Name = "PcxExit";
-            this.PcxExit.Size = new System.Drawing.Size(16, 16);
-            this.PcxExit.TabIndex = 15;
-            this.PcxExit.TabStop = false;
-            // 
             // LblExit
             // 
             this.LblExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -126,18 +107,6 @@
             this.LblExit.Text = "Exit";
             this.LblExit.Click += new System.EventHandler(this.LblExit_Click);
             // 
-            // PcxSettings
-            // 
-            this.PcxSettings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PcxSettings.BackColor = System.Drawing.Color.Transparent;
-            this.PcxSettings.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxSettings.BackgroundImage")));
-            this.PcxSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxSettings.Location = new System.Drawing.Point(836, 27);
-            this.PcxSettings.Name = "PcxSettings";
-            this.PcxSettings.Size = new System.Drawing.Size(16, 16);
-            this.PcxSettings.TabIndex = 13;
-            this.PcxSettings.TabStop = false;
-            // 
             // LblView
             // 
             this.LblView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -153,18 +122,6 @@
             this.LblView.TabIndex = 14;
             this.LblView.Text = "View App";
             this.LblView.Click += new System.EventHandler(this.LblView_Click);
-            // 
-            // PcxALogo
-            // 
-            this.PcxALogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PcxALogo.BackColor = System.Drawing.Color.Transparent;
-            this.PcxALogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxALogo.BackgroundImage")));
-            this.PcxALogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxALogo.Location = new System.Drawing.Point(933, 27);
-            this.PcxALogo.Name = "PcxALogo";
-            this.PcxALogo.Size = new System.Drawing.Size(16, 16);
-            this.PcxALogo.TabIndex = 11;
-            this.PcxALogo.TabStop = false;
             // 
             // LblInstall
             // 
@@ -190,18 +147,6 @@
             this.PnlSplitter.Name = "PnlSplitter";
             this.PnlSplitter.Size = new System.Drawing.Size(984, 2);
             this.PnlSplitter.TabIndex = 4;
-            // 
-            // PcxSwitchLogo
-            // 
-            this.PcxSwitchLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PcxSwitchLogo.BackColor = System.Drawing.Color.Transparent;
-            this.PcxSwitchLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxSwitchLogo.BackgroundImage")));
-            this.PcxSwitchLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxSwitchLogo.Location = new System.Drawing.Point(22, 19);
-            this.PcxSwitchLogo.Name = "PcxSwitchLogo";
-            this.PcxSwitchLogo.Size = new System.Drawing.Size(36, 32);
-            this.PcxSwitchLogo.TabIndex = 3;
-            this.PcxSwitchLogo.TabStop = false;
             // 
             // TbThemes
             // 
@@ -311,65 +256,53 @@
             this.TmrCheckVal.Enabled = true;
             this.TmrCheckVal.Tick += new System.EventHandler(this.TmrCheckVal_Tick);
             // 
-            // PnlInfo
+            // PcxExit
             // 
-            this.PnlInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.PnlInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(119)))), ((int)(((byte)(119)))));
-            this.PnlInfo.Controls.Add(this.LblInfo);
-            this.PnlInfo.Controls.Add(this.LblInfoBody);
-            this.PnlInfo.Controls.Add(this.LblInfoHeader);
-            this.PnlInfo.Controls.Add(this.PcxInfoIcon);
-            this.PnlInfo.Location = new System.Drawing.Point(71, 166);
-            this.PnlInfo.Name = "PnlInfo";
-            this.PnlInfo.Size = new System.Drawing.Size(869, 415);
-            this.PnlInfo.TabIndex = 11;
-            this.PnlInfo.Visible = false;
+            this.PcxExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PcxExit.BackColor = System.Drawing.Color.Transparent;
+            this.PcxExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxExit.BackgroundImage")));
+            this.PcxExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PcxExit.Location = new System.Drawing.Point(775, 27);
+            this.PcxExit.Name = "PcxExit";
+            this.PcxExit.Size = new System.Drawing.Size(16, 16);
+            this.PcxExit.TabIndex = 15;
+            this.PcxExit.TabStop = false;
             // 
-            // LblInfo
+            // PcxSettings
             // 
-            this.LblInfo.Depth = 0;
-            this.LblInfo.Font = new System.Drawing.Font("Roboto", 11F);
-            this.LblInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LblInfo.Location = new System.Drawing.Point(25, 241);
-            this.LblInfo.MouseState = MaterialSkin.MouseState.HOVER;
-            this.LblInfo.Name = "LblInfo";
-            this.LblInfo.Size = new System.Drawing.Size(823, 157);
-            this.LblInfo.TabIndex = 3;
-            this.LblInfo.Text = "%APPINFORMATION%\r\n\r\n%VERSION%\r\n%CREATOR% \r\n%UPDATED%\r\n%COMMIT% \r\n%GITURL% ";
+            this.PcxSettings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PcxSettings.BackColor = System.Drawing.Color.Transparent;
+            this.PcxSettings.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxSettings.BackgroundImage")));
+            this.PcxSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PcxSettings.Location = new System.Drawing.Point(836, 27);
+            this.PcxSettings.Name = "PcxSettings";
+            this.PcxSettings.Size = new System.Drawing.Size(16, 16);
+            this.PcxSettings.TabIndex = 13;
+            this.PcxSettings.TabStop = false;
             // 
-            // LblInfoBody
+            // PcxALogo
             // 
-            this.LblInfoBody.Depth = 0;
-            this.LblInfoBody.Font = new System.Drawing.Font("Roboto", 11F);
-            this.LblInfoBody.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LblInfoBody.Location = new System.Drawing.Point(227, 75);
-            this.LblInfoBody.MouseState = MaterialSkin.MouseState.HOVER;
-            this.LblInfoBody.Name = "LblInfoBody";
-            this.LblInfoBody.Size = new System.Drawing.Size(622, 151);
-            this.LblInfoBody.TabIndex = 2;
-            this.LblInfoBody.Text = "%APPDESCBODY%";
+            this.PcxALogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PcxALogo.BackColor = System.Drawing.Color.Transparent;
+            this.PcxALogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxALogo.BackgroundImage")));
+            this.PcxALogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PcxALogo.Location = new System.Drawing.Point(933, 27);
+            this.PcxALogo.Name = "PcxALogo";
+            this.PcxALogo.Size = new System.Drawing.Size(16, 16);
+            this.PcxALogo.TabIndex = 11;
+            this.PcxALogo.TabStop = false;
             // 
-            // LblInfoHeader
+            // PcxSwitchLogo
             // 
-            this.LblInfoHeader.Depth = 0;
-            this.LblInfoHeader.Font = new System.Drawing.Font("Roboto", 11F);
-            this.LblInfoHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LblInfoHeader.Location = new System.Drawing.Point(226, 33);
-            this.LblInfoHeader.MouseState = MaterialSkin.MouseState.HOVER;
-            this.LblInfoHeader.Name = "LblInfoHeader";
-            this.LblInfoHeader.Size = new System.Drawing.Size(622, 42);
-            this.LblInfoHeader.TabIndex = 1;
-            this.LblInfoHeader.Text = "%APPTITLE%";
-            // 
-            // PcxInfoIcon
-            // 
-            this.PcxInfoIcon.BackgroundImage = global::GetMyBru.Properties.Resources.NoImage;
-            this.PcxInfoIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxInfoIcon.Location = new System.Drawing.Point(25, 33);
-            this.PcxInfoIcon.Name = "PcxInfoIcon";
-            this.PcxInfoIcon.Size = new System.Drawing.Size(195, 193);
-            this.PcxInfoIcon.TabIndex = 0;
-            this.PcxInfoIcon.TabStop = false;
+            this.PcxSwitchLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PcxSwitchLogo.BackColor = System.Drawing.Color.Transparent;
+            this.PcxSwitchLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxSwitchLogo.BackgroundImage")));
+            this.PcxSwitchLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PcxSwitchLogo.Location = new System.Drawing.Point(22, 19);
+            this.PcxSwitchLogo.Name = "PcxSwitchLogo";
+            this.PcxSwitchLogo.Size = new System.Drawing.Size(36, 32);
+            this.PcxSwitchLogo.TabIndex = 3;
+            this.PcxSwitchLogo.TabStop = false;
             // 
             // FmSwitchMain
             // 
@@ -377,7 +310,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(1011, 746);
-            this.Controls.Add(this.PnlInfo);
             this.Controls.Add(this.TbSel);
             this.Controls.Add(this.TbPage);
             this.Controls.Add(this.PnlBottom);
@@ -391,13 +323,11 @@
             this.Load += new System.EventHandler(this.FmSwitchMain_Load);
             this.PnlBottom.ResumeLayout(false);
             this.PnlBottom.PerformLayout();
+            this.TbPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PcxExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSettings)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxALogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSwitchLogo)).EndInit();
-            this.TbPage.ResumeLayout(false);
-            this.PnlInfo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PcxInfoIcon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -425,10 +355,5 @@
         private MaterialSkin.Controls.MaterialTabControl TbPage;
         private MaterialSkin.Controls.MaterialTabSelector TbSel;
         private System.Windows.Forms.Timer TmrCheckVal;
-        private System.Windows.Forms.Panel PnlInfo;
-        private MaterialSkin.Controls.MaterialLabel LblInfo;
-        private MaterialSkin.Controls.MaterialLabel LblInfoBody;
-        private MaterialSkin.Controls.MaterialLabel LblInfoHeader;
-        private System.Windows.Forms.PictureBox PcxInfoIcon;
     }
 }

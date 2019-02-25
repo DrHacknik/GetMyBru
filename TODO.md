@@ -23,3 +23,11 @@
 ## BruParser.cs 
 
 * Implement proper WiiU and Switch Bru parsing. Will be parsed using their own JSON Repo; may consider just making a wrapper for Libget. 
+
+## IServiceInstall.cs 
+
+* Implement proper install service functions. 
+
+## FmHomebrewInfo.cs 
+
+* Implement proper parsing. Currently inherites information from the `public static` strings and bools. 
