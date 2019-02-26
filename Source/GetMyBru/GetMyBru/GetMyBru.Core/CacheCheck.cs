@@ -45,6 +45,17 @@ namespace GetMyBru.GetMyBru.Core
             {
                 SvcUpdate.GetUpdate();
             }
+            //if (Properties.Settings.Default.Clean == true)
+            //{
+            //    ClearCache(cd + "\\Data\\Cache\\");
+            //}
+
+            return;
+        }
+
+        private static void ClearCache(string CacheDir)
+        {
+            Directory.Delete(CacheDir, true);
             return;
         }
     }

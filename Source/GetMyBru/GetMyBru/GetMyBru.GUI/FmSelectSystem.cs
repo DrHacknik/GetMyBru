@@ -257,6 +257,7 @@ namespace GetMyBru.GetMyBru.GUI
                 NotifText = "Failed to save the settings to the Config";
                 NotifTime = 40000;
                 ShowToast = true;
+                return;
             }
             else
             {
@@ -270,6 +271,7 @@ namespace GetMyBru.GetMyBru.GUI
                 else
                 {
                     Properties.Settings.Default.Drive = TxtDrive.Text;
+                    Properties.Settings.Default.Save();
                 }
             }
 
