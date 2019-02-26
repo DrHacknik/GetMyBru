@@ -17,7 +17,7 @@ namespace GetMyBru.GetMyBru.Core.Installer
         public static readonly string GameLugaru = "Lugaru";
         public static readonly string GameSpaceGame = "spacenx";
         public static readonly string GameTiles = "Tiles_NX";
-        public static readonly string GameXash3d = "xash3d-switch_Blue_Shift.zip";
+        public static readonly string GameXash3d = "xash3d-switch_Blue_Shift";
         public static readonly string GameKGDOOM = "kgdoom";
         public static readonly string GameLegendOfSwordAndFairy = "pal";
         public static readonly string GameSuperMarioWar = "supermariowar-nx";
