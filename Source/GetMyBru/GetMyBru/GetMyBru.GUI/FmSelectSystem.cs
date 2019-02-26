@@ -60,9 +60,9 @@ namespace GetMyBru.GetMyBru.GUI
             Application.Exit();
         }
 
-        private void openSelectorToolStripMenuItem_Click(object sender, EventArgs e)
+/*      private void openSelectorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-/*            SafeExit = false;
+         SafeExit = false;
             if (SafeExit == false)
             {
                 this.Hide();
