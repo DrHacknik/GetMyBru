@@ -12,6 +12,7 @@ namespace GetMyBru.GetMyBru.Services
     internal class SvcUpdate
     {
         private static string cd = Environment.CurrentDirectory;
+        private static string IPath = cd + "\\Data\\Cache\\Update\\Update.json";
 
         public static void GetUpdate()
         {
@@ -19,7 +20,8 @@ namespace GetMyBru.GetMyBru.Services
             {
                 using (var JSONData = new WebClient())
                 {
-                    JSONData.DownloadFile("https://github.com/DrHacknik/GetMyBru/raw/master/Common/Updates/Meta.json", cd + "\\Data\\Cache\\Update\\Update.json");
+                    Uri JSONURL = new Uri("https://github.com/DrHacknik/GetMyBru/raw/master/Common/Updates/Meta.json");
+                    JSONData.DownloadFileAsync(JSONURL, IPath);
                 }
                 FmSelectSystem.NotifTitle = "GetMyBru - Update Check";
                 FmSelectSystem.NotifText = "Loaded update Information";
