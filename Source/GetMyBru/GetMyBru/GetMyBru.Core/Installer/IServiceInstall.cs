@@ -46,7 +46,7 @@ namespace GetMyBru.GetMyBru.Core.Installer
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.InnerException + Environment.NewLine + "URL: " + URLStr, "Error:", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message + Environment.NewLine + "URL: " + URLStr, "Error:", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Installing = false;
                 return;
             }

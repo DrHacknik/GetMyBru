@@ -14,6 +14,8 @@ namespace GetMyBru.GetMyBru.Core
     {
         public static string PackagesRawList;
         private static string cd = Environment.CurrentDirectory;
+        private static string IPathWiiU = cd + "\\Data\\Cache\\WiiU\\repo.json";
+        private static string IPathSwitch = cd + "\\Data\\Cache\\Switch\\repo.json";
         public static string PackagesRaw;
         public static string System;
 
@@ -30,14 +32,16 @@ namespace GetMyBru.GetMyBru.Core
                 {
                     using (var JSONData = new WebClient())
                     {
-                        JSONData.DownloadFile("https://www.switchbru.com/appstore/repo.json", cd + "\\Data\\Cache\\Switch\\repo.json");
+                        Uri JSONURL = new Uri("https://www.switchbru.com/appstore/repo.json");
+                        JSONData.DownloadFileAsync(JSONURL, IPathSwitch);
                     }
                 }
                 else if (System == "WiiU")
                 {
                     using (var JSONData = new WebClient())
                     {
-                        JSONData.DownloadFile("https://www.wiiubru.com/appstore/repo.json", cd + "\\Data\\Cache\\WiiU\\repo.json");
+                        Uri JSONURL = new Uri("https://www.wiiubru.com/appstore/repo.json");
+                        JSONData.DownloadFileAsync(JSONURL, IPathWiiU);
                     }
                 }
                 else if (System == "Wii")
