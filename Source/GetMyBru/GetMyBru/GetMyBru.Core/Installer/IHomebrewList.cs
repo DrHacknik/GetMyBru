@@ -87,7 +87,7 @@ namespace GetMyBru.GetMyBru.Core.Installer
         public static readonly string EmuVBANEXTRetro = "vba-next";
         public static readonly string EmuBeetlePSX = "beetlepsx";
         public static readonly string EmuOpenBor = "openbor";
-        public static readonly string EmuGameBatte = "gamebatte";
+        public static readonly string EmuGameBatte = "gambatte";
         public static readonly string EmuSNES9x2010NX = "snes9x_2010_nx";
         public static readonly string EmuNEOPOPSDL = "neopop_sdl";
         public static readonly string EmuMAMERetro = "mame2003";
