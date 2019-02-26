@@ -12,11 +12,10 @@ A copy of the License is included with the Source inside in the Repository.
 
 
 # Screenshots 
-![ScreenMain](Common/Screenshots/GetMyBru_YvRCIBonyH.png)
-![ScreenMain](Common/Screenshots/GetMyBru_3Zd9NtQ9ok.png)
+![ScreenMain](Common/Screenshots/GetMyBru_8C1hndUkTr.png)
+![ScreenMain](Common/Screenshots/GetMyBru_k0OaDFT1Oh.png)
 # Credits 
-* [WiiUBru](https://wiiubru.com/appstore/#/)
-* [SwitchBru](https://switchbru.com/appstore/#/)
+* [4TU](https://fortheusers.org/#services)
 * [WiiBrew](https://wiibrew.org/wiki/Main_Page)
 * Google's Material Design Icon/s
 * [MaterialSkin](https://github.com/IgnaceMaes/MaterialSkin)
