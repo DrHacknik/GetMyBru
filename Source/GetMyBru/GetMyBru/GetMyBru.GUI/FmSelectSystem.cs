@@ -62,7 +62,7 @@ namespace GetMyBru.GetMyBru.GUI
 
         private void openSelectorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SafeExit = false;
+/*            SafeExit = false;
             if (SafeExit == false)
             {
                 this.Hide();
@@ -81,6 +81,7 @@ namespace GetMyBru.GetMyBru.GUI
                 return;
             }
         }
+*/
 
         private void LblOk_Click(object sender, EventArgs e)
         {
