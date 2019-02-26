@@ -168,13 +168,6 @@
             this.MtxMain.Name = "MtxMain";
             this.MtxMain.Size = new System.Drawing.Size(149, 48);
             // 
-            // openSelectorToolStripMenuItem
-            // 
-            this.openSelectorToolStripMenuItem.Name = "openSelectorToolStripMenuItem";
-            this.openSelectorToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.openSelectorToolStripMenuItem.Text = "Open Selector";
-            this.openSelectorToolStripMenuItem.Click += new System.EventHandler(this.openSelectorToolStripMenuItem_Click);
-            // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
