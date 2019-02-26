@@ -42,11 +42,30 @@
             this.PnlSplitter = new System.Windows.Forms.Panel();
             this.PcxSwitchLogo = new System.Windows.Forms.PictureBox();
             this.TbThemes = new System.Windows.Forms.TabPage();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.TbAdv = new System.Windows.Forms.TabPage();
+            this.BtnAdvXorPlay = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnAdvHekate = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnAdvNXTemesInstaller = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnAdvEbooksCollection = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnAdvSwitchPresence = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnAdvSysClk = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnAdvReiNX = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnAdvSysFTPD = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnAdvSlide = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnAdvNetcheat = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnAdvAragon = new MaterialSkin.Controls.MaterialFlatButton();
             this.TbTools = new System.Windows.Forms.TabPage();
-            this.BtnToolPixelPainter = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolNXSH = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolFTPD4SXOS = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolScreenTester = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolYallAreNuts = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolN1DUS = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolPPLay = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolBrewJS = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolKipSelect = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolAvatool = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolLockPick = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolKEX = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolSharedFont = new MaterialSkin.Controls.MaterialFlatButton();
             this.BtnToolSwitchXboxController = new MaterialSkin.Controls.MaterialFlatButton();
             this.BtnToolBOTWSaveEditor = new MaterialSkin.Controls.MaterialFlatButton();
             this.BtnToolVaperSpec = new MaterialSkin.Controls.MaterialFlatButton();
@@ -54,11 +73,6 @@
             this.BtnToolGagOrder = new MaterialSkin.Controls.MaterialFlatButton();
             this.BtnToolFireplace = new MaterialSkin.Controls.MaterialFlatButton();
             this.BtnToolKEZPLEZ = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolHomebrewAppStore = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolBrainFuckInterpreter = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolEasyRPGPlayer = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolTestButtons = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolVgedit = new MaterialSkin.Controls.MaterialFlatButton();
             this.BtnToolPSwitch = new MaterialSkin.Controls.MaterialFlatButton();
             this.BtnToolNXPlay = new MaterialSkin.Controls.MaterialFlatButton();
             this.BtnToolSwitchGuideUpdater = new MaterialSkin.Controls.MaterialFlatButton();
@@ -182,29 +196,17 @@
             this.TbPage = new MaterialSkin.Controls.MaterialTabControl();
             this.TbSel = new MaterialSkin.Controls.MaterialTabSelector();
             this.TmrCheckVal = new System.Windows.Forms.Timer(this.components);
+            this.BtnToolRCMReboo = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolVgedit = new MaterialSkin.Controls.MaterialFlatButton();
             this.BtnToolEasyPower = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolSharedFont = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolKEX = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolLockPick = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolAvatool = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolKipSelect = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolBrewJS = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolPPLay = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolN1DUS = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolYallAreNuts = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolScreenTester = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnAdvAragon = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnAdvNetcheat = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnAdvSlide = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnAdvSysFTPD = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnAdvReiNX = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnAdvSysClk = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnAdvSwitchPresence = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnAdvEbooksCollection = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnAdvNXTemesInstaller = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnAdvHekate = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnAdvXorPlay = new MaterialSkin.Controls.MaterialFlatButton();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.BtnToolPixelPainter = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolNXSH = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolFTPD4SXOS = new MaterialSkin.Controls.MaterialFlatButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.BtnToolNXPlayer = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolHBMenu = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolGoldleaf_ = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolGCDump = new MaterialSkin.Controls.MaterialFlatButton();
             this.PnlBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PcxExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSettings)).BeginInit();
@@ -378,6 +380,21 @@
             this.TbThemes.TabIndex = 7;
             this.TbThemes.Text = "Themes";
             // 
+            // materialLabel1
+            // 
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(0, 0);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(1003, 556);
+            this.materialLabel1.TabIndex = 1;
+            this.materialLabel1.Text = "As of this version, this page is not implemented. \r\n\r\nPlease select another categ" +
+    "ory.";
+            this.materialLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // TbAdv
             // 
             this.TbAdv.AutoScroll = true;
@@ -399,10 +416,218 @@
             this.TbAdv.TabIndex = 6;
             this.TbAdv.Text = "Advanced";
             // 
+            // BtnAdvXorPlay
+            // 
+            this.BtnAdvXorPlay.AutoSize = true;
+            this.BtnAdvXorPlay.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnAdvXorPlay.Depth = 0;
+            this.BtnAdvXorPlay.Icon = ((System.Drawing.Image)(resources.GetObject("BtnAdvXorPlay.Icon")));
+            this.BtnAdvXorPlay.Location = new System.Drawing.Point(18, 503);
+            this.BtnAdvXorPlay.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnAdvXorPlay.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnAdvXorPlay.Name = "BtnAdvXorPlay";
+            this.BtnAdvXorPlay.Primary = false;
+            this.BtnAdvXorPlay.Size = new System.Drawing.Size(113, 36);
+            this.BtnAdvXorPlay.TabIndex = 3;
+            this.BtnAdvXorPlay.Text = "Xor.play";
+            this.BtnAdvXorPlay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAdvXorPlay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnAdvXorPlay.UseVisualStyleBackColor = true;
+            // 
+            // BtnAdvHekate
+            // 
+            this.BtnAdvHekate.AutoSize = true;
+            this.BtnAdvHekate.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnAdvHekate.Depth = 0;
+            this.BtnAdvHekate.Icon = ((System.Drawing.Image)(resources.GetObject("BtnAdvHekate.Icon")));
+            this.BtnAdvHekate.Location = new System.Drawing.Point(18, 455);
+            this.BtnAdvHekate.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnAdvHekate.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnAdvHekate.Name = "BtnAdvHekate";
+            this.BtnAdvHekate.Primary = false;
+            this.BtnAdvHekate.Size = new System.Drawing.Size(100, 36);
+            this.BtnAdvHekate.TabIndex = 3;
+            this.BtnAdvHekate.Text = "Hekate";
+            this.BtnAdvHekate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAdvHekate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnAdvHekate.UseVisualStyleBackColor = true;
+            // 
+            // BtnAdvNXTemesInstaller
+            // 
+            this.BtnAdvNXTemesInstaller.AutoSize = true;
+            this.BtnAdvNXTemesInstaller.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnAdvNXTemesInstaller.Depth = 0;
+            this.BtnAdvNXTemesInstaller.Icon = ((System.Drawing.Image)(resources.GetObject("BtnAdvNXTemesInstaller.Icon")));
+            this.BtnAdvNXTemesInstaller.Location = new System.Drawing.Point(18, 407);
+            this.BtnAdvNXTemesInstaller.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnAdvNXTemesInstaller.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnAdvNXTemesInstaller.Name = "BtnAdvNXTemesInstaller";
+            this.BtnAdvNXTemesInstaller.Primary = false;
+            this.BtnAdvNXTemesInstaller.Size = new System.Drawing.Size(195, 36);
+            this.BtnAdvNXTemesInstaller.TabIndex = 3;
+            this.BtnAdvNXTemesInstaller.Text = "NXThemes Installer";
+            this.BtnAdvNXTemesInstaller.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAdvNXTemesInstaller.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnAdvNXTemesInstaller.UseVisualStyleBackColor = true;
+            // 
+            // BtnAdvEbooksCollection
+            // 
+            this.BtnAdvEbooksCollection.AutoSize = true;
+            this.BtnAdvEbooksCollection.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnAdvEbooksCollection.Depth = 0;
+            this.BtnAdvEbooksCollection.Icon = ((System.Drawing.Image)(resources.GetObject("BtnAdvEbooksCollection.Icon")));
+            this.BtnAdvEbooksCollection.Location = new System.Drawing.Point(18, 359);
+            this.BtnAdvEbooksCollection.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnAdvEbooksCollection.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnAdvEbooksCollection.Name = "BtnAdvEbooksCollection";
+            this.BtnAdvEbooksCollection.Primary = false;
+            this.BtnAdvEbooksCollection.Size = new System.Drawing.Size(186, 36);
+            this.BtnAdvEbooksCollection.TabIndex = 3;
+            this.BtnAdvEbooksCollection.Text = "Ebooks Collection";
+            this.BtnAdvEbooksCollection.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAdvEbooksCollection.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnAdvEbooksCollection.UseVisualStyleBackColor = true;
+            // 
+            // BtnAdvSwitchPresence
+            // 
+            this.BtnAdvSwitchPresence.AutoSize = true;
+            this.BtnAdvSwitchPresence.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnAdvSwitchPresence.Depth = 0;
+            this.BtnAdvSwitchPresence.Icon = ((System.Drawing.Image)(resources.GetObject("BtnAdvSwitchPresence.Icon")));
+            this.BtnAdvSwitchPresence.Location = new System.Drawing.Point(18, 311);
+            this.BtnAdvSwitchPresence.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnAdvSwitchPresence.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnAdvSwitchPresence.Name = "BtnAdvSwitchPresence";
+            this.BtnAdvSwitchPresence.Primary = false;
+            this.BtnAdvSwitchPresence.Size = new System.Drawing.Size(171, 36);
+            this.BtnAdvSwitchPresence.TabIndex = 3;
+            this.BtnAdvSwitchPresence.Text = "Switch Presence";
+            this.BtnAdvSwitchPresence.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAdvSwitchPresence.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnAdvSwitchPresence.UseVisualStyleBackColor = true;
+            // 
+            // BtnAdvSysClk
+            // 
+            this.BtnAdvSysClk.AutoSize = true;
+            this.BtnAdvSysClk.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnAdvSysClk.Depth = 0;
+            this.BtnAdvSysClk.Icon = ((System.Drawing.Image)(resources.GetObject("BtnAdvSysClk.Icon")));
+            this.BtnAdvSysClk.Location = new System.Drawing.Point(18, 263);
+            this.BtnAdvSysClk.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnAdvSysClk.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnAdvSysClk.Name = "BtnAdvSysClk";
+            this.BtnAdvSysClk.Primary = false;
+            this.BtnAdvSysClk.Size = new System.Drawing.Size(103, 36);
+            this.BtnAdvSysClk.TabIndex = 3;
+            this.BtnAdvSysClk.Text = "sys-CLK";
+            this.BtnAdvSysClk.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAdvSysClk.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnAdvSysClk.UseVisualStyleBackColor = true;
+            // 
+            // BtnAdvReiNX
+            // 
+            this.BtnAdvReiNX.AutoSize = true;
+            this.BtnAdvReiNX.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnAdvReiNX.Depth = 0;
+            this.BtnAdvReiNX.Icon = ((System.Drawing.Image)(resources.GetObject("BtnAdvReiNX.Icon")));
+            this.BtnAdvReiNX.Location = new System.Drawing.Point(18, 215);
+            this.BtnAdvReiNX.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnAdvReiNX.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnAdvReiNX.Name = "BtnAdvReiNX";
+            this.BtnAdvReiNX.Primary = false;
+            this.BtnAdvReiNX.Size = new System.Drawing.Size(88, 36);
+            this.BtnAdvReiNX.TabIndex = 3;
+            this.BtnAdvReiNX.Text = "ReiNX";
+            this.BtnAdvReiNX.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAdvReiNX.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnAdvReiNX.UseVisualStyleBackColor = true;
+            // 
+            // BtnAdvSysFTPD
+            // 
+            this.BtnAdvSysFTPD.AutoSize = true;
+            this.BtnAdvSysFTPD.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnAdvSysFTPD.Depth = 0;
+            this.BtnAdvSysFTPD.Icon = ((System.Drawing.Image)(resources.GetObject("BtnAdvSysFTPD.Icon")));
+            this.BtnAdvSysFTPD.Location = new System.Drawing.Point(18, 167);
+            this.BtnAdvSysFTPD.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnAdvSysFTPD.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnAdvSysFTPD.Name = "BtnAdvSysFTPD";
+            this.BtnAdvSysFTPD.Primary = false;
+            this.BtnAdvSysFTPD.Size = new System.Drawing.Size(112, 36);
+            this.BtnAdvSysFTPD.TabIndex = 3;
+            this.BtnAdvSysFTPD.Text = "sys-FTPD";
+            this.BtnAdvSysFTPD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAdvSysFTPD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnAdvSysFTPD.UseVisualStyleBackColor = true;
+            // 
+            // BtnAdvSlide
+            // 
+            this.BtnAdvSlide.AutoSize = true;
+            this.BtnAdvSlide.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnAdvSlide.Depth = 0;
+            this.BtnAdvSlide.Icon = ((System.Drawing.Image)(resources.GetObject("BtnAdvSlide.Icon")));
+            this.BtnAdvSlide.Location = new System.Drawing.Point(18, 119);
+            this.BtnAdvSlide.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnAdvSlide.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnAdvSlide.Name = "BtnAdvSlide";
+            this.BtnAdvSlide.Primary = false;
+            this.BtnAdvSlide.Size = new System.Drawing.Size(104, 36);
+            this.BtnAdvSlide.TabIndex = 3;
+            this.BtnAdvSlide.Text = "SlideNX";
+            this.BtnAdvSlide.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAdvSlide.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnAdvSlide.UseVisualStyleBackColor = true;
+            // 
+            // BtnAdvNetcheat
+            // 
+            this.BtnAdvNetcheat.AutoSize = true;
+            this.BtnAdvNetcheat.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnAdvNetcheat.Depth = 0;
+            this.BtnAdvNetcheat.Icon = ((System.Drawing.Image)(resources.GetObject("BtnAdvNetcheat.Icon")));
+            this.BtnAdvNetcheat.Location = new System.Drawing.Point(18, 71);
+            this.BtnAdvNetcheat.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnAdvNetcheat.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnAdvNetcheat.Name = "BtnAdvNetcheat";
+            this.BtnAdvNetcheat.Primary = false;
+            this.BtnAdvNetcheat.Size = new System.Drawing.Size(148, 36);
+            this.BtnAdvNetcheat.TabIndex = 3;
+            this.BtnAdvNetcheat.Text = "sys-netcheat";
+            this.BtnAdvNetcheat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAdvNetcheat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnAdvNetcheat.UseVisualStyleBackColor = true;
+            // 
+            // BtnAdvAragon
+            // 
+            this.BtnAdvAragon.AutoSize = true;
+            this.BtnAdvAragon.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnAdvAragon.Depth = 0;
+            this.BtnAdvAragon.Icon = ((System.Drawing.Image)(resources.GetObject("BtnAdvAragon.Icon")));
+            this.BtnAdvAragon.Location = new System.Drawing.Point(18, 23);
+            this.BtnAdvAragon.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnAdvAragon.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnAdvAragon.Name = "BtnAdvAragon";
+            this.BtnAdvAragon.Primary = false;
+            this.BtnAdvAragon.Size = new System.Drawing.Size(129, 36);
+            this.BtnAdvAragon.TabIndex = 3;
+            this.BtnAdvAragon.Text = "Kezplez-nx";
+            this.BtnAdvAragon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnAdvAragon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnAdvAragon.UseVisualStyleBackColor = true;
+            // 
             // TbTools
             // 
             this.TbTools.AutoScroll = true;
             this.TbTools.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.TbTools.Controls.Add(this.panel1);
+            this.TbTools.Controls.Add(this.BtnToolGCDump);
+            this.TbTools.Controls.Add(this.BtnToolGoldleaf_);
+            this.TbTools.Controls.Add(this.BtnToolHBMenu);
+            this.TbTools.Controls.Add(this.BtnToolNXPlayer);
+            this.TbTools.Controls.Add(this.BtnToolEasyPower);
+            this.TbTools.Controls.Add(this.BtnToolPixelPainter);
+            this.TbTools.Controls.Add(this.BtnToolNXSH);
+            this.TbTools.Controls.Add(this.BtnToolFTPD4SXOS);
+            this.TbTools.Controls.Add(this.BtnToolRCMReboo);
             this.TbTools.Controls.Add(this.BtnToolScreenTester);
             this.TbTools.Controls.Add(this.BtnToolYallAreNuts);
             this.TbTools.Controls.Add(this.BtnToolN1DUS);
@@ -413,10 +638,6 @@
             this.TbTools.Controls.Add(this.BtnToolLockPick);
             this.TbTools.Controls.Add(this.BtnToolKEX);
             this.TbTools.Controls.Add(this.BtnToolSharedFont);
-            this.TbTools.Controls.Add(this.BtnToolEasyPower);
-            this.TbTools.Controls.Add(this.BtnToolPixelPainter);
-            this.TbTools.Controls.Add(this.BtnToolNXSH);
-            this.TbTools.Controls.Add(this.BtnToolFTPD4SXOS);
             this.TbTools.Controls.Add(this.BtnToolSwitchXboxController);
             this.TbTools.Controls.Add(this.BtnToolBOTWSaveEditor);
             this.TbTools.Controls.Add(this.BtnToolVaperSpec);
@@ -424,10 +645,6 @@
             this.TbTools.Controls.Add(this.BtnToolGagOrder);
             this.TbTools.Controls.Add(this.BtnToolFireplace);
             this.TbTools.Controls.Add(this.BtnToolKEZPLEZ);
-            this.TbTools.Controls.Add(this.BtnToolHomebrewAppStore);
-            this.TbTools.Controls.Add(this.BtnToolBrainFuckInterpreter);
-            this.TbTools.Controls.Add(this.BtnToolEasyRPGPlayer);
-            this.TbTools.Controls.Add(this.BtnToolTestButtons);
             this.TbTools.Controls.Add(this.BtnToolVgedit);
             this.TbTools.Controls.Add(this.BtnToolPSwitch);
             this.TbTools.Controls.Add(this.BtnToolNXPlay);
@@ -464,59 +681,185 @@
             this.TbTools.TabIndex = 4;
             this.TbTools.Text = "Tools";
             // 
-            // BtnToolPixelPainter
+            // BtnToolScreenTester
             // 
-            this.BtnToolPixelPainter.AutoSize = true;
-            this.BtnToolPixelPainter.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolPixelPainter.Depth = 0;
-            this.BtnToolPixelPainter.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolPixelPainter.Icon")));
-            this.BtnToolPixelPainter.Location = new System.Drawing.Point(18, 455);
-            this.BtnToolPixelPainter.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolPixelPainter.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolPixelPainter.Name = "BtnToolPixelPainter";
-            this.BtnToolPixelPainter.Primary = false;
-            this.BtnToolPixelPainter.Size = new System.Drawing.Size(145, 36);
-            this.BtnToolPixelPainter.TabIndex = 2;
-            this.BtnToolPixelPainter.Text = "Pixel Painter";
-            this.BtnToolPixelPainter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolPixelPainter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolPixelPainter.UseVisualStyleBackColor = true;
+            this.BtnToolScreenTester.AutoSize = true;
+            this.BtnToolScreenTester.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolScreenTester.Depth = 0;
+            this.BtnToolScreenTester.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolScreenTester.Icon")));
+            this.BtnToolScreenTester.Location = new System.Drawing.Point(18, 445);
+            this.BtnToolScreenTester.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolScreenTester.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolScreenTester.Name = "BtnToolScreenTester";
+            this.BtnToolScreenTester.Primary = false;
+            this.BtnToolScreenTester.Size = new System.Drawing.Size(172, 36);
+            this.BtnToolScreenTester.TabIndex = 2;
+            this.BtnToolScreenTester.Text = "Screentester-NX";
+            this.BtnToolScreenTester.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolScreenTester.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolScreenTester.UseVisualStyleBackColor = true;
             // 
-            // BtnToolNXSH
+            // BtnToolYallAreNuts
             // 
-            this.BtnToolNXSH.AutoSize = true;
-            this.BtnToolNXSH.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolNXSH.Depth = 0;
-            this.BtnToolNXSH.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolNXSH.Icon")));
-            this.BtnToolNXSH.Location = new System.Drawing.Point(18, 407);
-            this.BtnToolNXSH.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolNXSH.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolNXSH.Name = "BtnToolNXSH";
-            this.BtnToolNXSH.Primary = false;
-            this.BtnToolNXSH.Size = new System.Drawing.Size(85, 36);
-            this.BtnToolNXSH.TabIndex = 2;
-            this.BtnToolNXSH.Text = "NXSH";
-            this.BtnToolNXSH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolNXSH.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolNXSH.UseVisualStyleBackColor = true;
+            this.BtnToolYallAreNuts.AutoSize = true;
+            this.BtnToolYallAreNuts.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolYallAreNuts.Depth = 0;
+            this.BtnToolYallAreNuts.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolYallAreNuts.Icon")));
+            this.BtnToolYallAreNuts.Location = new System.Drawing.Point(18, 397);
+            this.BtnToolYallAreNuts.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolYallAreNuts.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolYallAreNuts.Name = "BtnToolYallAreNuts";
+            this.BtnToolYallAreNuts.Primary = false;
+            this.BtnToolYallAreNuts.Size = new System.Drawing.Size(144, 36);
+            this.BtnToolYallAreNuts.TabIndex = 2;
+            this.BtnToolYallAreNuts.Text = "Y\'allAreNuts";
+            this.BtnToolYallAreNuts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolYallAreNuts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolYallAreNuts.UseVisualStyleBackColor = true;
             // 
-            // BtnToolFTPD4SXOS
+            // BtnToolN1DUS
             // 
-            this.BtnToolFTPD4SXOS.AutoSize = true;
-            this.BtnToolFTPD4SXOS.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolFTPD4SXOS.Depth = 0;
-            this.BtnToolFTPD4SXOS.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolFTPD4SXOS.Icon")));
-            this.BtnToolFTPD4SXOS.Location = new System.Drawing.Point(18, 359);
-            this.BtnToolFTPD4SXOS.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolFTPD4SXOS.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolFTPD4SXOS.Name = "BtnToolFTPD4SXOS";
-            this.BtnToolFTPD4SXOS.Primary = false;
-            this.BtnToolFTPD4SXOS.Size = new System.Drawing.Size(125, 36);
-            this.BtnToolFTPD4SXOS.TabIndex = 2;
-            this.BtnToolFTPD4SXOS.Text = "FTPD4SXOS";
-            this.BtnToolFTPD4SXOS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolFTPD4SXOS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolFTPD4SXOS.UseVisualStyleBackColor = true;
+            this.BtnToolN1DUS.AutoSize = true;
+            this.BtnToolN1DUS.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolN1DUS.Depth = 0;
+            this.BtnToolN1DUS.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolN1DUS.Icon")));
+            this.BtnToolN1DUS.Location = new System.Drawing.Point(18, 349);
+            this.BtnToolN1DUS.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolN1DUS.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolN1DUS.Name = "BtnToolN1DUS";
+            this.BtnToolN1DUS.Primary = false;
+            this.BtnToolN1DUS.Size = new System.Drawing.Size(93, 36);
+            this.BtnToolN1DUS.TabIndex = 2;
+            this.BtnToolN1DUS.Text = "n1dus";
+            this.BtnToolN1DUS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolN1DUS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolN1DUS.UseVisualStyleBackColor = true;
+            // 
+            // BtnToolPPLay
+            // 
+            this.BtnToolPPLay.AutoSize = true;
+            this.BtnToolPPLay.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolPPLay.Depth = 0;
+            this.BtnToolPPLay.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolPPLay.Icon")));
+            this.BtnToolPPLay.Location = new System.Drawing.Point(18, 301);
+            this.BtnToolPPLay.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolPPLay.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolPPLay.Name = "BtnToolPPLay";
+            this.BtnToolPPLay.Primary = false;
+            this.BtnToolPPLay.Size = new System.Drawing.Size(91, 36);
+            this.BtnToolPPLay.TabIndex = 2;
+            this.BtnToolPPLay.Text = "PPLay";
+            this.BtnToolPPLay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolPPLay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolPPLay.UseVisualStyleBackColor = true;
+            // 
+            // BtnToolBrewJS
+            // 
+            this.BtnToolBrewJS.AutoSize = true;
+            this.BtnToolBrewJS.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolBrewJS.Depth = 0;
+            this.BtnToolBrewJS.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolBrewJS.Icon")));
+            this.BtnToolBrewJS.Location = new System.Drawing.Point(18, 253);
+            this.BtnToolBrewJS.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolBrewJS.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolBrewJS.Name = "BtnToolBrewJS";
+            this.BtnToolBrewJS.Primary = false;
+            this.BtnToolBrewJS.Size = new System.Drawing.Size(106, 36);
+            this.BtnToolBrewJS.TabIndex = 2;
+            this.BtnToolBrewJS.Text = "Brew.JS";
+            this.BtnToolBrewJS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolBrewJS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolBrewJS.UseVisualStyleBackColor = true;
+            // 
+            // BtnToolKipSelect
+            // 
+            this.BtnToolKipSelect.AutoSize = true;
+            this.BtnToolKipSelect.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolKipSelect.Depth = 0;
+            this.BtnToolKipSelect.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolKipSelect.Icon")));
+            this.BtnToolKipSelect.Location = new System.Drawing.Point(18, 205);
+            this.BtnToolKipSelect.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolKipSelect.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolKipSelect.Name = "BtnToolKipSelect";
+            this.BtnToolKipSelect.Primary = false;
+            this.BtnToolKipSelect.Size = new System.Drawing.Size(122, 36);
+            this.BtnToolKipSelect.TabIndex = 2;
+            this.BtnToolKipSelect.Text = "Kip Select";
+            this.BtnToolKipSelect.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolKipSelect.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolKipSelect.UseVisualStyleBackColor = true;
+            // 
+            // BtnToolAvatool
+            // 
+            this.BtnToolAvatool.AutoSize = true;
+            this.BtnToolAvatool.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolAvatool.Depth = 0;
+            this.BtnToolAvatool.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolAvatool.Icon")));
+            this.BtnToolAvatool.Location = new System.Drawing.Point(18, 157);
+            this.BtnToolAvatool.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolAvatool.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolAvatool.Name = "BtnToolAvatool";
+            this.BtnToolAvatool.Primary = false;
+            this.BtnToolAvatool.Size = new System.Drawing.Size(111, 36);
+            this.BtnToolAvatool.TabIndex = 2;
+            this.BtnToolAvatool.Text = "Avatool";
+            this.BtnToolAvatool.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolAvatool.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolAvatool.UseVisualStyleBackColor = true;
+            // 
+            // BtnToolLockPick
+            // 
+            this.BtnToolLockPick.AutoSize = true;
+            this.BtnToolLockPick.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolLockPick.Depth = 0;
+            this.BtnToolLockPick.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolLockPick.Icon")));
+            this.BtnToolLockPick.Location = new System.Drawing.Point(18, 109);
+            this.BtnToolLockPick.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolLockPick.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolLockPick.Name = "BtnToolLockPick";
+            this.BtnToolLockPick.Primary = false;
+            this.BtnToolLockPick.Size = new System.Drawing.Size(114, 36);
+            this.BtnToolLockPick.TabIndex = 2;
+            this.BtnToolLockPick.Text = "LockPick";
+            this.BtnToolLockPick.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolLockPick.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolLockPick.UseVisualStyleBackColor = true;
+            // 
+            // BtnToolKEX
+            // 
+            this.BtnToolKEX.AutoSize = true;
+            this.BtnToolKEX.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolKEX.Depth = 0;
+            this.BtnToolKEX.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolKEX.Icon")));
+            this.BtnToolKEX.Location = new System.Drawing.Point(18, 61);
+            this.BtnToolKEX.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolKEX.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolKEX.Name = "BtnToolKEX";
+            this.BtnToolKEX.Primary = false;
+            this.BtnToolKEX.Size = new System.Drawing.Size(74, 36);
+            this.BtnToolKEX.TabIndex = 2;
+            this.BtnToolKEX.Text = "KEX";
+            this.BtnToolKEX.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolKEX.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolKEX.UseVisualStyleBackColor = true;
+            // 
+            // BtnToolSharedFont
+            // 
+            this.BtnToolSharedFont.AutoSize = true;
+            this.BtnToolSharedFont.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolSharedFont.Depth = 0;
+            this.BtnToolSharedFont.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolSharedFont.Icon")));
+            this.BtnToolSharedFont.Location = new System.Drawing.Point(18, 541);
+            this.BtnToolSharedFont.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolSharedFont.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolSharedFont.Name = "BtnToolSharedFont";
+            this.BtnToolSharedFont.Primary = false;
+            this.BtnToolSharedFont.Size = new System.Drawing.Size(198, 36);
+            this.BtnToolSharedFont.TabIndex = 2;
+            this.BtnToolSharedFont.Text = "Shared Font Dumper";
+            this.BtnToolSharedFont.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolSharedFont.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolSharedFont.UseVisualStyleBackColor = true;
             // 
             // BtnToolSwitchXboxController
             // 
@@ -524,7 +867,7 @@
             this.BtnToolSwitchXboxController.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolSwitchXboxController.Depth = 0;
             this.BtnToolSwitchXboxController.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolSwitchXboxController.Icon")));
-            this.BtnToolSwitchXboxController.Location = new System.Drawing.Point(18, 311);
+            this.BtnToolSwitchXboxController.Location = new System.Drawing.Point(18, -499);
             this.BtnToolSwitchXboxController.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolSwitchXboxController.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolSwitchXboxController.Name = "BtnToolSwitchXboxController";
@@ -542,7 +885,7 @@
             this.BtnToolBOTWSaveEditor.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolBOTWSaveEditor.Depth = 0;
             this.BtnToolBOTWSaveEditor.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolBOTWSaveEditor.Icon")));
-            this.BtnToolBOTWSaveEditor.Location = new System.Drawing.Point(18, 263);
+            this.BtnToolBOTWSaveEditor.Location = new System.Drawing.Point(18, -547);
             this.BtnToolBOTWSaveEditor.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolBOTWSaveEditor.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolBOTWSaveEditor.Name = "BtnToolBOTWSaveEditor";
@@ -560,7 +903,7 @@
             this.BtnToolVaperSpec.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolVaperSpec.Depth = 0;
             this.BtnToolVaperSpec.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolVaperSpec.Icon")));
-            this.BtnToolVaperSpec.Location = new System.Drawing.Point(18, 215);
+            this.BtnToolVaperSpec.Location = new System.Drawing.Point(18, -595);
             this.BtnToolVaperSpec.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolVaperSpec.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolVaperSpec.Name = "BtnToolVaperSpec";
@@ -578,7 +921,7 @@
             this.BtnToolNXShell.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolNXShell.Depth = 0;
             this.BtnToolNXShell.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolNXShell.Icon")));
-            this.BtnToolNXShell.Location = new System.Drawing.Point(18, 167);
+            this.BtnToolNXShell.Location = new System.Drawing.Point(18, -643);
             this.BtnToolNXShell.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolNXShell.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolNXShell.Name = "BtnToolNXShell";
@@ -596,7 +939,7 @@
             this.BtnToolGagOrder.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolGagOrder.Depth = 0;
             this.BtnToolGagOrder.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolGagOrder.Icon")));
-            this.BtnToolGagOrder.Location = new System.Drawing.Point(18, 119);
+            this.BtnToolGagOrder.Location = new System.Drawing.Point(18, -691);
             this.BtnToolGagOrder.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolGagOrder.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolGagOrder.Name = "BtnToolGagOrder";
@@ -614,7 +957,7 @@
             this.BtnToolFireplace.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolFireplace.Depth = 0;
             this.BtnToolFireplace.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolFireplace.Icon")));
-            this.BtnToolFireplace.Location = new System.Drawing.Point(18, 71);
+            this.BtnToolFireplace.Location = new System.Drawing.Point(18, -739);
             this.BtnToolFireplace.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolFireplace.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolFireplace.Name = "BtnToolFireplace";
@@ -632,7 +975,7 @@
             this.BtnToolKEZPLEZ.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolKEZPLEZ.Depth = 0;
             this.BtnToolKEZPLEZ.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolKEZPLEZ.Icon")));
-            this.BtnToolKEZPLEZ.Location = new System.Drawing.Point(18, 23);
+            this.BtnToolKEZPLEZ.Location = new System.Drawing.Point(18, -787);
             this.BtnToolKEZPLEZ.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolKEZPLEZ.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolKEZPLEZ.Name = "BtnToolKEZPLEZ";
@@ -644,103 +987,13 @@
             this.BtnToolKEZPLEZ.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnToolKEZPLEZ.UseVisualStyleBackColor = true;
             // 
-            // BtnToolHomebrewAppStore
-            // 
-            this.BtnToolHomebrewAppStore.AutoSize = true;
-            this.BtnToolHomebrewAppStore.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolHomebrewAppStore.Depth = 0;
-            this.BtnToolHomebrewAppStore.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolHomebrewAppStore.Icon")));
-            this.BtnToolHomebrewAppStore.Location = new System.Drawing.Point(18, -53);
-            this.BtnToolHomebrewAppStore.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolHomebrewAppStore.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolHomebrewAppStore.Name = "BtnToolHomebrewAppStore";
-            this.BtnToolHomebrewAppStore.Primary = false;
-            this.BtnToolHomebrewAppStore.Size = new System.Drawing.Size(198, 36);
-            this.BtnToolHomebrewAppStore.TabIndex = 2;
-            this.BtnToolHomebrewAppStore.Text = "Homebrew Appstore";
-            this.BtnToolHomebrewAppStore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolHomebrewAppStore.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolHomebrewAppStore.UseVisualStyleBackColor = true;
-            // 
-            // BtnToolBrainFuckInterpreter
-            // 
-            this.BtnToolBrainFuckInterpreter.AutoSize = true;
-            this.BtnToolBrainFuckInterpreter.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolBrainFuckInterpreter.Depth = 0;
-            this.BtnToolBrainFuckInterpreter.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolBrainFuckInterpreter.Icon")));
-            this.BtnToolBrainFuckInterpreter.Location = new System.Drawing.Point(18, -101);
-            this.BtnToolBrainFuckInterpreter.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolBrainFuckInterpreter.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolBrainFuckInterpreter.Name = "BtnToolBrainFuckInterpreter";
-            this.BtnToolBrainFuckInterpreter.Primary = false;
-            this.BtnToolBrainFuckInterpreter.Size = new System.Drawing.Size(215, 36);
-            this.BtnToolBrainFuckInterpreter.TabIndex = 2;
-            this.BtnToolBrainFuckInterpreter.Text = "Brainfuck Interpreter";
-            this.BtnToolBrainFuckInterpreter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolBrainFuckInterpreter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolBrainFuckInterpreter.UseVisualStyleBackColor = true;
-            // 
-            // BtnToolEasyRPGPlayer
-            // 
-            this.BtnToolEasyRPGPlayer.AutoSize = true;
-            this.BtnToolEasyRPGPlayer.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolEasyRPGPlayer.Depth = 0;
-            this.BtnToolEasyRPGPlayer.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolEasyRPGPlayer.Icon")));
-            this.BtnToolEasyRPGPlayer.Location = new System.Drawing.Point(18, -149);
-            this.BtnToolEasyRPGPlayer.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolEasyRPGPlayer.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolEasyRPGPlayer.Name = "BtnToolEasyRPGPlayer";
-            this.BtnToolEasyRPGPlayer.Primary = false;
-            this.BtnToolEasyRPGPlayer.Size = new System.Drawing.Size(157, 36);
-            this.BtnToolEasyRPGPlayer.TabIndex = 2;
-            this.BtnToolEasyRPGPlayer.Text = "Easy RPG Layer";
-            this.BtnToolEasyRPGPlayer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolEasyRPGPlayer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolEasyRPGPlayer.UseVisualStyleBackColor = true;
-            // 
-            // BtnToolTestButtons
-            // 
-            this.BtnToolTestButtons.AutoSize = true;
-            this.BtnToolTestButtons.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolTestButtons.Depth = 0;
-            this.BtnToolTestButtons.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolTestButtons.Icon")));
-            this.BtnToolTestButtons.Location = new System.Drawing.Point(18, -197);
-            this.BtnToolTestButtons.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolTestButtons.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolTestButtons.Name = "BtnToolTestButtons";
-            this.BtnToolTestButtons.Primary = false;
-            this.BtnToolTestButtons.Size = new System.Drawing.Size(147, 36);
-            this.BtnToolTestButtons.TabIndex = 2;
-            this.BtnToolTestButtons.Text = "Test Buttons";
-            this.BtnToolTestButtons.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolTestButtons.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolTestButtons.UseVisualStyleBackColor = true;
-            // 
-            // BtnToolVgedit
-            // 
-            this.BtnToolVgedit.AutoSize = true;
-            this.BtnToolVgedit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolVgedit.Depth = 0;
-            this.BtnToolVgedit.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolVgedit.Icon")));
-            this.BtnToolVgedit.Location = new System.Drawing.Point(18, -245);
-            this.BtnToolVgedit.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolVgedit.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolVgedit.Name = "BtnToolVgedit";
-            this.BtnToolVgedit.Primary = false;
-            this.BtnToolVgedit.Size = new System.Drawing.Size(96, 36);
-            this.BtnToolVgedit.TabIndex = 2;
-            this.BtnToolVgedit.Text = "VGedit";
-            this.BtnToolVgedit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolVgedit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolVgedit.UseVisualStyleBackColor = true;
-            // 
             // BtnToolPSwitch
             // 
             this.BtnToolPSwitch.AutoSize = true;
             this.BtnToolPSwitch.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolPSwitch.Depth = 0;
             this.BtnToolPSwitch.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolPSwitch.Icon")));
-            this.BtnToolPSwitch.Location = new System.Drawing.Point(18, -293);
+            this.BtnToolPSwitch.Location = new System.Drawing.Point(18, -1103);
             this.BtnToolPSwitch.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolPSwitch.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolPSwitch.Name = "BtnToolPSwitch";
@@ -758,7 +1011,7 @@
             this.BtnToolNXPlay.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolNXPlay.Depth = 0;
             this.BtnToolNXPlay.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolNXPlay.Icon")));
-            this.BtnToolNXPlay.Location = new System.Drawing.Point(18, -341);
+            this.BtnToolNXPlay.Location = new System.Drawing.Point(18, -1151);
             this.BtnToolNXPlay.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolNXPlay.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolNXPlay.Name = "BtnToolNXPlay";
@@ -776,7 +1029,7 @@
             this.BtnToolSwitchGuideUpdater.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolSwitchGuideUpdater.Depth = 0;
             this.BtnToolSwitchGuideUpdater.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolSwitchGuideUpdater.Icon")));
-            this.BtnToolSwitchGuideUpdater.Location = new System.Drawing.Point(18, -389);
+            this.BtnToolSwitchGuideUpdater.Location = new System.Drawing.Point(18, -1199);
             this.BtnToolSwitchGuideUpdater.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolSwitchGuideUpdater.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolSwitchGuideUpdater.Name = "BtnToolSwitchGuideUpdater";
@@ -794,7 +1047,7 @@
             this.BtnToolEdizon.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolEdizon.Depth = 0;
             this.BtnToolEdizon.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolEdizon.Icon")));
-            this.BtnToolEdizon.Location = new System.Drawing.Point(18, -437);
+            this.BtnToolEdizon.Location = new System.Drawing.Point(18, -1247);
             this.BtnToolEdizon.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolEdizon.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolEdizon.Name = "BtnToolEdizon";
@@ -812,7 +1065,7 @@
             this.BtnToolSwitchIdentGUI.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolSwitchIdentGUI.Depth = 0;
             this.BtnToolSwitchIdentGUI.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolSwitchIdentGUI.Icon")));
-            this.BtnToolSwitchIdentGUI.Location = new System.Drawing.Point(18, -485);
+            this.BtnToolSwitchIdentGUI.Location = new System.Drawing.Point(18, -1295);
             this.BtnToolSwitchIdentGUI.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolSwitchIdentGUI.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolSwitchIdentGUI.Name = "BtnToolSwitchIdentGUI";
@@ -830,7 +1083,7 @@
             this.BtnToolNXDownload.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolNXDownload.Depth = 0;
             this.BtnToolNXDownload.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolNXDownload.Icon")));
-            this.BtnToolNXDownload.Location = new System.Drawing.Point(18, -533);
+            this.BtnToolNXDownload.Location = new System.Drawing.Point(18, -1343);
             this.BtnToolNXDownload.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolNXDownload.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolNXDownload.Name = "BtnToolNXDownload";
@@ -848,7 +1101,7 @@
             this.BtnToolKosmosUpdater.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolKosmosUpdater.Depth = 0;
             this.BtnToolKosmosUpdater.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolKosmosUpdater.Icon")));
-            this.BtnToolKosmosUpdater.Location = new System.Drawing.Point(18, -581);
+            this.BtnToolKosmosUpdater.Location = new System.Drawing.Point(18, -1391);
             this.BtnToolKosmosUpdater.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolKosmosUpdater.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolKosmosUpdater.Name = "BtnToolKosmosUpdater";
@@ -866,7 +1119,7 @@
             this.BtnToolLoveStory.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolLoveStory.Depth = 0;
             this.BtnToolLoveStory.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolLoveStory.Icon")));
-            this.BtnToolLoveStory.Location = new System.Drawing.Point(18, -629);
+            this.BtnToolLoveStory.Location = new System.Drawing.Point(18, -1439);
             this.BtnToolLoveStory.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolLoveStory.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolLoveStory.Name = "BtnToolLoveStory";
@@ -884,7 +1137,7 @@
             this.BtnToolGCDumpTool.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolGCDumpTool.Depth = 0;
             this.BtnToolGCDumpTool.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolGCDumpTool.Icon")));
-            this.BtnToolGCDumpTool.Location = new System.Drawing.Point(18, -677);
+            this.BtnToolGCDumpTool.Location = new System.Drawing.Point(18, -1487);
             this.BtnToolGCDumpTool.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolGCDumpTool.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolGCDumpTool.Name = "BtnToolGCDumpTool";
@@ -902,7 +1155,7 @@
             this.BtnToolMarioEditor.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolMarioEditor.Depth = 0;
             this.BtnToolMarioEditor.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolMarioEditor.Icon")));
-            this.BtnToolMarioEditor.Location = new System.Drawing.Point(18, -725);
+            this.BtnToolMarioEditor.Location = new System.Drawing.Point(18, -1535);
             this.BtnToolMarioEditor.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolMarioEditor.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolMarioEditor.Name = "BtnToolMarioEditor";
@@ -920,7 +1173,7 @@
             this.BtnToolGameRedirector.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolGameRedirector.Depth = 0;
             this.BtnToolGameRedirector.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolGameRedirector.Icon")));
-            this.BtnToolGameRedirector.Location = new System.Drawing.Point(18, -773);
+            this.BtnToolGameRedirector.Location = new System.Drawing.Point(18, -1583);
             this.BtnToolGameRedirector.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolGameRedirector.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolGameRedirector.Name = "BtnToolGameRedirector";
@@ -938,7 +1191,7 @@
             this.BtnToolPlayer.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolPlayer.Depth = 0;
             this.BtnToolPlayer.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolPlayer.Icon")));
-            this.BtnToolPlayer.Location = new System.Drawing.Point(18, -821);
+            this.BtnToolPlayer.Location = new System.Drawing.Point(18, -1631);
             this.BtnToolPlayer.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolPlayer.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolPlayer.Name = "BtnToolPlayer";
@@ -956,7 +1209,7 @@
             this.BtnToolBrowser.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolBrowser.Depth = 0;
             this.BtnToolBrowser.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolBrowser.Icon")));
-            this.BtnToolBrowser.Location = new System.Drawing.Point(18, -869);
+            this.BtnToolBrowser.Location = new System.Drawing.Point(18, -1679);
             this.BtnToolBrowser.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolBrowser.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolBrowser.Name = "BtnToolBrowser";
@@ -974,7 +1227,7 @@
             this.BtnToolReiNXTool.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolReiNXTool.Depth = 0;
             this.BtnToolReiNXTool.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolReiNXTool.Icon")));
-            this.BtnToolReiNXTool.Location = new System.Drawing.Point(18, -917);
+            this.BtnToolReiNXTool.Location = new System.Drawing.Point(18, -1727);
             this.BtnToolReiNXTool.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolReiNXTool.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolReiNXTool.Name = "BtnToolReiNXTool";
@@ -992,7 +1245,7 @@
             this.BtnToolCheckpoint.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolCheckpoint.Depth = 0;
             this.BtnToolCheckpoint.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolCheckpoint.Icon")));
-            this.BtnToolCheckpoint.Location = new System.Drawing.Point(18, -965);
+            this.BtnToolCheckpoint.Location = new System.Drawing.Point(18, -1775);
             this.BtnToolCheckpoint.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolCheckpoint.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolCheckpoint.Name = "BtnToolCheckpoint";
@@ -1010,7 +1263,7 @@
             this.BtnToolSvitch.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolSvitch.Depth = 0;
             this.BtnToolSvitch.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolSvitch.Icon")));
-            this.BtnToolSvitch.Location = new System.Drawing.Point(18, -1013);
+            this.BtnToolSvitch.Location = new System.Drawing.Point(18, -1823);
             this.BtnToolSvitch.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolSvitch.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolSvitch.Name = "BtnToolSvitch";
@@ -1028,7 +1281,7 @@
             this.BtnToolSwitchMediaHost.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolSwitchMediaHost.Depth = 0;
             this.BtnToolSwitchMediaHost.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolSwitchMediaHost.Icon")));
-            this.BtnToolSwitchMediaHost.Location = new System.Drawing.Point(18, -1061);
+            this.BtnToolSwitchMediaHost.Location = new System.Drawing.Point(18, -1871);
             this.BtnToolSwitchMediaHost.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolSwitchMediaHost.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolSwitchMediaHost.Name = "BtnToolSwitchMediaHost";
@@ -1046,7 +1299,7 @@
             this.BtnToolNXNtpc.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolNXNtpc.Depth = 0;
             this.BtnToolNXNtpc.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolNXNtpc.Icon")));
-            this.BtnToolNXNtpc.Location = new System.Drawing.Point(18, -1109);
+            this.BtnToolNXNtpc.Location = new System.Drawing.Point(18, -1919);
             this.BtnToolNXNtpc.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolNXNtpc.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolNXNtpc.Name = "BtnToolNXNtpc";
@@ -1064,7 +1317,7 @@
             this.BtnToolPowertools.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolPowertools.Depth = 0;
             this.BtnToolPowertools.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolPowertools.Icon")));
-            this.BtnToolPowertools.Location = new System.Drawing.Point(18, -1157);
+            this.BtnToolPowertools.Location = new System.Drawing.Point(18, -1967);
             this.BtnToolPowertools.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolPowertools.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolPowertools.Name = "BtnToolPowertools";
@@ -1082,7 +1335,7 @@
             this.BtnToolSwitchIndentConsole.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolSwitchIndentConsole.Depth = 0;
             this.BtnToolSwitchIndentConsole.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolSwitchIndentConsole.Icon")));
-            this.BtnToolSwitchIndentConsole.Location = new System.Drawing.Point(18, -1205);
+            this.BtnToolSwitchIndentConsole.Location = new System.Drawing.Point(18, -2015);
             this.BtnToolSwitchIndentConsole.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolSwitchIndentConsole.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolSwitchIndentConsole.Name = "BtnToolSwitchIndentConsole";
@@ -1100,7 +1353,7 @@
             this.BtnToolInHomeSwitching.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolInHomeSwitching.Depth = 0;
             this.BtnToolInHomeSwitching.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolInHomeSwitching.Icon")));
-            this.BtnToolInHomeSwitching.Location = new System.Drawing.Point(18, -1253);
+            this.BtnToolInHomeSwitching.Location = new System.Drawing.Point(18, -2063);
             this.BtnToolInHomeSwitching.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolInHomeSwitching.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolInHomeSwitching.Name = "BtnToolInHomeSwitching";
@@ -1118,7 +1371,7 @@
             this.BtnToolRCMRebootInstant.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolRCMRebootInstant.Depth = 0;
             this.BtnToolRCMRebootInstant.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolRCMRebootInstant.Icon")));
-            this.BtnToolRCMRebootInstant.Location = new System.Drawing.Point(18, -1301);
+            this.BtnToolRCMRebootInstant.Location = new System.Drawing.Point(18, -2111);
             this.BtnToolRCMRebootInstant.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolRCMRebootInstant.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolRCMRebootInstant.Name = "BtnToolRCMRebootInstant";
@@ -1136,7 +1389,7 @@
             this.BtnToolFTPD.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolFTPD.Depth = 0;
             this.BtnToolFTPD.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolFTPD.Icon")));
-            this.BtnToolFTPD.Location = new System.Drawing.Point(18, -1349);
+            this.BtnToolFTPD.Location = new System.Drawing.Point(18, -2159);
             this.BtnToolFTPD.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolFTPD.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolFTPD.Name = "BtnToolFTPD";
@@ -1154,7 +1407,7 @@
             this.BtnToolButtonTester.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolButtonTester.Depth = 0;
             this.BtnToolButtonTester.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolButtonTester.Icon")));
-            this.BtnToolButtonTester.Location = new System.Drawing.Point(18, -1397);
+            this.BtnToolButtonTester.Location = new System.Drawing.Point(18, -2207);
             this.BtnToolButtonTester.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolButtonTester.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolButtonTester.Name = "BtnToolButtonTester";
@@ -1172,7 +1425,7 @@
             this.BtnToolPynx.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolPynx.Depth = 0;
             this.BtnToolPynx.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolPynx.Icon")));
-            this.BtnToolPynx.Location = new System.Drawing.Point(18, -1445);
+            this.BtnToolPynx.Location = new System.Drawing.Point(18, -2255);
             this.BtnToolPynx.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolPynx.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolPynx.Name = "BtnToolPynx";
@@ -1190,7 +1443,7 @@
             this.BtnToolNXToolkit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolNXToolkit.Depth = 0;
             this.BtnToolNXToolkit.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolNXToolkit.Icon")));
-            this.BtnToolNXToolkit.Location = new System.Drawing.Point(18, -1493);
+            this.BtnToolNXToolkit.Location = new System.Drawing.Point(18, -2303);
             this.BtnToolNXToolkit.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolNXToolkit.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolNXToolkit.Name = "BtnToolNXToolkit";
@@ -1208,7 +1461,7 @@
             this.BtnToolGoldleaf.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolGoldleaf.Depth = 0;
             this.BtnToolGoldleaf.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolGoldleaf.Icon")));
-            this.BtnToolGoldleaf.Location = new System.Drawing.Point(18, -1541);
+            this.BtnToolGoldleaf.Location = new System.Drawing.Point(18, -2351);
             this.BtnToolGoldleaf.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolGoldleaf.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolGoldleaf.Name = "BtnToolGoldleaf";
@@ -1226,7 +1479,7 @@
             this.BtnToolHomebrewSD.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolHomebrewSD.Depth = 0;
             this.BtnToolHomebrewSD.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolHomebrewSD.Icon")));
-            this.BtnToolHomebrewSD.Location = new System.Drawing.Point(18, -1589);
+            this.BtnToolHomebrewSD.Location = new System.Drawing.Point(18, -2399);
             this.BtnToolHomebrewSD.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolHomebrewSD.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolHomebrewSD.Name = "BtnToolHomebrewSD";
@@ -1244,7 +1497,7 @@
             this.BtnToolRCMReboot.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolRCMReboot.Depth = 0;
             this.BtnToolRCMReboot.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolRCMReboot.Icon")));
-            this.BtnToolRCMReboot.Location = new System.Drawing.Point(18, -1637);
+            this.BtnToolRCMReboot.Location = new System.Drawing.Point(18, -2447);
             this.BtnToolRCMReboot.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolRCMReboot.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolRCMReboot.Name = "BtnToolRCMReboot";
@@ -1539,9 +1792,9 @@
             this.BtnEmuVBANextRetro.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnEmuVBANextRetro.Name = "BtnEmuVBANextRetro";
             this.BtnEmuVBANextRetro.Primary = false;
-            this.BtnEmuVBANextRetro.Size = new System.Drawing.Size(103, 36);
+            this.BtnEmuVBANextRetro.Size = new System.Drawing.Size(156, 36);
             this.BtnEmuVBANextRetro.TabIndex = 1;
-            this.BtnEmuVBANextRetro.Text = "gdkGBA";
+            this.BtnEmuVBANextRetro.Text = "VBANEXT Retro";
             this.BtnEmuVBANextRetro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuVBANextRetro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuVBANextRetro.UseVisualStyleBackColor = true;
@@ -2988,416 +3241,192 @@
             this.TmrCheckVal.Enabled = true;
             this.TmrCheckVal.Tick += new System.EventHandler(this.TmrCheckVal_Tick);
             // 
+            // BtnToolRCMReboo
+            // 
+            this.BtnToolRCMReboo.AutoSize = true;
+            this.BtnToolRCMReboo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolRCMReboo.Depth = 0;
+            this.BtnToolRCMReboo.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolRCMReboo.Icon")));
+            this.BtnToolRCMReboo.Location = new System.Drawing.Point(18, 493);
+            this.BtnToolRCMReboo.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolRCMReboo.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolRCMReboo.Name = "BtnToolRCMReboo";
+            this.BtnToolRCMReboo.Primary = false;
+            this.BtnToolRCMReboo.Size = new System.Drawing.Size(134, 36);
+            this.BtnToolRCMReboo.TabIndex = 2;
+            this.BtnToolRCMReboo.Text = "RCM Reboot";
+            this.BtnToolRCMReboo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolRCMReboo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolRCMReboo.UseVisualStyleBackColor = true;
+            // 
+            // BtnToolVgedit
+            // 
+            this.BtnToolVgedit.AutoSize = true;
+            this.BtnToolVgedit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolVgedit.Depth = 0;
+            this.BtnToolVgedit.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolVgedit.Icon")));
+            this.BtnToolVgedit.Location = new System.Drawing.Point(18, 13);
+            this.BtnToolVgedit.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolVgedit.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolVgedit.Name = "BtnToolVgedit";
+            this.BtnToolVgedit.Primary = false;
+            this.BtnToolVgedit.Size = new System.Drawing.Size(96, 36);
+            this.BtnToolVgedit.TabIndex = 2;
+            this.BtnToolVgedit.Text = "VGedit";
+            this.BtnToolVgedit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolVgedit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolVgedit.UseVisualStyleBackColor = true;
+            // 
             // BtnToolEasyPower
             // 
             this.BtnToolEasyPower.AutoSize = true;
             this.BtnToolEasyPower.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolEasyPower.Depth = 0;
             this.BtnToolEasyPower.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolEasyPower.Icon")));
-            this.BtnToolEasyPower.Location = new System.Drawing.Point(18, 503);
+            this.BtnToolEasyPower.Location = new System.Drawing.Point(18, 733);
             this.BtnToolEasyPower.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolEasyPower.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolEasyPower.Name = "BtnToolEasyPower";
             this.BtnToolEasyPower.Primary = false;
             this.BtnToolEasyPower.Size = new System.Drawing.Size(129, 36);
-            this.BtnToolEasyPower.TabIndex = 2;
+            this.BtnToolEasyPower.TabIndex = 4;
             this.BtnToolEasyPower.Text = "EasyPower";
             this.BtnToolEasyPower.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnToolEasyPower.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnToolEasyPower.UseVisualStyleBackColor = true;
             // 
-            // BtnToolSharedFont
+            // BtnToolPixelPainter
             // 
-            this.BtnToolSharedFont.AutoSize = true;
-            this.BtnToolSharedFont.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolSharedFont.Depth = 0;
-            this.BtnToolSharedFont.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolSharedFont.Icon")));
-            this.BtnToolSharedFont.Location = new System.Drawing.Point(18, 551);
-            this.BtnToolSharedFont.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolSharedFont.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolSharedFont.Name = "BtnToolSharedFont";
-            this.BtnToolSharedFont.Primary = false;
-            this.BtnToolSharedFont.Size = new System.Drawing.Size(198, 36);
-            this.BtnToolSharedFont.TabIndex = 2;
-            this.BtnToolSharedFont.Text = "Shared Font Dumper";
-            this.BtnToolSharedFont.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolSharedFont.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolSharedFont.UseVisualStyleBackColor = true;
+            this.BtnToolPixelPainter.AutoSize = true;
+            this.BtnToolPixelPainter.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolPixelPainter.Depth = 0;
+            this.BtnToolPixelPainter.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolPixelPainter.Icon")));
+            this.BtnToolPixelPainter.Location = new System.Drawing.Point(18, 685);
+            this.BtnToolPixelPainter.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolPixelPainter.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolPixelPainter.Name = "BtnToolPixelPainter";
+            this.BtnToolPixelPainter.Primary = false;
+            this.BtnToolPixelPainter.Size = new System.Drawing.Size(145, 36);
+            this.BtnToolPixelPainter.TabIndex = 5;
+            this.BtnToolPixelPainter.Text = "Pixel Painter";
+            this.BtnToolPixelPainter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolPixelPainter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolPixelPainter.UseVisualStyleBackColor = true;
             // 
-            // BtnToolKEX
+            // BtnToolNXSH
             // 
-            this.BtnToolKEX.AutoSize = true;
-            this.BtnToolKEX.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolKEX.Depth = 0;
-            this.BtnToolKEX.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolKEX.Icon")));
-            this.BtnToolKEX.Location = new System.Drawing.Point(18, 599);
-            this.BtnToolKEX.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolKEX.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolKEX.Name = "BtnToolKEX";
-            this.BtnToolKEX.Primary = false;
-            this.BtnToolKEX.Size = new System.Drawing.Size(74, 36);
-            this.BtnToolKEX.TabIndex = 2;
-            this.BtnToolKEX.Text = "KEX";
-            this.BtnToolKEX.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolKEX.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolKEX.UseVisualStyleBackColor = true;
+            this.BtnToolNXSH.AutoSize = true;
+            this.BtnToolNXSH.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolNXSH.Depth = 0;
+            this.BtnToolNXSH.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolNXSH.Icon")));
+            this.BtnToolNXSH.Location = new System.Drawing.Point(18, 637);
+            this.BtnToolNXSH.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolNXSH.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolNXSH.Name = "BtnToolNXSH";
+            this.BtnToolNXSH.Primary = false;
+            this.BtnToolNXSH.Size = new System.Drawing.Size(85, 36);
+            this.BtnToolNXSH.TabIndex = 6;
+            this.BtnToolNXSH.Text = "NXSH";
+            this.BtnToolNXSH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolNXSH.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolNXSH.UseVisualStyleBackColor = true;
             // 
-            // BtnToolLockPick
+            // BtnToolFTPD4SXOS
             // 
-            this.BtnToolLockPick.AutoSize = true;
-            this.BtnToolLockPick.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolLockPick.Depth = 0;
-            this.BtnToolLockPick.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolLockPick.Icon")));
-            this.BtnToolLockPick.Location = new System.Drawing.Point(18, 647);
-            this.BtnToolLockPick.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolLockPick.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolLockPick.Name = "BtnToolLockPick";
-            this.BtnToolLockPick.Primary = false;
-            this.BtnToolLockPick.Size = new System.Drawing.Size(114, 36);
-            this.BtnToolLockPick.TabIndex = 2;
-            this.BtnToolLockPick.Text = "LockPick";
-            this.BtnToolLockPick.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolLockPick.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolLockPick.UseVisualStyleBackColor = true;
+            this.BtnToolFTPD4SXOS.AutoSize = true;
+            this.BtnToolFTPD4SXOS.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolFTPD4SXOS.Depth = 0;
+            this.BtnToolFTPD4SXOS.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolFTPD4SXOS.Icon")));
+            this.BtnToolFTPD4SXOS.Location = new System.Drawing.Point(18, 589);
+            this.BtnToolFTPD4SXOS.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolFTPD4SXOS.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolFTPD4SXOS.Name = "BtnToolFTPD4SXOS";
+            this.BtnToolFTPD4SXOS.Primary = false;
+            this.BtnToolFTPD4SXOS.Size = new System.Drawing.Size(125, 36);
+            this.BtnToolFTPD4SXOS.TabIndex = 7;
+            this.BtnToolFTPD4SXOS.Text = "FTPD4SXOS";
+            this.BtnToolFTPD4SXOS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolFTPD4SXOS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolFTPD4SXOS.UseVisualStyleBackColor = true;
             // 
-            // BtnToolAvatool
+            // panel1
             // 
-            this.BtnToolAvatool.AutoSize = true;
-            this.BtnToolAvatool.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolAvatool.Depth = 0;
-            this.BtnToolAvatool.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolAvatool.Icon")));
-            this.BtnToolAvatool.Location = new System.Drawing.Point(18, 695);
-            this.BtnToolAvatool.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolAvatool.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolAvatool.Name = "BtnToolAvatool";
-            this.BtnToolAvatool.Primary = false;
-            this.BtnToolAvatool.Size = new System.Drawing.Size(111, 36);
-            this.BtnToolAvatool.TabIndex = 2;
-            this.BtnToolAvatool.Text = "Avatool";
-            this.BtnToolAvatool.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolAvatool.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolAvatool.UseVisualStyleBackColor = true;
+            this.panel1.Location = new System.Drawing.Point(656, 262);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(8, 802);
+            this.panel1.TabIndex = 8;
             // 
-            // BtnToolKipSelect
+            // BtnToolNXPlayer
             // 
-            this.BtnToolKipSelect.AutoSize = true;
-            this.BtnToolKipSelect.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolKipSelect.Depth = 0;
-            this.BtnToolKipSelect.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolKipSelect.Icon")));
-            this.BtnToolKipSelect.Location = new System.Drawing.Point(18, 743);
-            this.BtnToolKipSelect.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolKipSelect.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolKipSelect.Name = "BtnToolKipSelect";
-            this.BtnToolKipSelect.Primary = false;
-            this.BtnToolKipSelect.Size = new System.Drawing.Size(122, 36);
-            this.BtnToolKipSelect.TabIndex = 2;
-            this.BtnToolKipSelect.Text = "Kip Select";
-            this.BtnToolKipSelect.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolKipSelect.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolKipSelect.UseVisualStyleBackColor = true;
+            this.BtnToolNXPlayer.AutoSize = true;
+            this.BtnToolNXPlayer.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolNXPlayer.Depth = 0;
+            this.BtnToolNXPlayer.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolNXPlayer.Icon")));
+            this.BtnToolNXPlayer.Location = new System.Drawing.Point(18, 781);
+            this.BtnToolNXPlayer.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolNXPlayer.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolNXPlayer.Name = "BtnToolNXPlayer";
+            this.BtnToolNXPlayer.Primary = false;
+            this.BtnToolNXPlayer.Size = new System.Drawing.Size(101, 36);
+            this.BtnToolNXPlayer.TabIndex = 4;
+            this.BtnToolNXPlayer.Text = "NXPlay";
+            this.BtnToolNXPlayer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolNXPlayer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolNXPlayer.UseVisualStyleBackColor = true;
             // 
-            // BtnToolBrewJS
+            // BtnToolHBMenu
             // 
-            this.BtnToolBrewJS.AutoSize = true;
-            this.BtnToolBrewJS.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolBrewJS.Depth = 0;
-            this.BtnToolBrewJS.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolBrewJS.Icon")));
-            this.BtnToolBrewJS.Location = new System.Drawing.Point(18, 791);
-            this.BtnToolBrewJS.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolBrewJS.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolBrewJS.Name = "BtnToolBrewJS";
-            this.BtnToolBrewJS.Primary = false;
-            this.BtnToolBrewJS.Size = new System.Drawing.Size(106, 36);
-            this.BtnToolBrewJS.TabIndex = 2;
-            this.BtnToolBrewJS.Text = "Brew.JS";
-            this.BtnToolBrewJS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolBrewJS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolBrewJS.UseVisualStyleBackColor = true;
+            this.BtnToolHBMenu.AutoSize = true;
+            this.BtnToolHBMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolHBMenu.Depth = 0;
+            this.BtnToolHBMenu.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolHBMenu.Icon")));
+            this.BtnToolHBMenu.Location = new System.Drawing.Point(18, 829);
+            this.BtnToolHBMenu.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolHBMenu.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolHBMenu.Name = "BtnToolHBMenu";
+            this.BtnToolHBMenu.Primary = false;
+            this.BtnToolHBMenu.Size = new System.Drawing.Size(167, 36);
+            this.BtnToolHBMenu.TabIndex = 4;
+            this.BtnToolHBMenu.Text = "Homebrew Menu";
+            this.BtnToolHBMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolHBMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolHBMenu.UseVisualStyleBackColor = true;
             // 
-            // BtnToolPPLay
+            // BtnToolGoldleaf_
             // 
-            this.BtnToolPPLay.AutoSize = true;
-            this.BtnToolPPLay.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolPPLay.Depth = 0;
-            this.BtnToolPPLay.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolPPLay.Icon")));
-            this.BtnToolPPLay.Location = new System.Drawing.Point(18, 839);
-            this.BtnToolPPLay.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolPPLay.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolPPLay.Name = "BtnToolPPLay";
-            this.BtnToolPPLay.Primary = false;
-            this.BtnToolPPLay.Size = new System.Drawing.Size(91, 36);
-            this.BtnToolPPLay.TabIndex = 2;
-            this.BtnToolPPLay.Text = "PPLay";
-            this.BtnToolPPLay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolPPLay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolPPLay.UseVisualStyleBackColor = true;
+            this.BtnToolGoldleaf_.AutoSize = true;
+            this.BtnToolGoldleaf_.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolGoldleaf_.Depth = 0;
+            this.BtnToolGoldleaf_.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolGoldleaf_.Icon")));
+            this.BtnToolGoldleaf_.Location = new System.Drawing.Point(18, 877);
+            this.BtnToolGoldleaf_.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolGoldleaf_.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolGoldleaf_.Name = "BtnToolGoldleaf_";
+            this.BtnToolGoldleaf_.Primary = false;
+            this.BtnToolGoldleaf_.Size = new System.Drawing.Size(116, 36);
+            this.BtnToolGoldleaf_.TabIndex = 4;
+            this.BtnToolGoldleaf_.Text = "Goldleaf";
+            this.BtnToolGoldleaf_.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolGoldleaf_.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolGoldleaf_.UseVisualStyleBackColor = true;
             // 
-            // BtnToolN1DUS
+            // BtnToolGCDump
             // 
-            this.BtnToolN1DUS.AutoSize = true;
-            this.BtnToolN1DUS.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolN1DUS.Depth = 0;
-            this.BtnToolN1DUS.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolN1DUS.Icon")));
-            this.BtnToolN1DUS.Location = new System.Drawing.Point(18, 887);
-            this.BtnToolN1DUS.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolN1DUS.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolN1DUS.Name = "BtnToolN1DUS";
-            this.BtnToolN1DUS.Primary = false;
-            this.BtnToolN1DUS.Size = new System.Drawing.Size(93, 36);
-            this.BtnToolN1DUS.TabIndex = 2;
-            this.BtnToolN1DUS.Text = "n1dus";
-            this.BtnToolN1DUS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolN1DUS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolN1DUS.UseVisualStyleBackColor = true;
-            // 
-            // BtnToolYallAreNuts
-            // 
-            this.BtnToolYallAreNuts.AutoSize = true;
-            this.BtnToolYallAreNuts.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolYallAreNuts.Depth = 0;
-            this.BtnToolYallAreNuts.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolYallAreNuts.Icon")));
-            this.BtnToolYallAreNuts.Location = new System.Drawing.Point(18, 935);
-            this.BtnToolYallAreNuts.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolYallAreNuts.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolYallAreNuts.Name = "BtnToolYallAreNuts";
-            this.BtnToolYallAreNuts.Primary = false;
-            this.BtnToolYallAreNuts.Size = new System.Drawing.Size(144, 36);
-            this.BtnToolYallAreNuts.TabIndex = 2;
-            this.BtnToolYallAreNuts.Text = "Y\'allAreNuts";
-            this.BtnToolYallAreNuts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolYallAreNuts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolYallAreNuts.UseVisualStyleBackColor = true;
-            // 
-            // BtnToolScreenTester
-            // 
-            this.BtnToolScreenTester.AutoSize = true;
-            this.BtnToolScreenTester.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolScreenTester.Depth = 0;
-            this.BtnToolScreenTester.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolScreenTester.Icon")));
-            this.BtnToolScreenTester.Location = new System.Drawing.Point(18, 983);
-            this.BtnToolScreenTester.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolScreenTester.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolScreenTester.Name = "BtnToolScreenTester";
-            this.BtnToolScreenTester.Primary = false;
-            this.BtnToolScreenTester.Size = new System.Drawing.Size(172, 36);
-            this.BtnToolScreenTester.TabIndex = 2;
-            this.BtnToolScreenTester.Text = "Screentester-NX";
-            this.BtnToolScreenTester.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolScreenTester.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolScreenTester.UseVisualStyleBackColor = true;
-            // 
-            // BtnAdvAragon
-            // 
-            this.BtnAdvAragon.AutoSize = true;
-            this.BtnAdvAragon.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnAdvAragon.Depth = 0;
-            this.BtnAdvAragon.Icon = ((System.Drawing.Image)(resources.GetObject("BtnAdvAragon.Icon")));
-            this.BtnAdvAragon.Location = new System.Drawing.Point(18, 23);
-            this.BtnAdvAragon.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnAdvAragon.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnAdvAragon.Name = "BtnAdvAragon";
-            this.BtnAdvAragon.Primary = false;
-            this.BtnAdvAragon.Size = new System.Drawing.Size(129, 36);
-            this.BtnAdvAragon.TabIndex = 3;
-            this.BtnAdvAragon.Text = "Kezplez-nx";
-            this.BtnAdvAragon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAdvAragon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnAdvAragon.UseVisualStyleBackColor = true;
-            // 
-            // BtnAdvNetcheat
-            // 
-            this.BtnAdvNetcheat.AutoSize = true;
-            this.BtnAdvNetcheat.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnAdvNetcheat.Depth = 0;
-            this.BtnAdvNetcheat.Icon = ((System.Drawing.Image)(resources.GetObject("BtnAdvNetcheat.Icon")));
-            this.BtnAdvNetcheat.Location = new System.Drawing.Point(18, 71);
-            this.BtnAdvNetcheat.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnAdvNetcheat.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnAdvNetcheat.Name = "BtnAdvNetcheat";
-            this.BtnAdvNetcheat.Primary = false;
-            this.BtnAdvNetcheat.Size = new System.Drawing.Size(148, 36);
-            this.BtnAdvNetcheat.TabIndex = 3;
-            this.BtnAdvNetcheat.Text = "sys-netcheat";
-            this.BtnAdvNetcheat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAdvNetcheat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnAdvNetcheat.UseVisualStyleBackColor = true;
-            // 
-            // BtnAdvSlide
-            // 
-            this.BtnAdvSlide.AutoSize = true;
-            this.BtnAdvSlide.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnAdvSlide.Depth = 0;
-            this.BtnAdvSlide.Icon = ((System.Drawing.Image)(resources.GetObject("BtnAdvSlide.Icon")));
-            this.BtnAdvSlide.Location = new System.Drawing.Point(18, 119);
-            this.BtnAdvSlide.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnAdvSlide.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnAdvSlide.Name = "BtnAdvSlide";
-            this.BtnAdvSlide.Primary = false;
-            this.BtnAdvSlide.Size = new System.Drawing.Size(104, 36);
-            this.BtnAdvSlide.TabIndex = 3;
-            this.BtnAdvSlide.Text = "SlideNX";
-            this.BtnAdvSlide.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAdvSlide.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnAdvSlide.UseVisualStyleBackColor = true;
-            // 
-            // BtnAdvSysFTPD
-            // 
-            this.BtnAdvSysFTPD.AutoSize = true;
-            this.BtnAdvSysFTPD.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnAdvSysFTPD.Depth = 0;
-            this.BtnAdvSysFTPD.Icon = ((System.Drawing.Image)(resources.GetObject("BtnAdvSysFTPD.Icon")));
-            this.BtnAdvSysFTPD.Location = new System.Drawing.Point(18, 167);
-            this.BtnAdvSysFTPD.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnAdvSysFTPD.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnAdvSysFTPD.Name = "BtnAdvSysFTPD";
-            this.BtnAdvSysFTPD.Primary = false;
-            this.BtnAdvSysFTPD.Size = new System.Drawing.Size(112, 36);
-            this.BtnAdvSysFTPD.TabIndex = 3;
-            this.BtnAdvSysFTPD.Text = "sys-FTPD";
-            this.BtnAdvSysFTPD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAdvSysFTPD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnAdvSysFTPD.UseVisualStyleBackColor = true;
-            // 
-            // BtnAdvReiNX
-            // 
-            this.BtnAdvReiNX.AutoSize = true;
-            this.BtnAdvReiNX.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnAdvReiNX.Depth = 0;
-            this.BtnAdvReiNX.Icon = ((System.Drawing.Image)(resources.GetObject("BtnAdvReiNX.Icon")));
-            this.BtnAdvReiNX.Location = new System.Drawing.Point(18, 215);
-            this.BtnAdvReiNX.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnAdvReiNX.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnAdvReiNX.Name = "BtnAdvReiNX";
-            this.BtnAdvReiNX.Primary = false;
-            this.BtnAdvReiNX.Size = new System.Drawing.Size(88, 36);
-            this.BtnAdvReiNX.TabIndex = 3;
-            this.BtnAdvReiNX.Text = "ReiNX";
-            this.BtnAdvReiNX.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAdvReiNX.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnAdvReiNX.UseVisualStyleBackColor = true;
-            // 
-            // BtnAdvSysClk
-            // 
-            this.BtnAdvSysClk.AutoSize = true;
-            this.BtnAdvSysClk.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnAdvSysClk.Depth = 0;
-            this.BtnAdvSysClk.Icon = ((System.Drawing.Image)(resources.GetObject("BtnAdvSysClk.Icon")));
-            this.BtnAdvSysClk.Location = new System.Drawing.Point(18, 263);
-            this.BtnAdvSysClk.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnAdvSysClk.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnAdvSysClk.Name = "BtnAdvSysClk";
-            this.BtnAdvSysClk.Primary = false;
-            this.BtnAdvSysClk.Size = new System.Drawing.Size(103, 36);
-            this.BtnAdvSysClk.TabIndex = 3;
-            this.BtnAdvSysClk.Text = "sys-CLK";
-            this.BtnAdvSysClk.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAdvSysClk.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnAdvSysClk.UseVisualStyleBackColor = true;
-            // 
-            // BtnAdvSwitchPresence
-            // 
-            this.BtnAdvSwitchPresence.AutoSize = true;
-            this.BtnAdvSwitchPresence.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnAdvSwitchPresence.Depth = 0;
-            this.BtnAdvSwitchPresence.Icon = ((System.Drawing.Image)(resources.GetObject("BtnAdvSwitchPresence.Icon")));
-            this.BtnAdvSwitchPresence.Location = new System.Drawing.Point(18, 311);
-            this.BtnAdvSwitchPresence.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnAdvSwitchPresence.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnAdvSwitchPresence.Name = "BtnAdvSwitchPresence";
-            this.BtnAdvSwitchPresence.Primary = false;
-            this.BtnAdvSwitchPresence.Size = new System.Drawing.Size(171, 36);
-            this.BtnAdvSwitchPresence.TabIndex = 3;
-            this.BtnAdvSwitchPresence.Text = "Switch Presence";
-            this.BtnAdvSwitchPresence.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAdvSwitchPresence.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnAdvSwitchPresence.UseVisualStyleBackColor = true;
-            // 
-            // BtnAdvEbooksCollection
-            // 
-            this.BtnAdvEbooksCollection.AutoSize = true;
-            this.BtnAdvEbooksCollection.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnAdvEbooksCollection.Depth = 0;
-            this.BtnAdvEbooksCollection.Icon = ((System.Drawing.Image)(resources.GetObject("BtnAdvEbooksCollection.Icon")));
-            this.BtnAdvEbooksCollection.Location = new System.Drawing.Point(18, 359);
-            this.BtnAdvEbooksCollection.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnAdvEbooksCollection.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnAdvEbooksCollection.Name = "BtnAdvEbooksCollection";
-            this.BtnAdvEbooksCollection.Primary = false;
-            this.BtnAdvEbooksCollection.Size = new System.Drawing.Size(186, 36);
-            this.BtnAdvEbooksCollection.TabIndex = 3;
-            this.BtnAdvEbooksCollection.Text = "Ebooks Collection";
-            this.BtnAdvEbooksCollection.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAdvEbooksCollection.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnAdvEbooksCollection.UseVisualStyleBackColor = true;
-            // 
-            // BtnAdvNXTemesInstaller
-            // 
-            this.BtnAdvNXTemesInstaller.AutoSize = true;
-            this.BtnAdvNXTemesInstaller.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnAdvNXTemesInstaller.Depth = 0;
-            this.BtnAdvNXTemesInstaller.Icon = ((System.Drawing.Image)(resources.GetObject("BtnAdvNXTemesInstaller.Icon")));
-            this.BtnAdvNXTemesInstaller.Location = new System.Drawing.Point(18, 407);
-            this.BtnAdvNXTemesInstaller.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnAdvNXTemesInstaller.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnAdvNXTemesInstaller.Name = "BtnAdvNXTemesInstaller";
-            this.BtnAdvNXTemesInstaller.Primary = false;
-            this.BtnAdvNXTemesInstaller.Size = new System.Drawing.Size(195, 36);
-            this.BtnAdvNXTemesInstaller.TabIndex = 3;
-            this.BtnAdvNXTemesInstaller.Text = "NXThemes Installer";
-            this.BtnAdvNXTemesInstaller.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAdvNXTemesInstaller.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnAdvNXTemesInstaller.UseVisualStyleBackColor = true;
-            // 
-            // BtnAdvHekate
-            // 
-            this.BtnAdvHekate.AutoSize = true;
-            this.BtnAdvHekate.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnAdvHekate.Depth = 0;
-            this.BtnAdvHekate.Icon = ((System.Drawing.Image)(resources.GetObject("BtnAdvHekate.Icon")));
-            this.BtnAdvHekate.Location = new System.Drawing.Point(18, 455);
-            this.BtnAdvHekate.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnAdvHekate.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnAdvHekate.Name = "BtnAdvHekate";
-            this.BtnAdvHekate.Primary = false;
-            this.BtnAdvHekate.Size = new System.Drawing.Size(100, 36);
-            this.BtnAdvHekate.TabIndex = 3;
-            this.BtnAdvHekate.Text = "Hekate";
-            this.BtnAdvHekate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAdvHekate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnAdvHekate.UseVisualStyleBackColor = true;
-            // 
-            // BtnAdvXorPlay
-            // 
-            this.BtnAdvXorPlay.AutoSize = true;
-            this.BtnAdvXorPlay.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnAdvXorPlay.Depth = 0;
-            this.BtnAdvXorPlay.Icon = ((System.Drawing.Image)(resources.GetObject("BtnAdvXorPlay.Icon")));
-            this.BtnAdvXorPlay.Location = new System.Drawing.Point(18, 503);
-            this.BtnAdvXorPlay.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnAdvXorPlay.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnAdvXorPlay.Name = "BtnAdvXorPlay";
-            this.BtnAdvXorPlay.Primary = false;
-            this.BtnAdvXorPlay.Size = new System.Drawing.Size(113, 36);
-            this.BtnAdvXorPlay.TabIndex = 3;
-            this.BtnAdvXorPlay.Text = "Xor.play";
-            this.BtnAdvXorPlay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnAdvXorPlay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnAdvXorPlay.UseVisualStyleBackColor = true;
-            // 
-            // materialLabel1
-            // 
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(0, 0);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(1003, 556);
-            this.materialLabel1.TabIndex = 1;
-            this.materialLabel1.Text = "As of this version, this page is not implemented. \r\n\r\nPlease select another categ" +
-    "ory.";
-            this.materialLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnToolGCDump.AutoSize = true;
+            this.BtnToolGCDump.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolGCDump.Depth = 0;
+            this.BtnToolGCDump.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolGCDump.Icon")));
+            this.BtnToolGCDump.Location = new System.Drawing.Point(18, 925);
+            this.BtnToolGCDump.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolGCDump.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolGCDump.Name = "BtnToolGCDump";
+            this.BtnToolGCDump.Primary = false;
+            this.BtnToolGCDump.Size = new System.Drawing.Size(144, 36);
+            this.BtnToolGCDump.TabIndex = 4;
+            this.BtnToolGCDump.Text = "GCDump Tool";
+            this.BtnToolGCDump.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolGCDump.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolGCDump.UseVisualStyleBackColor = true;
             // 
             // FmSwitchMain
             // 
@@ -3582,17 +3611,8 @@
         private MaterialSkin.Controls.MaterialFlatButton BtnToolGagOrder;
         private MaterialSkin.Controls.MaterialFlatButton BtnToolFireplace;
         private MaterialSkin.Controls.MaterialFlatButton BtnToolKEZPLEZ;
-        private MaterialSkin.Controls.MaterialFlatButton BtnToolHomebrewAppStore;
-        private MaterialSkin.Controls.MaterialFlatButton BtnToolBrainFuckInterpreter;
-        private MaterialSkin.Controls.MaterialFlatButton BtnToolEasyRPGPlayer;
-        private MaterialSkin.Controls.MaterialFlatButton BtnToolTestButtons;
-        private MaterialSkin.Controls.MaterialFlatButton BtnToolVgedit;
-        private MaterialSkin.Controls.MaterialFlatButton BtnToolPixelPainter;
-        private MaterialSkin.Controls.MaterialFlatButton BtnToolNXSH;
-        private MaterialSkin.Controls.MaterialFlatButton BtnToolFTPD4SXOS;
         private MaterialSkin.Controls.MaterialFlatButton BtnToolSwitchXboxController;
         private MaterialSkin.Controls.MaterialFlatButton BtnToolSharedFont;
-        private MaterialSkin.Controls.MaterialFlatButton BtnToolEasyPower;
         private MaterialSkin.Controls.MaterialFlatButton BtnToolAvatool;
         private MaterialSkin.Controls.MaterialFlatButton BtnToolLockPick;
         private MaterialSkin.Controls.MaterialFlatButton BtnToolKEX;
@@ -3614,5 +3634,16 @@
         private MaterialSkin.Controls.MaterialFlatButton BtnAdvNXTemesInstaller;
         private MaterialSkin.Controls.MaterialFlatButton BtnAdvEbooksCollection;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialFlatButton BtnToolEasyPower;
+        private MaterialSkin.Controls.MaterialFlatButton BtnToolPixelPainter;
+        private MaterialSkin.Controls.MaterialFlatButton BtnToolNXSH;
+        private MaterialSkin.Controls.MaterialFlatButton BtnToolFTPD4SXOS;
+        private MaterialSkin.Controls.MaterialFlatButton BtnToolRCMReboo;
+        private MaterialSkin.Controls.MaterialFlatButton BtnToolVgedit;
+        private System.Windows.Forms.Panel panel1;
+        private MaterialSkin.Controls.MaterialFlatButton BtnToolNXPlayer;
+        private MaterialSkin.Controls.MaterialFlatButton BtnToolHBMenu;
+        private MaterialSkin.Controls.MaterialFlatButton BtnToolGoldleaf_;
+        private MaterialSkin.Controls.MaterialFlatButton BtnToolGCDump;
     }
 }

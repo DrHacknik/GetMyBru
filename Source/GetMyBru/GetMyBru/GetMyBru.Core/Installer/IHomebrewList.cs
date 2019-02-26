@@ -102,6 +102,13 @@ namespace GetMyBru.GetMyBru.Core.Installer
         //Tools
         public static readonly string ToolKEZPLEZ = "kezplez-nx";
 
+        public static readonly string ToolVgedit = "vgedit";
+        public static readonly string ToolRCMReboot = "RCMReboot";
+        public static readonly string ToolHBAppstore = "appstore";
+        public static readonly string ToolNXPlay = "nxplay";
+        public static readonly string ToolHBMenu = "hbmunu";
+        public static readonly string ToolGCDumpTool = "gcdumptool";
+        public static readonly string ToolGoldleaf = "Goldleaf";
         public static readonly string ToolFireplace = "FireplaceNX";
         public static readonly string ToolGagOrder = "gagorder";
         public static readonly string ToolNXSHELL = "NX-shell";

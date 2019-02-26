@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="GetMyBru.Core\CacheCheck.cs" />
     <Compile Include="GetMyBru.Core\Config\ConfigParser.cs" />
+    <Compile Include="GetMyBru.Core\Installer\IHomebrewList.cs" />
     <Compile Include="GetMyBru.Core\Installer\IServiceInstall.cs" />
     <Compile Include="GetMyBru.Core\Net\Parser\AppveyorParser.cs" />
     <Compile Include="GetMyBru.Core\Net\Parser\BruParser.cs" />
