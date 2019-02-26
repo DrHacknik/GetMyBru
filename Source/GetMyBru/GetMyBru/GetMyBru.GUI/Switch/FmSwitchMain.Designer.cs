@@ -56,6 +56,15 @@
             this.BtnAdvNetcheat = new MaterialSkin.Controls.MaterialFlatButton();
             this.BtnAdvAragon = new MaterialSkin.Controls.MaterialFlatButton();
             this.TbTools = new System.Windows.Forms.TabPage();
+            this.BtnToolGCDump = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolGoldleaf_ = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolHBMenu = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolNXPlayer = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolEasyPower = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolPixelPainter = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolNXSH = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolFTPD4SXOS = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolRCMReboo = new MaterialSkin.Controls.MaterialFlatButton();
             this.BtnToolScreenTester = new MaterialSkin.Controls.MaterialFlatButton();
             this.BtnToolYallAreNuts = new MaterialSkin.Controls.MaterialFlatButton();
             this.BtnToolN1DUS = new MaterialSkin.Controls.MaterialFlatButton();
@@ -73,6 +82,7 @@
             this.BtnToolGagOrder = new MaterialSkin.Controls.MaterialFlatButton();
             this.BtnToolFireplace = new MaterialSkin.Controls.MaterialFlatButton();
             this.BtnToolKEZPLEZ = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BtnToolVgedit = new MaterialSkin.Controls.MaterialFlatButton();
             this.BtnToolPSwitch = new MaterialSkin.Controls.MaterialFlatButton();
             this.BtnToolNXPlay = new MaterialSkin.Controls.MaterialFlatButton();
             this.BtnToolSwitchGuideUpdater = new MaterialSkin.Controls.MaterialFlatButton();
@@ -196,17 +206,6 @@
             this.TbPage = new MaterialSkin.Controls.MaterialTabControl();
             this.TbSel = new MaterialSkin.Controls.MaterialTabSelector();
             this.TmrCheckVal = new System.Windows.Forms.Timer(this.components);
-            this.BtnToolRCMReboo = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolVgedit = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolEasyPower = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolPixelPainter = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolNXSH = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolFTPD4SXOS = new MaterialSkin.Controls.MaterialFlatButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.BtnToolNXPlayer = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolHBMenu = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolGoldleaf_ = new MaterialSkin.Controls.MaterialFlatButton();
-            this.BtnToolGCDump = new MaterialSkin.Controls.MaterialFlatButton();
             this.PnlBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PcxExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSettings)).BeginInit();
@@ -433,6 +432,7 @@
             this.BtnAdvXorPlay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAdvXorPlay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnAdvXorPlay.UseVisualStyleBackColor = true;
+            this.BtnAdvXorPlay.Click += new System.EventHandler(this.BtnAdvXorPlay_Click);
             // 
             // BtnAdvHekate
             // 
@@ -451,6 +451,7 @@
             this.BtnAdvHekate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAdvHekate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnAdvHekate.UseVisualStyleBackColor = true;
+            this.BtnAdvHekate.Click += new System.EventHandler(this.BtnAdvHekate_Click);
             // 
             // BtnAdvNXTemesInstaller
             // 
@@ -469,6 +470,7 @@
             this.BtnAdvNXTemesInstaller.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAdvNXTemesInstaller.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnAdvNXTemesInstaller.UseVisualStyleBackColor = true;
+            this.BtnAdvNXTemesInstaller.Click += new System.EventHandler(this.BtnAdvNXTemesInstaller_Click);
             // 
             // BtnAdvEbooksCollection
             // 
@@ -487,6 +489,7 @@
             this.BtnAdvEbooksCollection.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAdvEbooksCollection.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnAdvEbooksCollection.UseVisualStyleBackColor = true;
+            this.BtnAdvEbooksCollection.Click += new System.EventHandler(this.BtnAdvEbooksCollection_Click);
             // 
             // BtnAdvSwitchPresence
             // 
@@ -505,6 +508,7 @@
             this.BtnAdvSwitchPresence.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAdvSwitchPresence.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnAdvSwitchPresence.UseVisualStyleBackColor = true;
+            this.BtnAdvSwitchPresence.Click += new System.EventHandler(this.BtnAdvSwitchPresence_Click);
             // 
             // BtnAdvSysClk
             // 
@@ -523,6 +527,7 @@
             this.BtnAdvSysClk.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAdvSysClk.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnAdvSysClk.UseVisualStyleBackColor = true;
+            this.BtnAdvSysClk.Click += new System.EventHandler(this.BtnAdvSysClk_Click);
             // 
             // BtnAdvReiNX
             // 
@@ -541,6 +546,7 @@
             this.BtnAdvReiNX.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAdvReiNX.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnAdvReiNX.UseVisualStyleBackColor = true;
+            this.BtnAdvReiNX.Click += new System.EventHandler(this.BtnAdvReiNX_Click);
             // 
             // BtnAdvSysFTPD
             // 
@@ -559,6 +565,7 @@
             this.BtnAdvSysFTPD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAdvSysFTPD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnAdvSysFTPD.UseVisualStyleBackColor = true;
+            this.BtnAdvSysFTPD.Click += new System.EventHandler(this.BtnAdvSysFTPD_Click);
             // 
             // BtnAdvSlide
             // 
@@ -577,6 +584,7 @@
             this.BtnAdvSlide.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAdvSlide.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnAdvSlide.UseVisualStyleBackColor = true;
+            this.BtnAdvSlide.Click += new System.EventHandler(this.BtnAdvSlide_Click);
             // 
             // BtnAdvNetcheat
             // 
@@ -595,6 +603,7 @@
             this.BtnAdvNetcheat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAdvNetcheat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnAdvNetcheat.UseVisualStyleBackColor = true;
+            this.BtnAdvNetcheat.Click += new System.EventHandler(this.BtnAdvNetcheat_Click);
             // 
             // BtnAdvAragon
             // 
@@ -613,12 +622,12 @@
             this.BtnAdvAragon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnAdvAragon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnAdvAragon.UseVisualStyleBackColor = true;
+            this.BtnAdvAragon.Click += new System.EventHandler(this.BtnAdvAragon_Click);
             // 
             // TbTools
             // 
             this.TbTools.AutoScroll = true;
             this.TbTools.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.TbTools.Controls.Add(this.panel1);
             this.TbTools.Controls.Add(this.BtnToolGCDump);
             this.TbTools.Controls.Add(this.BtnToolGoldleaf_);
             this.TbTools.Controls.Add(this.BtnToolHBMenu);
@@ -681,13 +690,184 @@
             this.TbTools.TabIndex = 4;
             this.TbTools.Text = "Tools";
             // 
+            // BtnToolGCDump
+            // 
+            this.BtnToolGCDump.AutoSize = true;
+            this.BtnToolGCDump.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolGCDump.Depth = 0;
+            this.BtnToolGCDump.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolGCDump.Icon")));
+            this.BtnToolGCDump.Location = new System.Drawing.Point(18, 935);
+            this.BtnToolGCDump.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolGCDump.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolGCDump.Name = "BtnToolGCDump";
+            this.BtnToolGCDump.Primary = false;
+            this.BtnToolGCDump.Size = new System.Drawing.Size(144, 36);
+            this.BtnToolGCDump.TabIndex = 4;
+            this.BtnToolGCDump.Text = "GCDump Tool";
+            this.BtnToolGCDump.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolGCDump.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolGCDump.UseVisualStyleBackColor = true;
+            this.BtnToolGCDump.Click += new System.EventHandler(this.BtnToolGCDump_Click);
+            // 
+            // BtnToolGoldleaf_
+            // 
+            this.BtnToolGoldleaf_.AutoSize = true;
+            this.BtnToolGoldleaf_.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolGoldleaf_.Depth = 0;
+            this.BtnToolGoldleaf_.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolGoldleaf_.Icon")));
+            this.BtnToolGoldleaf_.Location = new System.Drawing.Point(18, 887);
+            this.BtnToolGoldleaf_.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolGoldleaf_.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolGoldleaf_.Name = "BtnToolGoldleaf_";
+            this.BtnToolGoldleaf_.Primary = false;
+            this.BtnToolGoldleaf_.Size = new System.Drawing.Size(116, 36);
+            this.BtnToolGoldleaf_.TabIndex = 4;
+            this.BtnToolGoldleaf_.Text = "Goldleaf";
+            this.BtnToolGoldleaf_.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolGoldleaf_.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolGoldleaf_.UseVisualStyleBackColor = true;
+            this.BtnToolGoldleaf_.Click += new System.EventHandler(this.BtnToolGoldleaf__Click);
+            // 
+            // BtnToolHBMenu
+            // 
+            this.BtnToolHBMenu.AutoSize = true;
+            this.BtnToolHBMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolHBMenu.Depth = 0;
+            this.BtnToolHBMenu.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolHBMenu.Icon")));
+            this.BtnToolHBMenu.Location = new System.Drawing.Point(18, 839);
+            this.BtnToolHBMenu.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolHBMenu.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolHBMenu.Name = "BtnToolHBMenu";
+            this.BtnToolHBMenu.Primary = false;
+            this.BtnToolHBMenu.Size = new System.Drawing.Size(167, 36);
+            this.BtnToolHBMenu.TabIndex = 4;
+            this.BtnToolHBMenu.Text = "Homebrew Menu";
+            this.BtnToolHBMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolHBMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolHBMenu.UseVisualStyleBackColor = true;
+            this.BtnToolHBMenu.Click += new System.EventHandler(this.BtnToolHBMenu_Click);
+            // 
+            // BtnToolNXPlayer
+            // 
+            this.BtnToolNXPlayer.AutoSize = true;
+            this.BtnToolNXPlayer.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolNXPlayer.Depth = 0;
+            this.BtnToolNXPlayer.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolNXPlayer.Icon")));
+            this.BtnToolNXPlayer.Location = new System.Drawing.Point(18, 791);
+            this.BtnToolNXPlayer.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolNXPlayer.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolNXPlayer.Name = "BtnToolNXPlayer";
+            this.BtnToolNXPlayer.Primary = false;
+            this.BtnToolNXPlayer.Size = new System.Drawing.Size(101, 36);
+            this.BtnToolNXPlayer.TabIndex = 4;
+            this.BtnToolNXPlayer.Text = "NXPlay";
+            this.BtnToolNXPlayer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolNXPlayer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolNXPlayer.UseVisualStyleBackColor = true;
+            this.BtnToolNXPlayer.Click += new System.EventHandler(this.BtnToolNXPlayer_Click);
+            // 
+            // BtnToolEasyPower
+            // 
+            this.BtnToolEasyPower.AutoSize = true;
+            this.BtnToolEasyPower.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolEasyPower.Depth = 0;
+            this.BtnToolEasyPower.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolEasyPower.Icon")));
+            this.BtnToolEasyPower.Location = new System.Drawing.Point(18, 743);
+            this.BtnToolEasyPower.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolEasyPower.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolEasyPower.Name = "BtnToolEasyPower";
+            this.BtnToolEasyPower.Primary = false;
+            this.BtnToolEasyPower.Size = new System.Drawing.Size(129, 36);
+            this.BtnToolEasyPower.TabIndex = 4;
+            this.BtnToolEasyPower.Text = "EasyPower";
+            this.BtnToolEasyPower.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolEasyPower.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolEasyPower.UseVisualStyleBackColor = true;
+            this.BtnToolEasyPower.Click += new System.EventHandler(this.BtnToolEasyPower_Click);
+            // 
+            // BtnToolPixelPainter
+            // 
+            this.BtnToolPixelPainter.AutoSize = true;
+            this.BtnToolPixelPainter.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolPixelPainter.Depth = 0;
+            this.BtnToolPixelPainter.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolPixelPainter.Icon")));
+            this.BtnToolPixelPainter.Location = new System.Drawing.Point(18, 695);
+            this.BtnToolPixelPainter.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolPixelPainter.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolPixelPainter.Name = "BtnToolPixelPainter";
+            this.BtnToolPixelPainter.Primary = false;
+            this.BtnToolPixelPainter.Size = new System.Drawing.Size(145, 36);
+            this.BtnToolPixelPainter.TabIndex = 5;
+            this.BtnToolPixelPainter.Text = "Pixel Painter";
+            this.BtnToolPixelPainter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolPixelPainter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolPixelPainter.UseVisualStyleBackColor = true;
+            this.BtnToolPixelPainter.Click += new System.EventHandler(this.BtnToolPixelPainter_Click);
+            // 
+            // BtnToolNXSH
+            // 
+            this.BtnToolNXSH.AutoSize = true;
+            this.BtnToolNXSH.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolNXSH.Depth = 0;
+            this.BtnToolNXSH.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolNXSH.Icon")));
+            this.BtnToolNXSH.Location = new System.Drawing.Point(18, 647);
+            this.BtnToolNXSH.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolNXSH.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolNXSH.Name = "BtnToolNXSH";
+            this.BtnToolNXSH.Primary = false;
+            this.BtnToolNXSH.Size = new System.Drawing.Size(85, 36);
+            this.BtnToolNXSH.TabIndex = 6;
+            this.BtnToolNXSH.Text = "NXSH";
+            this.BtnToolNXSH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolNXSH.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolNXSH.UseVisualStyleBackColor = true;
+            this.BtnToolNXSH.Click += new System.EventHandler(this.BtnToolNXSH_Click);
+            // 
+            // BtnToolFTPD4SXOS
+            // 
+            this.BtnToolFTPD4SXOS.AutoSize = true;
+            this.BtnToolFTPD4SXOS.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolFTPD4SXOS.Depth = 0;
+            this.BtnToolFTPD4SXOS.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolFTPD4SXOS.Icon")));
+            this.BtnToolFTPD4SXOS.Location = new System.Drawing.Point(18, 599);
+            this.BtnToolFTPD4SXOS.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolFTPD4SXOS.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolFTPD4SXOS.Name = "BtnToolFTPD4SXOS";
+            this.BtnToolFTPD4SXOS.Primary = false;
+            this.BtnToolFTPD4SXOS.Size = new System.Drawing.Size(125, 36);
+            this.BtnToolFTPD4SXOS.TabIndex = 7;
+            this.BtnToolFTPD4SXOS.Text = "FTPD4SXOS";
+            this.BtnToolFTPD4SXOS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolFTPD4SXOS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolFTPD4SXOS.UseVisualStyleBackColor = true;
+            this.BtnToolFTPD4SXOS.Click += new System.EventHandler(this.BtnToolFTPD4SXOS_Click);
+            // 
+            // BtnToolRCMReboo
+            // 
+            this.BtnToolRCMReboo.AutoSize = true;
+            this.BtnToolRCMReboo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolRCMReboo.Depth = 0;
+            this.BtnToolRCMReboo.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolRCMReboo.Icon")));
+            this.BtnToolRCMReboo.Location = new System.Drawing.Point(18, 503);
+            this.BtnToolRCMReboo.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolRCMReboo.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolRCMReboo.Name = "BtnToolRCMReboo";
+            this.BtnToolRCMReboo.Primary = false;
+            this.BtnToolRCMReboo.Size = new System.Drawing.Size(134, 36);
+            this.BtnToolRCMReboo.TabIndex = 2;
+            this.BtnToolRCMReboo.Text = "RCM Reboot";
+            this.BtnToolRCMReboo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolRCMReboo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolRCMReboo.UseVisualStyleBackColor = true;
+            this.BtnToolRCMReboo.Click += new System.EventHandler(this.BtnToolRCMReboo_Click);
+            // 
             // BtnToolScreenTester
             // 
             this.BtnToolScreenTester.AutoSize = true;
             this.BtnToolScreenTester.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolScreenTester.Depth = 0;
             this.BtnToolScreenTester.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolScreenTester.Icon")));
-            this.BtnToolScreenTester.Location = new System.Drawing.Point(18, 445);
+            this.BtnToolScreenTester.Location = new System.Drawing.Point(18, 455);
             this.BtnToolScreenTester.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolScreenTester.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolScreenTester.Name = "BtnToolScreenTester";
@@ -698,6 +878,7 @@
             this.BtnToolScreenTester.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnToolScreenTester.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnToolScreenTester.UseVisualStyleBackColor = true;
+            this.BtnToolScreenTester.Click += new System.EventHandler(this.BtnToolScreenTester_Click);
             // 
             // BtnToolYallAreNuts
             // 
@@ -705,7 +886,7 @@
             this.BtnToolYallAreNuts.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolYallAreNuts.Depth = 0;
             this.BtnToolYallAreNuts.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolYallAreNuts.Icon")));
-            this.BtnToolYallAreNuts.Location = new System.Drawing.Point(18, 397);
+            this.BtnToolYallAreNuts.Location = new System.Drawing.Point(18, 407);
             this.BtnToolYallAreNuts.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolYallAreNuts.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolYallAreNuts.Name = "BtnToolYallAreNuts";
@@ -716,6 +897,7 @@
             this.BtnToolYallAreNuts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnToolYallAreNuts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnToolYallAreNuts.UseVisualStyleBackColor = true;
+            this.BtnToolYallAreNuts.Click += new System.EventHandler(this.BtnToolYallAreNuts_Click);
             // 
             // BtnToolN1DUS
             // 
@@ -723,7 +905,7 @@
             this.BtnToolN1DUS.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolN1DUS.Depth = 0;
             this.BtnToolN1DUS.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolN1DUS.Icon")));
-            this.BtnToolN1DUS.Location = new System.Drawing.Point(18, 349);
+            this.BtnToolN1DUS.Location = new System.Drawing.Point(18, 359);
             this.BtnToolN1DUS.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolN1DUS.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolN1DUS.Name = "BtnToolN1DUS";
@@ -734,6 +916,7 @@
             this.BtnToolN1DUS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnToolN1DUS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnToolN1DUS.UseVisualStyleBackColor = true;
+            this.BtnToolN1DUS.Click += new System.EventHandler(this.BtnToolN1DUS_Click);
             // 
             // BtnToolPPLay
             // 
@@ -741,7 +924,7 @@
             this.BtnToolPPLay.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolPPLay.Depth = 0;
             this.BtnToolPPLay.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolPPLay.Icon")));
-            this.BtnToolPPLay.Location = new System.Drawing.Point(18, 301);
+            this.BtnToolPPLay.Location = new System.Drawing.Point(18, 311);
             this.BtnToolPPLay.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolPPLay.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolPPLay.Name = "BtnToolPPLay";
@@ -752,6 +935,7 @@
             this.BtnToolPPLay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnToolPPLay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnToolPPLay.UseVisualStyleBackColor = true;
+            this.BtnToolPPLay.Click += new System.EventHandler(this.BtnToolPPLay_Click);
             // 
             // BtnToolBrewJS
             // 
@@ -759,7 +943,7 @@
             this.BtnToolBrewJS.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolBrewJS.Depth = 0;
             this.BtnToolBrewJS.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolBrewJS.Icon")));
-            this.BtnToolBrewJS.Location = new System.Drawing.Point(18, 253);
+            this.BtnToolBrewJS.Location = new System.Drawing.Point(18, 263);
             this.BtnToolBrewJS.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolBrewJS.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolBrewJS.Name = "BtnToolBrewJS";
@@ -770,6 +954,7 @@
             this.BtnToolBrewJS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnToolBrewJS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnToolBrewJS.UseVisualStyleBackColor = true;
+            this.BtnToolBrewJS.Click += new System.EventHandler(this.BtnToolBrewJS_Click);
             // 
             // BtnToolKipSelect
             // 
@@ -777,7 +962,7 @@
             this.BtnToolKipSelect.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolKipSelect.Depth = 0;
             this.BtnToolKipSelect.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolKipSelect.Icon")));
-            this.BtnToolKipSelect.Location = new System.Drawing.Point(18, 205);
+            this.BtnToolKipSelect.Location = new System.Drawing.Point(18, 215);
             this.BtnToolKipSelect.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolKipSelect.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolKipSelect.Name = "BtnToolKipSelect";
@@ -788,6 +973,7 @@
             this.BtnToolKipSelect.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnToolKipSelect.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnToolKipSelect.UseVisualStyleBackColor = true;
+            this.BtnToolKipSelect.Click += new System.EventHandler(this.BtnToolKipSelect_Click);
             // 
             // BtnToolAvatool
             // 
@@ -795,7 +981,7 @@
             this.BtnToolAvatool.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolAvatool.Depth = 0;
             this.BtnToolAvatool.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolAvatool.Icon")));
-            this.BtnToolAvatool.Location = new System.Drawing.Point(18, 157);
+            this.BtnToolAvatool.Location = new System.Drawing.Point(18, 167);
             this.BtnToolAvatool.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolAvatool.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolAvatool.Name = "BtnToolAvatool";
@@ -806,6 +992,7 @@
             this.BtnToolAvatool.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnToolAvatool.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnToolAvatool.UseVisualStyleBackColor = true;
+            this.BtnToolAvatool.Click += new System.EventHandler(this.BtnToolAvatool_Click);
             // 
             // BtnToolLockPick
             // 
@@ -813,7 +1000,7 @@
             this.BtnToolLockPick.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolLockPick.Depth = 0;
             this.BtnToolLockPick.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolLockPick.Icon")));
-            this.BtnToolLockPick.Location = new System.Drawing.Point(18, 109);
+            this.BtnToolLockPick.Location = new System.Drawing.Point(18, 119);
             this.BtnToolLockPick.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolLockPick.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolLockPick.Name = "BtnToolLockPick";
@@ -824,6 +1011,7 @@
             this.BtnToolLockPick.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnToolLockPick.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnToolLockPick.UseVisualStyleBackColor = true;
+            this.BtnToolLockPick.Click += new System.EventHandler(this.BtnToolLockPick_Click);
             // 
             // BtnToolKEX
             // 
@@ -831,7 +1019,7 @@
             this.BtnToolKEX.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolKEX.Depth = 0;
             this.BtnToolKEX.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolKEX.Icon")));
-            this.BtnToolKEX.Location = new System.Drawing.Point(18, 61);
+            this.BtnToolKEX.Location = new System.Drawing.Point(18, 71);
             this.BtnToolKEX.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolKEX.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolKEX.Name = "BtnToolKEX";
@@ -842,6 +1030,7 @@
             this.BtnToolKEX.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnToolKEX.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnToolKEX.UseVisualStyleBackColor = true;
+            this.BtnToolKEX.Click += new System.EventHandler(this.BtnToolKEX_Click);
             // 
             // BtnToolSharedFont
             // 
@@ -849,7 +1038,7 @@
             this.BtnToolSharedFont.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BtnToolSharedFont.Depth = 0;
             this.BtnToolSharedFont.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolSharedFont.Icon")));
-            this.BtnToolSharedFont.Location = new System.Drawing.Point(18, 541);
+            this.BtnToolSharedFont.Location = new System.Drawing.Point(18, 551);
             this.BtnToolSharedFont.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.BtnToolSharedFont.MouseState = MaterialSkin.MouseState.HOVER;
             this.BtnToolSharedFont.Name = "BtnToolSharedFont";
@@ -860,6 +1049,7 @@
             this.BtnToolSharedFont.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnToolSharedFont.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnToolSharedFont.UseVisualStyleBackColor = true;
+            this.BtnToolSharedFont.Click += new System.EventHandler(this.BtnToolSharedFont_Click);
             // 
             // BtnToolSwitchXboxController
             // 
@@ -986,6 +1176,25 @@
             this.BtnToolKEZPLEZ.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnToolKEZPLEZ.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnToolKEZPLEZ.UseVisualStyleBackColor = true;
+            // 
+            // BtnToolVgedit
+            // 
+            this.BtnToolVgedit.AutoSize = true;
+            this.BtnToolVgedit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BtnToolVgedit.Depth = 0;
+            this.BtnToolVgedit.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolVgedit.Icon")));
+            this.BtnToolVgedit.Location = new System.Drawing.Point(18, 23);
+            this.BtnToolVgedit.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BtnToolVgedit.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnToolVgedit.Name = "BtnToolVgedit";
+            this.BtnToolVgedit.Primary = false;
+            this.BtnToolVgedit.Size = new System.Drawing.Size(96, 36);
+            this.BtnToolVgedit.TabIndex = 2;
+            this.BtnToolVgedit.Text = "VGedit";
+            this.BtnToolVgedit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnToolVgedit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnToolVgedit.UseVisualStyleBackColor = true;
+            this.BtnToolVgedit.Click += new System.EventHandler(this.BtnToolVgedit_Click);
             // 
             // BtnToolPSwitch
             // 
@@ -1564,6 +1773,7 @@
             this.BtnEmuGenesisPlusGX.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuGenesisPlusGX.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuGenesisPlusGX.UseVisualStyleBackColor = true;
+            this.BtnEmuGenesisPlusGX.Click += new System.EventHandler(this.BtnEmuGenesisPlusGX_Click);
             // 
             // BtnEmuCHIP8
             // 
@@ -1582,6 +1792,7 @@
             this.BtnEmuCHIP8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuCHIP8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuCHIP8.UseVisualStyleBackColor = true;
+            this.BtnEmuCHIP8.Click += new System.EventHandler(this.BtnEmuCHIP8_Click);
             // 
             // BtnEmuFCUMM
             // 
@@ -1600,6 +1811,7 @@
             this.BtnEmuFCUMM.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuFCUMM.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuFCUMM.UseVisualStyleBackColor = true;
+            this.BtnEmuFCUMM.Click += new System.EventHandler(this.BtnEmuFCUMM_Click);
             // 
             // BtnEmuUae4all2
             // 
@@ -1618,6 +1830,7 @@
             this.BtnEmuUae4all2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuUae4all2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuUae4all2.UseVisualStyleBackColor = true;
+            this.BtnEmuUae4all2.Click += new System.EventHandler(this.BtnEmuUae4all2_Click);
             // 
             // BtnEmuSNES9x_2010
             // 
@@ -1636,6 +1849,7 @@
             this.BtnEmuSNES9x_2010.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuSNES9x_2010.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuSNES9x_2010.UseVisualStyleBackColor = true;
+            this.BtnEmuSNES9x_2010.Click += new System.EventHandler(this.BtnEmuSNES9x_2010_Click);
             // 
             // BtnEmuPFBAFInal
             // 
@@ -1654,6 +1868,7 @@
             this.BtnEmuPFBAFInal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuPFBAFInal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuPFBAFInal.UseVisualStyleBackColor = true;
+            this.BtnEmuPFBAFInal.Click += new System.EventHandler(this.BtnEmuPFBAFInal_Click);
             // 
             // BtnEmuMame2000Retro
             // 
@@ -1672,6 +1887,7 @@
             this.BtnEmuMame2000Retro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuMame2000Retro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuMame2000Retro.UseVisualStyleBackColor = true;
+            this.BtnEmuMame2000Retro.Click += new System.EventHandler(this.BtnEmuMame2000Retro_Click);
             // 
             // BtnEmuMameRetro
             // 
@@ -1690,6 +1906,7 @@
             this.BtnEmuMameRetro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuMameRetro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuMameRetro.UseVisualStyleBackColor = true;
+            this.BtnEmuMameRetro.Click += new System.EventHandler(this.BtnEmuMameRetro_Click);
             // 
             // BtnEmuNeoPopSDL
             // 
@@ -1708,6 +1925,7 @@
             this.BtnEmuNeoPopSDL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuNeoPopSDL.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuNeoPopSDL.UseVisualStyleBackColor = true;
+            this.BtnEmuNeoPopSDL.Click += new System.EventHandler(this.BtnEmuNeoPopSDL_Click);
             // 
             // BtnEmuSnex9x2010
             // 
@@ -1726,6 +1944,7 @@
             this.BtnEmuSnex9x2010.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuSnex9x2010.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuSnex9x2010.UseVisualStyleBackColor = true;
+            this.BtnEmuSnex9x2010.Click += new System.EventHandler(this.BtnEmuSnex9x2010_Click);
             // 
             // BtnEmuGambatte
             // 
@@ -1744,6 +1963,7 @@
             this.BtnEmuGambatte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuGambatte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuGambatte.UseVisualStyleBackColor = true;
+            this.BtnEmuGambatte.Click += new System.EventHandler(this.BtnEmuGambatte_Click);
             // 
             // BtnEmuOpenBor
             // 
@@ -1762,6 +1982,7 @@
             this.BtnEmuOpenBor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuOpenBor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuOpenBor.UseVisualStyleBackColor = true;
+            this.BtnEmuOpenBor.Click += new System.EventHandler(this.BtnEmuOpenBor_Click);
             // 
             // BtnEmuBeetlePSX
             // 
@@ -1780,6 +2001,7 @@
             this.BtnEmuBeetlePSX.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuBeetlePSX.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuBeetlePSX.UseVisualStyleBackColor = true;
+            this.BtnEmuBeetlePSX.Click += new System.EventHandler(this.BtnEmuBeetlePSX_Click);
             // 
             // BtnEmuVBANextRetro
             // 
@@ -1798,6 +2020,7 @@
             this.BtnEmuVBANextRetro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuVBANextRetro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuVBANextRetro.UseVisualStyleBackColor = true;
+            this.BtnEmuVBANextRetro.Click += new System.EventHandler(this.BtnEmuVBANextRetro_Click);
             // 
             // BtnEmuGDKGBA
             // 
@@ -1816,6 +2039,7 @@
             this.BtnEmuGDKGBA.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuGDKGBA.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuGDKGBA.UseVisualStyleBackColor = true;
+            this.BtnEmuGDKGBA.Click += new System.EventHandler(this.BtnEmuGDKGBA_Click);
             // 
             // BtnEmuJaguar
             // 
@@ -1834,6 +2058,7 @@
             this.BtnEmuJaguar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuJaguar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuJaguar.UseVisualStyleBackColor = true;
+            this.BtnEmuJaguar.Click += new System.EventHandler(this.BtnEmuJaguar_Click);
             // 
             // BtnEmuMAME
             // 
@@ -1852,6 +2077,7 @@
             this.BtnEmuMAME.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuMAME.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuMAME.UseVisualStyleBackColor = true;
+            this.BtnEmuMAME.Click += new System.EventHandler(this.BtnEmuMAME_Click);
             // 
             // BtnEmuVBANext
             // 
@@ -1870,6 +2096,7 @@
             this.BtnEmuVBANext.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuVBANext.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuVBANext.UseVisualStyleBackColor = true;
+            this.BtnEmuVBANext.Click += new System.EventHandler(this.BtnEmuVBANext_Click);
             // 
             // BtnEmuScummVM
             // 
@@ -1888,6 +2115,7 @@
             this.BtnEmuScummVM.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuScummVM.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuScummVM.UseVisualStyleBackColor = true;
+            this.BtnEmuScummVM.Click += new System.EventHandler(this.BtnEmuScummVM_Click);
             // 
             // BtnEmuMGBA
             // 
@@ -1906,6 +2134,7 @@
             this.BtnEmuMGBA.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuMGBA.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuMGBA.UseVisualStyleBackColor = true;
+            this.BtnEmuMGBA.Click += new System.EventHandler(this.BtnEmuMGBA_Click);
             // 
             // BtnEmuPSnes
             // 
@@ -1924,6 +2153,7 @@
             this.BtnEmuPSnes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuPSnes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuPSnes.UseVisualStyleBackColor = true;
+            this.BtnEmuPSnes.Click += new System.EventHandler(this.BtnEmuPSnes_Click);
             // 
             // BtnEmuPicodrive
             // 
@@ -1942,6 +2172,7 @@
             this.BtnEmuPicodrive.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuPicodrive.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuPicodrive.UseVisualStyleBackColor = true;
+            this.BtnEmuPicodrive.Click += new System.EventHandler(this.BtnEmuPicodrive_Click);
             // 
             // BtnEmuGearboy
             // 
@@ -1960,6 +2191,7 @@
             this.BtnEmuGearboy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuGearboy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuGearboy.UseVisualStyleBackColor = true;
+            this.BtnEmuGearboy.Click += new System.EventHandler(this.BtnEmuGearboy_Click);
             // 
             // BtnEmuLaiNES
             // 
@@ -1978,6 +2210,7 @@
             this.BtnEmuLaiNES.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuLaiNES.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuLaiNES.UseVisualStyleBackColor = true;
+            this.BtnEmuLaiNES.Click += new System.EventHandler(this.BtnEmuLaiNES_Click);
             // 
             // BtnEmuMelonds
             // 
@@ -1996,6 +2229,7 @@
             this.BtnEmuMelonds.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuMelonds.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuMelonds.UseVisualStyleBackColor = true;
+            this.BtnEmuMelonds.Click += new System.EventHandler(this.BtnEmuMelonds_Click);
             // 
             // BtnEmuKhedgb
             // 
@@ -2014,6 +2248,7 @@
             this.BtnEmuKhedgb.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuKhedgb.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuKhedgb.UseVisualStyleBackColor = true;
+            this.BtnEmuKhedgb.Click += new System.EventHandler(this.BtnEmuKhedgb_Click);
             // 
             // BtnEmuRetroarch
             // 
@@ -2032,6 +2267,7 @@
             this.BtnEmuRetroarch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuRetroarch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuRetroarch.UseVisualStyleBackColor = true;
+            this.BtnEmuRetroarch.Click += new System.EventHandler(this.BtnEmuRetroarch_Click);
             // 
             // BtnEmuDessmume
             // 
@@ -2050,6 +2286,7 @@
             this.BtnEmuDessmume.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuDessmume.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEmuDessmume.UseVisualStyleBackColor = true;
+            this.BtnEmuDessmume.Click += new System.EventHandler(this.BtnEmuDessmume_Click);
             // 
             // TbGame
             // 
@@ -2137,6 +2374,7 @@
             this.BtnGameDOOM64.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameDOOM64.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameDOOM64.UseVisualStyleBackColor = true;
+            this.BtnGameDOOM64.Click += new System.EventHandler(this.BtnGameDOOM64_Click);
             // 
             // BtnGameNXQuake
             // 
@@ -2155,6 +2393,7 @@
             this.BtnGameNXQuake.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameNXQuake.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameNXQuake.UseVisualStyleBackColor = true;
+            this.BtnGameNXQuake.Click += new System.EventHandler(this.BtnGameNXQuake_Click);
             // 
             // BtnGameKensLab
             // 
@@ -2173,6 +2412,7 @@
             this.BtnGameKensLab.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameKensLab.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameKensLab.UseVisualStyleBackColor = true;
+            this.BtnGameKensLab.Click += new System.EventHandler(this.BtnGameKensLab_Click);
             // 
             // BtnGameMemoryGame
             // 
@@ -2191,6 +2431,7 @@
             this.BtnGameMemoryGame.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameMemoryGame.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameMemoryGame.UseVisualStyleBackColor = true;
+            this.BtnGameMemoryGame.Click += new System.EventHandler(this.BtnGameMemoryGame_Click);
             // 
             // BtnGameNXEngine
             // 
@@ -2209,6 +2450,7 @@
             this.BtnGameNXEngine.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameNXEngine.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameNXEngine.UseVisualStyleBackColor = true;
+            this.BtnGameNXEngine.Click += new System.EventHandler(this.BtnGameNXEngine_Click);
             // 
             // BtnGameMirrorMagic
             // 
@@ -2227,6 +2469,7 @@
             this.BtnGameMirrorMagic.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameMirrorMagic.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameMirrorMagic.UseVisualStyleBackColor = true;
+            this.BtnGameMirrorMagic.Click += new System.EventHandler(this.BtnGameMirrorMagic_Click);
             // 
             // BtnGamePushA
             // 
@@ -2245,6 +2488,7 @@
             this.BtnGamePushA.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGamePushA.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGamePushA.UseVisualStyleBackColor = true;
+            this.BtnGamePushA.Click += new System.EventHandler(this.BtnGamePushA_Click);
             // 
             // BtnGameChocolateDoom
             // 
@@ -2263,6 +2507,7 @@
             this.BtnGameChocolateDoom.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameChocolateDoom.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameChocolateDoom.UseVisualStyleBackColor = true;
+            this.BtnGameChocolateDoom.Click += new System.EventHandler(this.BtnGameChocolateDoom_Click);
             // 
             // BtnGameRocksDiamonds
             // 
@@ -2281,6 +2526,7 @@
             this.BtnGameRocksDiamonds.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameRocksDiamonds.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameRocksDiamonds.UseVisualStyleBackColor = true;
+            this.BtnGameRocksDiamonds.Click += new System.EventHandler(this.BtnGameRocksDiamonds_Click);
             // 
             // BtnGameLiero
             // 
@@ -2299,6 +2545,7 @@
             this.BtnGameLiero.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameLiero.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameLiero.UseVisualStyleBackColor = true;
+            this.BtnGameLiero.Click += new System.EventHandler(this.BtnGameLiero_Click);
             // 
             // BtnGameMaze
             // 
@@ -2317,6 +2564,7 @@
             this.BtnGameMaze.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameMaze.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameMaze.UseVisualStyleBackColor = true;
+            this.BtnGameMaze.Click += new System.EventHandler(this.BtnGameMaze_Click);
             // 
             // BtnGameClawSwitch
             // 
@@ -2335,6 +2583,7 @@
             this.BtnGameClawSwitch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameClawSwitch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameClawSwitch.UseVisualStyleBackColor = true;
+            this.BtnGameClawSwitch.Click += new System.EventHandler(this.BtnGameClawSwitch_Click);
             // 
             // BtnGameSudoku
             // 
@@ -2353,6 +2602,7 @@
             this.BtnGameSudoku.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameSudoku.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameSudoku.UseVisualStyleBackColor = true;
+            this.BtnGameSudoku.Click += new System.EventHandler(this.BtnGameSudoku_Click);
             // 
             // BtnGameTetris
             // 
@@ -2371,6 +2621,7 @@
             this.BtnGameTetris.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameTetris.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameTetris.UseVisualStyleBackColor = true;
+            this.BtnGameTetris.Click += new System.EventHandler(this.BtnGameTetris_Click);
             // 
             // BtnGameSonicRobotBlast
             // 
@@ -2389,6 +2640,7 @@
             this.BtnGameSonicRobotBlast.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameSonicRobotBlast.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameSonicRobotBlast.UseVisualStyleBackColor = true;
+            this.BtnGameSonicRobotBlast.Click += new System.EventHandler(this.BtnGameSonicRobotBlast_Click);
             // 
             // BtnGameHata
             // 
@@ -2407,6 +2659,7 @@
             this.BtnGameHata.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameHata.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameHata.UseVisualStyleBackColor = true;
+            this.BtnGameHata.Click += new System.EventHandler(this.BtnGameHata_Click);
             // 
             // BtnGameSimon
             // 
@@ -2425,6 +2678,7 @@
             this.BtnGameSimon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameSimon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameSimon.UseVisualStyleBackColor = true;
+            this.BtnGameSimon.Click += new System.EventHandler(this.BtnGameSimon_Click);
             // 
             // BtnGameDX2Switch
             // 
@@ -2443,6 +2697,7 @@
             this.BtnGameDX2Switch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameDX2Switch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameDX2Switch.UseVisualStyleBackColor = true;
+            this.BtnGameDX2Switch.Click += new System.EventHandler(this.BtnGameDX2Switch_Click);
             // 
             // BtnGameHamsters
             // 
@@ -2461,6 +2716,7 @@
             this.BtnGameHamsters.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameHamsters.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameHamsters.UseVisualStyleBackColor = true;
+            this.BtnGameHamsters.Click += new System.EventHandler(this.BtnGameHamsters_Click);
             // 
             // BtnGameDDLCLove
             // 
@@ -2479,6 +2735,7 @@
             this.BtnGameDDLCLove.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameDDLCLove.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameDDLCLove.UseVisualStyleBackColor = true;
+            this.BtnGameDDLCLove.Click += new System.EventHandler(this.BtnGameDDLCLove_Click);
             // 
             // BtnGameREminiscence
             // 
@@ -2497,6 +2754,7 @@
             this.BtnGameREminiscence.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameREminiscence.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameREminiscence.UseVisualStyleBackColor = true;
+            this.BtnGameREminiscence.Click += new System.EventHandler(this.BtnGameREminiscence_Click);
             // 
             // BtnGameEnigma
             // 
@@ -2515,6 +2773,7 @@
             this.BtnGameEnigma.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameEnigma.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameEnigma.UseVisualStyleBackColor = true;
+            this.BtnGameEnigma.Click += new System.EventHandler(this.BtnGameEnigma_Click);
             // 
             // BtnGameEduke32
             // 
@@ -2533,6 +2792,7 @@
             this.BtnGameEduke32.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameEduke32.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameEduke32.UseVisualStyleBackColor = true;
+            this.BtnGameEduke32.Click += new System.EventHandler(this.BtnGameEduke32_Click);
             // 
             // BtnGameSdlPong
             // 
@@ -2551,6 +2811,7 @@
             this.BtnGameSdlPong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameSdlPong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameSdlPong.UseVisualStyleBackColor = true;
+            this.BtnGameSdlPong.Click += new System.EventHandler(this.BtnGameSdlPong_Click);
             // 
             // BtnGamePickr
             // 
@@ -2569,6 +2830,7 @@
             this.BtnGamePickr.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGamePickr.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGamePickr.UseVisualStyleBackColor = true;
+            this.BtnGamePickr.Click += new System.EventHandler(this.BtnGamePickr_Click);
             // 
             // BtnGameRawgl
             // 
@@ -2587,6 +2849,7 @@
             this.BtnGameRawgl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameRawgl.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameRawgl.UseVisualStyleBackColor = true;
+            this.BtnGameRawgl.Click += new System.EventHandler(this.BtnGameRawgl_Click);
             // 
             // BtnGameWolf4SDL
             // 
@@ -2605,6 +2868,7 @@
             this.BtnGameWolf4SDL.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameWolf4SDL.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameWolf4SDL.UseVisualStyleBackColor = true;
+            this.BtnGameWolf4SDL.Click += new System.EventHandler(this.BtnGameWolf4SDL_Click);
             // 
             // BtnGameQuakespasm
             // 
@@ -2623,6 +2887,7 @@
             this.BtnGameQuakespasm.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameQuakespasm.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameQuakespasm.UseVisualStyleBackColor = true;
+            this.BtnGameQuakespasm.Click += new System.EventHandler(this.BtnGameQuakespasm_Click);
             // 
             // BtnGameFifteen
             // 
@@ -2641,6 +2906,7 @@
             this.BtnGameFifteen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameFifteen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameFifteen.UseVisualStyleBackColor = true;
+            this.BtnGameFifteen.Click += new System.EventHandler(this.BtnGameFifteen_Click);
             // 
             // BtnGamef2bgl
             // 
@@ -2659,6 +2925,7 @@
             this.BtnGamef2bgl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGamef2bgl.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGamef2bgl.UseVisualStyleBackColor = true;
+            this.BtnGamef2bgl.Click += new System.EventHandler(this.BtnGamef2bgl_Click);
             // 
             // BtnGameMinesweeper
             // 
@@ -2677,6 +2944,7 @@
             this.BtnGameMinesweeper.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameMinesweeper.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameMinesweeper.UseVisualStyleBackColor = true;
+            this.BtnGameMinesweeper.Click += new System.EventHandler(this.BtnGameMinesweeper_Click);
             // 
             // BtnGameTwoPlanes
             // 
@@ -2695,6 +2963,7 @@
             this.BtnGameTwoPlanes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameTwoPlanes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameTwoPlanes.UseVisualStyleBackColor = true;
+            this.BtnGameTwoPlanes.Click += new System.EventHandler(this.BtnGameTwoPlanes_Click);
             // 
             // BtnGamePostal
             // 
@@ -2713,6 +2982,7 @@
             this.BtnGamePostal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGamePostal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGamePostal.UseVisualStyleBackColor = true;
+            this.BtnGamePostal.Click += new System.EventHandler(this.BtnGamePostal_Click);
             // 
             // BtnGameInvaders
             // 
@@ -2731,6 +3001,7 @@
             this.BtnGameInvaders.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameInvaders.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameInvaders.UseVisualStyleBackColor = true;
+            this.BtnGameInvaders.Click += new System.EventHandler(this.BtnGameInvaders_Click);
             // 
             // BtnGameBermuda
             // 
@@ -2749,6 +3020,7 @@
             this.BtnGameBermuda.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameBermuda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameBermuda.UseVisualStyleBackColor = true;
+            this.BtnGameBermuda.Click += new System.EventHandler(this.BtnGameBermuda_Click);
             // 
             // BtnGameNXQuake2
             // 
@@ -2767,6 +3039,7 @@
             this.BtnGameNXQuake2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnGameNXQuake2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameNXQuake2.UseVisualStyleBackColor = true;
+            this.BtnGameNXQuake2.Click += new System.EventHandler(this.BtnGameNXQuake2_Click);
             // 
             // BtnGameHexgem
             // 
@@ -2785,6 +3058,7 @@
             this.BtnGameHexgem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGameHexgem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameHexgem.UseVisualStyleBackColor = true;
+            this.BtnGameHexgem.Click += new System.EventHandler(this.BtnGameHexgem_Click);
             // 
             // BtnGameGameOfLife
             // 
@@ -2803,6 +3077,7 @@
             this.BtnGameGameOfLife.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGameGameOfLife.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameGameOfLife.UseVisualStyleBackColor = true;
+            this.BtnGameGameOfLife.Click += new System.EventHandler(this.BtnGameGameOfLife_Click);
             // 
             // BtnGameTRekt
             // 
@@ -2821,6 +3096,7 @@
             this.BtnGameTRekt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGameTRekt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameTRekt.UseVisualStyleBackColor = true;
+            this.BtnGameTRekt.Click += new System.EventHandler(this.BtnGameTRekt_Click);
             // 
             // BtnGameCannonBall
             // 
@@ -2839,6 +3115,7 @@
             this.BtnGameCannonBall.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGameCannonBall.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameCannonBall.UseVisualStyleBackColor = true;
+            this.BtnGameCannonBall.Click += new System.EventHandler(this.BtnGameCannonBall_Click);
             // 
             // BtnGamePong
             // 
@@ -2857,6 +3134,7 @@
             this.BtnGamePong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGamePong.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGamePong.UseVisualStyleBackColor = true;
+            this.BtnGamePong.Click += new System.EventHandler(this.BtnGamePong_Click);
             // 
             // BtnGamePixelShuffle
             // 
@@ -2875,6 +3153,7 @@
             this.BtnGamePixelShuffle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGamePixelShuffle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGamePixelShuffle.UseVisualStyleBackColor = true;
+            this.BtnGamePixelShuffle.Click += new System.EventHandler(this.BtnGamePixelShuffle_Click);
             // 
             // BtnGameJumpBump
             // 
@@ -2893,6 +3172,7 @@
             this.BtnGameJumpBump.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGameJumpBump.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameJumpBump.UseVisualStyleBackColor = true;
+            this.BtnGameJumpBump.Click += new System.EventHandler(this.BtnGameJumpBump_Click);
             // 
             // BtnGameSnake
             // 
@@ -2911,6 +3191,7 @@
             this.BtnGameSnake.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGameSnake.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameSnake.UseVisualStyleBackColor = true;
+            this.BtnGameSnake.Click += new System.EventHandler(this.BtnGameSnake_Click);
             // 
             // BtnGameTilNX
             // 
@@ -2929,6 +3210,7 @@
             this.BtnGameTilNX.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGameTilNX.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameTilNX.UseVisualStyleBackColor = true;
+            this.BtnGameTilNX.Click += new System.EventHandler(this.BtnGameTilNX_Click);
             // 
             // BtnGameMeritous
             // 
@@ -2947,6 +3229,7 @@
             this.BtnGameMeritous.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGameMeritous.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameMeritous.UseVisualStyleBackColor = true;
+            this.BtnGameMeritous.Click += new System.EventHandler(this.BtnGameMeritous_Click);
             // 
             // BtnGameWhatIsInTheBox
             // 
@@ -2965,6 +3248,7 @@
             this.BtnGameWhatIsInTheBox.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGameWhatIsInTheBox.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameWhatIsInTheBox.UseVisualStyleBackColor = true;
+            this.BtnGameWhatIsInTheBox.Click += new System.EventHandler(this.BtnGameWhatIsInTheBox_Click);
             // 
             // BtnGameHCLSwitch
             // 
@@ -2983,6 +3267,7 @@
             this.BtnGameHCLSwitch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGameHCLSwitch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameHCLSwitch.UseVisualStyleBackColor = true;
+            this.BtnGameHCLSwitch.Click += new System.EventHandler(this.BtnGameHCLSwitch_Click);
             // 
             // BtnGameSuperMarioWar
             // 
@@ -3001,6 +3286,7 @@
             this.BtnGameSuperMarioWar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGameSuperMarioWar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameSuperMarioWar.UseVisualStyleBackColor = true;
+            this.BtnGameSuperMarioWar.Click += new System.EventHandler(this.BtnGameSuperMarioWar_Click);
             // 
             // BtnGameLegendOfSwordFairy
             // 
@@ -3019,6 +3305,7 @@
             this.BtnGameLegendOfSwordFairy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGameLegendOfSwordFairy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameLegendOfSwordFairy.UseVisualStyleBackColor = true;
+            this.BtnGameLegendOfSwordFairy.Click += new System.EventHandler(this.BtnGameLegendOfSwordFairy_Click);
             // 
             // BtnGameKgDoom
             // 
@@ -3037,6 +3324,7 @@
             this.BtnGameKgDoom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGameKgDoom.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameKgDoom.UseVisualStyleBackColor = true;
+            this.BtnGameKgDoom.Click += new System.EventHandler(this.BtnGameKgDoom_Click);
             // 
             // BtnGameXash
             // 
@@ -3055,6 +3343,7 @@
             this.BtnGameXash.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGameXash.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameXash.UseVisualStyleBackColor = true;
+            this.BtnGameXash.Click += new System.EventHandler(this.BtnGameXash_Click);
             // 
             // BtnGameTilesNX
             // 
@@ -3073,6 +3362,7 @@
             this.BtnGameTilesNX.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGameTilesNX.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameTilesNX.UseVisualStyleBackColor = true;
+            this.BtnGameTilesNX.Click += new System.EventHandler(this.BtnGameTilesNX_Click);
             // 
             // BtnGameSpaceGameNX
             // 
@@ -3091,6 +3381,7 @@
             this.BtnGameSpaceGameNX.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGameSpaceGameNX.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameSpaceGameNX.UseVisualStyleBackColor = true;
+            this.BtnGameSpaceGameNX.Click += new System.EventHandler(this.BtnGameSpaceGameNX_Click);
             // 
             // BtnGameLugaru
             // 
@@ -3109,6 +3400,7 @@
             this.BtnGameLugaru.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGameLugaru.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameLugaru.UseVisualStyleBackColor = true;
+            this.BtnGameLugaru.Click += new System.EventHandler(this.BtnGameLugaru_Click);
             // 
             // BtnGame2048
             // 
@@ -3127,6 +3419,7 @@
             this.BtnGame2048.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGame2048.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGame2048.UseVisualStyleBackColor = true;
+            this.BtnGame2048.Click += new System.EventHandler(this.BtnGame2048_Click);
             // 
             // BtnGameTicTacToeNX
             // 
@@ -3145,6 +3438,7 @@
             this.BtnGameTicTacToeNX.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGameTicTacToeNX.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameTicTacToeNX.UseVisualStyleBackColor = true;
+            this.BtnGameTicTacToeNX.Click += new System.EventHandler(this.BtnGameTicTacToeNX_Click);
             // 
             // BtnGameOpenLara
             // 
@@ -3163,6 +3457,7 @@
             this.BtnGameOpenLara.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGameOpenLara.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameOpenLara.UseVisualStyleBackColor = true;
+            this.BtnGameOpenLara.Click += new System.EventHandler(this.BtnGameOpenLara_Click);
             // 
             // BtnGameMystery
             // 
@@ -3181,6 +3476,7 @@
             this.BtnGameMystery.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnGameMystery.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnGameMystery.UseVisualStyleBackColor = true;
+            this.BtnGameMystery.Click += new System.EventHandler(this.BtnGameMystery_Click);
             // 
             // TbHome
             // 
@@ -3240,193 +3536,6 @@
             // 
             this.TmrCheckVal.Enabled = true;
             this.TmrCheckVal.Tick += new System.EventHandler(this.TmrCheckVal_Tick);
-            // 
-            // BtnToolRCMReboo
-            // 
-            this.BtnToolRCMReboo.AutoSize = true;
-            this.BtnToolRCMReboo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolRCMReboo.Depth = 0;
-            this.BtnToolRCMReboo.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolRCMReboo.Icon")));
-            this.BtnToolRCMReboo.Location = new System.Drawing.Point(18, 493);
-            this.BtnToolRCMReboo.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolRCMReboo.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolRCMReboo.Name = "BtnToolRCMReboo";
-            this.BtnToolRCMReboo.Primary = false;
-            this.BtnToolRCMReboo.Size = new System.Drawing.Size(134, 36);
-            this.BtnToolRCMReboo.TabIndex = 2;
-            this.BtnToolRCMReboo.Text = "RCM Reboot";
-            this.BtnToolRCMReboo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolRCMReboo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolRCMReboo.UseVisualStyleBackColor = true;
-            // 
-            // BtnToolVgedit
-            // 
-            this.BtnToolVgedit.AutoSize = true;
-            this.BtnToolVgedit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolVgedit.Depth = 0;
-            this.BtnToolVgedit.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolVgedit.Icon")));
-            this.BtnToolVgedit.Location = new System.Drawing.Point(18, 13);
-            this.BtnToolVgedit.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolVgedit.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolVgedit.Name = "BtnToolVgedit";
-            this.BtnToolVgedit.Primary = false;
-            this.BtnToolVgedit.Size = new System.Drawing.Size(96, 36);
-            this.BtnToolVgedit.TabIndex = 2;
-            this.BtnToolVgedit.Text = "VGedit";
-            this.BtnToolVgedit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolVgedit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolVgedit.UseVisualStyleBackColor = true;
-            // 
-            // BtnToolEasyPower
-            // 
-            this.BtnToolEasyPower.AutoSize = true;
-            this.BtnToolEasyPower.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolEasyPower.Depth = 0;
-            this.BtnToolEasyPower.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolEasyPower.Icon")));
-            this.BtnToolEasyPower.Location = new System.Drawing.Point(18, 733);
-            this.BtnToolEasyPower.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolEasyPower.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolEasyPower.Name = "BtnToolEasyPower";
-            this.BtnToolEasyPower.Primary = false;
-            this.BtnToolEasyPower.Size = new System.Drawing.Size(129, 36);
-            this.BtnToolEasyPower.TabIndex = 4;
-            this.BtnToolEasyPower.Text = "EasyPower";
-            this.BtnToolEasyPower.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolEasyPower.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolEasyPower.UseVisualStyleBackColor = true;
-            // 
-            // BtnToolPixelPainter
-            // 
-            this.BtnToolPixelPainter.AutoSize = true;
-            this.BtnToolPixelPainter.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolPixelPainter.Depth = 0;
-            this.BtnToolPixelPainter.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolPixelPainter.Icon")));
-            this.BtnToolPixelPainter.Location = new System.Drawing.Point(18, 685);
-            this.BtnToolPixelPainter.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolPixelPainter.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolPixelPainter.Name = "BtnToolPixelPainter";
-            this.BtnToolPixelPainter.Primary = false;
-            this.BtnToolPixelPainter.Size = new System.Drawing.Size(145, 36);
-            this.BtnToolPixelPainter.TabIndex = 5;
-            this.BtnToolPixelPainter.Text = "Pixel Painter";
-            this.BtnToolPixelPainter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolPixelPainter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolPixelPainter.UseVisualStyleBackColor = true;
-            // 
-            // BtnToolNXSH
-            // 
-            this.BtnToolNXSH.AutoSize = true;
-            this.BtnToolNXSH.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolNXSH.Depth = 0;
-            this.BtnToolNXSH.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolNXSH.Icon")));
-            this.BtnToolNXSH.Location = new System.Drawing.Point(18, 637);
-            this.BtnToolNXSH.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolNXSH.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolNXSH.Name = "BtnToolNXSH";
-            this.BtnToolNXSH.Primary = false;
-            this.BtnToolNXSH.Size = new System.Drawing.Size(85, 36);
-            this.BtnToolNXSH.TabIndex = 6;
-            this.BtnToolNXSH.Text = "NXSH";
-            this.BtnToolNXSH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolNXSH.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolNXSH.UseVisualStyleBackColor = true;
-            // 
-            // BtnToolFTPD4SXOS
-            // 
-            this.BtnToolFTPD4SXOS.AutoSize = true;
-            this.BtnToolFTPD4SXOS.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolFTPD4SXOS.Depth = 0;
-            this.BtnToolFTPD4SXOS.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolFTPD4SXOS.Icon")));
-            this.BtnToolFTPD4SXOS.Location = new System.Drawing.Point(18, 589);
-            this.BtnToolFTPD4SXOS.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolFTPD4SXOS.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolFTPD4SXOS.Name = "BtnToolFTPD4SXOS";
-            this.BtnToolFTPD4SXOS.Primary = false;
-            this.BtnToolFTPD4SXOS.Size = new System.Drawing.Size(125, 36);
-            this.BtnToolFTPD4SXOS.TabIndex = 7;
-            this.BtnToolFTPD4SXOS.Text = "FTPD4SXOS";
-            this.BtnToolFTPD4SXOS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolFTPD4SXOS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolFTPD4SXOS.UseVisualStyleBackColor = true;
-            // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(656, 262);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(8, 802);
-            this.panel1.TabIndex = 8;
-            // 
-            // BtnToolNXPlayer
-            // 
-            this.BtnToolNXPlayer.AutoSize = true;
-            this.BtnToolNXPlayer.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolNXPlayer.Depth = 0;
-            this.BtnToolNXPlayer.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolNXPlayer.Icon")));
-            this.BtnToolNXPlayer.Location = new System.Drawing.Point(18, 781);
-            this.BtnToolNXPlayer.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolNXPlayer.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolNXPlayer.Name = "BtnToolNXPlayer";
-            this.BtnToolNXPlayer.Primary = false;
-            this.BtnToolNXPlayer.Size = new System.Drawing.Size(101, 36);
-            this.BtnToolNXPlayer.TabIndex = 4;
-            this.BtnToolNXPlayer.Text = "NXPlay";
-            this.BtnToolNXPlayer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolNXPlayer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolNXPlayer.UseVisualStyleBackColor = true;
-            // 
-            // BtnToolHBMenu
-            // 
-            this.BtnToolHBMenu.AutoSize = true;
-            this.BtnToolHBMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolHBMenu.Depth = 0;
-            this.BtnToolHBMenu.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolHBMenu.Icon")));
-            this.BtnToolHBMenu.Location = new System.Drawing.Point(18, 829);
-            this.BtnToolHBMenu.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolHBMenu.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolHBMenu.Name = "BtnToolHBMenu";
-            this.BtnToolHBMenu.Primary = false;
-            this.BtnToolHBMenu.Size = new System.Drawing.Size(167, 36);
-            this.BtnToolHBMenu.TabIndex = 4;
-            this.BtnToolHBMenu.Text = "Homebrew Menu";
-            this.BtnToolHBMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolHBMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolHBMenu.UseVisualStyleBackColor = true;
-            // 
-            // BtnToolGoldleaf_
-            // 
-            this.BtnToolGoldleaf_.AutoSize = true;
-            this.BtnToolGoldleaf_.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolGoldleaf_.Depth = 0;
-            this.BtnToolGoldleaf_.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolGoldleaf_.Icon")));
-            this.BtnToolGoldleaf_.Location = new System.Drawing.Point(18, 877);
-            this.BtnToolGoldleaf_.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolGoldleaf_.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolGoldleaf_.Name = "BtnToolGoldleaf_";
-            this.BtnToolGoldleaf_.Primary = false;
-            this.BtnToolGoldleaf_.Size = new System.Drawing.Size(116, 36);
-            this.BtnToolGoldleaf_.TabIndex = 4;
-            this.BtnToolGoldleaf_.Text = "Goldleaf";
-            this.BtnToolGoldleaf_.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolGoldleaf_.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolGoldleaf_.UseVisualStyleBackColor = true;
-            // 
-            // BtnToolGCDump
-            // 
-            this.BtnToolGCDump.AutoSize = true;
-            this.BtnToolGCDump.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BtnToolGCDump.Depth = 0;
-            this.BtnToolGCDump.Icon = ((System.Drawing.Image)(resources.GetObject("BtnToolGCDump.Icon")));
-            this.BtnToolGCDump.Location = new System.Drawing.Point(18, 925);
-            this.BtnToolGCDump.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.BtnToolGCDump.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnToolGCDump.Name = "BtnToolGCDump";
-            this.BtnToolGCDump.Primary = false;
-            this.BtnToolGCDump.Size = new System.Drawing.Size(144, 36);
-            this.BtnToolGCDump.TabIndex = 4;
-            this.BtnToolGCDump.Text = "GCDump Tool";
-            this.BtnToolGCDump.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnToolGCDump.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnToolGCDump.UseVisualStyleBackColor = true;
             // 
             // FmSwitchMain
             // 
@@ -3640,7 +3749,6 @@
         private MaterialSkin.Controls.MaterialFlatButton BtnToolFTPD4SXOS;
         private MaterialSkin.Controls.MaterialFlatButton BtnToolRCMReboo;
         private MaterialSkin.Controls.MaterialFlatButton BtnToolVgedit;
-        private System.Windows.Forms.Panel panel1;
         private MaterialSkin.Controls.MaterialFlatButton BtnToolNXPlayer;
         private MaterialSkin.Controls.MaterialFlatButton BtnToolHBMenu;
         private MaterialSkin.Controls.MaterialFlatButton BtnToolGoldleaf_;
