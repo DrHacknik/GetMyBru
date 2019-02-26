@@ -323,6 +323,7 @@
             this.LblView.AutoSize = true;
             this.LblView.BackColor = System.Drawing.Color.Transparent;
             this.LblView.Depth = 0;
+            this.LblView.Enabled = false;
             this.LblView.Font = new System.Drawing.Font("Roboto", 11F);
             this.LblView.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.LblView.Location = new System.Drawing.Point(926, 22);
