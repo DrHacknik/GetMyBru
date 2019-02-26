@@ -10,6 +10,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using GetMyBru.GetMyBru.GUI;
+using System.IO;
+using GetMyBru.GetMyBru.Core;
+using System.Text.RegularExpressions;
+using GetMyBru.GetMyBru.Core.Installer;
 
 namespace GetMyBru.GetMyBru.GUI
 {
@@ -20,16 +24,33 @@ namespace GetMyBru.GetMyBru.GUI
         private Form FmWiiU = new FmWiiUMain();
         private Form FmSwitch = new FmSwitchMain();
         private bool SettingsActive = false;
+        private string cd = Environment.CurrentDirectory;
+        public static string NotifTitle;
+        public static string NotifText;
+        public static int NotifTime = 40000;
+        public static bool ShowToast;
 
         public FmSelectSystem()
         {
             Program.EnableVisualsDefault();
             InitializeComponent();
+            CheckFirstTime();
+            BruParser.PrepareJSON();
+        }
+
+        private void CheckFirstTime()
+        {
+            if (Properties.Settings.Default.FirstTime == true)
+            {
+                MessageBox.Show("This is the first time you have used this program. " + Environment.NewLine + "We'll need you to change some settings to your liking before we go on.", "Wait a min~", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                SettingsActive = true;
+            }
         }
 
         private void FmSelectSystem_Load(object sender, EventArgs e)
         {
             LblVersion.Text = "Version: " + Application.ProductVersion;
+            CacheCheck.PerformCheck();
             this.Refresh();
             return;
         }
@@ -65,7 +86,7 @@ namespace GetMyBru.GetMyBru.GUI
         {
             if (SettingsActive == true)
             {
-                //SaveSettings();
+                SaveSettings();
                 SettingsActive = false;
                 return;
             }
@@ -74,18 +95,21 @@ namespace GetMyBru.GetMyBru.GUI
                 SafeExit = true;
                 if (RdSwitch.Checked == true)
                 {
+                    IServiceInstall.ISystem = "switch";
                     FmSwitch.Show();
                     this.Hide();
                     return;
                 }
                 else if (RdWii.Checked == true)
                 {
+                    IServiceInstall.ISystem = "wii";
                     FmWii.Show();
                     this.Hide();
                     return;
                 }
                 else if (RdWiiU.Checked == true)
                 {
+                    IServiceInstall.ISystem = "wiiu";
                     FmWiiU.Show();
                     this.Hide();
                     return;
@@ -100,23 +124,53 @@ namespace GetMyBru.GetMyBru.GUI
 
         private void LblSettings_Click(object sender, EventArgs e)
         {
-            if (SettingsActive == null)
+            //MessageBox.Show("Please do keep in mind that this feature is not implemented yet.", "Do note:", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //return;
+
+            if (Properties.Settings.Default.FirstTime == true)
             {
-                SettingsActive = true;
+                MessageBox.Show("You haven't saved the settings for first use. Please do so.", "Wait a min~", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
             }
-            else if (SettingsActive == false)
+            else
             {
-                SettingsActive = true;
-            }
-            else if (SettingsActive == true)
-            {
-                SettingsActive = false;
+                if (SettingsActive == false)
+                {
+                    SettingsActive = true;
+                    TxtDrive.Clear();
+                    LoadSettings();
+                }
+                else if (SettingsActive == true)
+                {
+                    SettingsActive = false;
+                }
             }
         }
 
         private void TmrCheckVal_Tick(object sender, EventArgs e)
         {
             SetLocationButtons();
+            if (ShowToast == true)
+            {
+                NtfMain.BalloonTipTitle = NotifTitle;
+                NtfMain.BalloonTipText = NotifText;
+                NtfMain.ShowBalloonTip(NotifTime);
+                ShowToast = false;
+                return;
+            }
+
+            if (Properties.Settings.Default.Notif == true)
+            {
+                if (IServiceInstall.Installed == true)
+                {
+                    NotifTitle = "GetMyBru";
+                    NotifText = "Package: " + FmSwitchMain.AppToInstall + " was installed.";
+                    NotifTime = 40000;
+                    ShowToast = true;
+                    IServiceInstall.Installed = false;
+                    return;
+                }
+            }
         }
 
         private void SetLocationButtons()
@@ -132,6 +186,8 @@ namespace GetMyBru.GetMyBru.GUI
                 LblExit.Location = new Point(478, 25);
                 PcxButtonX.Location = new Point(459, 26);
                 PnlSettings.Visible = false;
+
+                LoadSettings();
                 return;
             }
             if (SettingsActive == true)
@@ -147,6 +203,123 @@ namespace GetMyBru.GetMyBru.GUI
                 PnlSettings.Visible = true;
                 return;
             }
+        }
+
+        private void SaveSettings()
+        {
+            if (ChckAutoUpdate.Checked == true)
+            {
+                Properties.Settings.Default.AutoUpdate = true;
+            }
+            else if (ChckAutoUpdate.Checked == false)
+            {
+                Properties.Settings.Default.AutoUpdate = false;
+            }
+            if (ChckClean.Checked == true)
+            {
+                Properties.Settings.Default.Clean = true;
+            }
+            else if (ChckClean.Checked == false)
+            {
+                Properties.Settings.Default.Clean = false;
+            }
+            if (ChckNotif.Checked == true)
+            {
+                Properties.Settings.Default.Notif = true;
+            }
+            else if (ChckNotif.Checked == false)
+            {
+                Properties.Settings.Default.Notif = false;
+            }
+            if (RdCanary.Checked == true)
+            {
+                Properties.Settings.Default.Branch = "Canary";
+            }
+            else if (RdStable.Checked == true)
+            {
+                Properties.Settings.Default.Branch = "Stable";
+            }
+
+            if (Properties.Settings.Default.FirstTime == true)
+            {
+                Properties.Settings.Default.FirstTime = false;
+            }
+
+            Properties.Settings.Default.Save();
+            //Write values to JSON
+
+            if (TxtDrive.Text.Contains(":") || TxtDrive.Text.Contains("\\") || TxtDrive.Text.Contains("/") || TxtDrive.Text.Contains(","))
+            {
+                MessageBox.Show("The Drive text field contains invalid character/s. Please only input the drive letter!", "Error: Invalid character/s", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                TxtDrive.Focus();
+                SettingsActive = true;
+                NotifTitle = "GetMyBru";
+                NotifText = "Failed to save the settings to the Config";
+                NotifTime = 40000;
+                ShowToast = true;
+                return;
+            }
+            else
+            {
+                if (TxtDrive == null)
+                {
+                    MessageBox.Show("The Drive text field is empty!", "Error: ", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    TxtDrive.Focus();
+                    SettingsActive = true;
+                    return;
+                }
+                else
+                {
+                    Properties.Settings.Default.Drive = TxtDrive.Text;
+                    Properties.Settings.Default.Save();
+                }
+            }
+
+            NotifTitle = "GetMyBru";
+            NotifText = "Saved the settings to the Config";
+            NotifTime = 40000;
+            ShowToast = true;
+        }
+
+        private void LoadSettings()
+        {
+            //Load settings by parsing from JSON, and then storing them into the Applications settings.
+
+            //Load settings from the Applications config
+            TxtDrive.Text = Properties.Settings.Default.Drive;
+            if (Properties.Settings.Default.Branch == "Stable")
+            {
+                RdStable.Checked = true;
+            }
+            else if (Properties.Settings.Default.Branch == "Canary")
+            {
+                RdCanary.Checked = true;
+            }
+            if (Properties.Settings.Default.AutoUpdate == true)
+            {
+                ChckAutoUpdate.Checked = true;
+            }
+            else if (Properties.Settings.Default.AutoUpdate == true)
+            {
+                ChckAutoUpdate.Checked = false;
+            }
+            if (Properties.Settings.Default.Clean == true)
+            {
+                ChckClean.Checked = true;
+            }
+            else if (Properties.Settings.Default.Clean == false)
+            {
+                ChckClean.Checked = false;
+            }
+            if (Properties.Settings.Default.Notif == true)
+            {
+                ChckNotif.Checked = true;
+            }
+            else if (Properties.Settings.Default.Notif == false)
+            {
+                ChckNotif.Checked = false;
+            }
+            return;
         }
     }
 }

@@ -36,8 +36,11 @@
     <ApplicationIcon>Icon256.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ionic.Zip.1.9.1.8\lib\Ionic.Zip.dll</HintPath>
+    </Reference>
     <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+      <HintPath>..\packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -55,8 +58,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GetMyBru.Core\CacheCheck.cs" />
     <Compile Include="GetMyBru.Core\Config\ConfigParser.cs" />
+    <Compile Include="GetMyBru.Core\Installer\IHomebrewList.cs" />
+    <Compile Include="GetMyBru.Core\Installer\IServiceInstall.cs" />
+    <Compile Include="GetMyBru.Core\Net\Parser\AppveyorParser.cs" />
     <Compile Include="GetMyBru.Core\Net\Parser\BruParser.cs" />
+    <Compile Include="GetMyBru.GUI\FmHomebrewInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetMyBru.GUI\FmHomebrewInfo.Designer.cs">
+      <DependentUpon>FmHomebrewInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="GetMyBru.GUI\FmSelectSystem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +97,9 @@
     <Compile Include="GetMyBru.Services\SvcUpdate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GetMyBru.GUI\FmHomebrewInfo.resx">
+      <DependentUpon>FmHomebrewInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GetMyBru.GUI\FmSelectSystem.resx">
       <DependentUpon>FmSelectSystem.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,6 +120,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -122,6 +139,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Icon256.ico" />
+    <None Include="Resources\NoImage.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
