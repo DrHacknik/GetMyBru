@@ -82,5 +82,17 @@ namespace GetMyBru.Properties {
                 this["FirstTime"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Drive {
+            get {
+                return ((string)(this["Drive"]));
+            }
+            set {
+                this["Drive"] = value;
+            }
+        }
     }
 }

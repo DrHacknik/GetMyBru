@@ -13,6 +13,7 @@ using GetMyBru.GetMyBru.GUI;
 using System.IO;
 using GetMyBru.GetMyBru.Core;
 using System.Text.RegularExpressions;
+using GetMyBru.GetMyBru.Core.Installer;
 
 namespace GetMyBru.GetMyBru.GUI
 {
@@ -94,18 +95,21 @@ namespace GetMyBru.GetMyBru.GUI
                 SafeExit = true;
                 if (RdSwitch.Checked == true)
                 {
+                    IServiceInstall.ISystem = "switch";
                     FmSwitch.Show();
                     this.Hide();
                     return;
                 }
                 else if (RdWii.Checked == true)
                 {
+                    IServiceInstall.ISystem = "wii";
                     FmWii.Show();
                     this.Hide();
                     return;
                 }
                 else if (RdWiiU.Checked == true)
                 {
+                    IServiceInstall.ISystem = "wiiu";
                     FmWiiU.Show();
                     this.Hide();
                     return;
@@ -153,6 +157,19 @@ namespace GetMyBru.GetMyBru.GUI
                 NtfMain.ShowBalloonTip(NotifTime);
                 ShowToast = false;
                 return;
+            }
+
+            if (Properties.Settings.Default.Notif == true)
+            {
+                if (IServiceInstall.Installed == true)
+                {
+                    NotifTitle = "GetMyBru";
+                    NotifText = "Package: " + FmSwitchMain.AppToInstall + " was installed.";
+                    NotifTime = 40000;
+                    ShowToast = true;
+                    IServiceInstall.Installed = false;
+                    return;
+                }
             }
         }
 
@@ -227,6 +244,7 @@ namespace GetMyBru.GetMyBru.GUI
             {
                 Properties.Settings.Default.FirstTime = false;
             }
+
             Properties.Settings.Default.Save();
             //Write values to JSON
 
@@ -240,6 +258,20 @@ namespace GetMyBru.GetMyBru.GUI
                 NotifTime = 40000;
                 ShowToast = true;
             }
+            else
+            {
+                if (TxtDrive == null)
+                {
+                    MessageBox.Show("The Drive text field is empty!", "Error: ", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    TxtDrive.Focus();
+                    SettingsActive = true;
+                    return;
+                }
+                else
+                {
+                    Properties.Settings.Default.Drive = TxtDrive.Text;
+                }
+            }
 
             NotifTitle = "GetMyBru";
             NotifText = "Saved the settings to the Config";
@@ -252,6 +284,7 @@ namespace GetMyBru.GetMyBru.GUI
             //Load settings by parsing from JSON, and then storing them into the Applications settings.
 
             //Load settings from the Applications config
+            TxtDrive.Text = Properties.Settings.Default.Drive;
             if (Properties.Settings.Default.Branch == "Stable")
             {
                 RdStable.Checked = true;

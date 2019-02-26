@@ -31,14 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FmSwitchMain));
             this.PnlBottom = new System.Windows.Forms.Panel();
+            this.LblInstalling = new MaterialSkin.Controls.MaterialLabel();
             this.PrgInstall = new MaterialSkin.Controls.MaterialProgressBar();
             this.LblVersion = new MaterialSkin.Controls.MaterialLabel();
             this.PcxExit = new System.Windows.Forms.PictureBox();
             this.LblExit = new MaterialSkin.Controls.MaterialLabel();
             this.PcxSettings = new System.Windows.Forms.PictureBox();
             this.LblView = new MaterialSkin.Controls.MaterialLabel();
-            this.PcxALogo = new System.Windows.Forms.PictureBox();
-            this.LblInstall = new MaterialSkin.Controls.MaterialLabel();
             this.PnlSplitter = new System.Windows.Forms.Panel();
             this.PcxSwitchLogo = new System.Windows.Forms.PictureBox();
             this.TbThemes = new System.Windows.Forms.TabPage();
@@ -209,7 +208,6 @@
             this.PnlBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PcxExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSettings)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PcxALogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSwitchLogo)).BeginInit();
             this.TbThemes.SuspendLayout();
             this.TbAdv.SuspendLayout();
@@ -222,14 +220,13 @@
             // 
             // PnlBottom
             // 
+            this.PnlBottom.Controls.Add(this.LblInstalling);
             this.PnlBottom.Controls.Add(this.PrgInstall);
             this.PnlBottom.Controls.Add(this.LblVersion);
             this.PnlBottom.Controls.Add(this.PcxExit);
             this.PnlBottom.Controls.Add(this.LblExit);
             this.PnlBottom.Controls.Add(this.PcxSettings);
             this.PnlBottom.Controls.Add(this.LblView);
-            this.PnlBottom.Controls.Add(this.PcxALogo);
-            this.PnlBottom.Controls.Add(this.LblInstall);
             this.PnlBottom.Controls.Add(this.PnlSplitter);
             this.PnlBottom.Controls.Add(this.PcxSwitchLogo);
             this.PnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -238,11 +235,28 @@
             this.PnlBottom.Size = new System.Drawing.Size(1011, 63);
             this.PnlBottom.TabIndex = 5;
             // 
+            // LblInstalling
+            // 
+            this.LblInstalling.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LblInstalling.BackColor = System.Drawing.Color.Transparent;
+            this.LblInstalling.Depth = 0;
+            this.LblInstalling.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LblInstalling.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LblInstalling.Location = new System.Drawing.Point(299, 14);
+            this.LblInstalling.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LblInstalling.Name = "LblInstalling";
+            this.LblInstalling.Size = new System.Drawing.Size(413, 19);
+            this.LblInstalling.TabIndex = 18;
+            this.LblInstalling.Text = "Installing %APP%";
+            this.LblInstalling.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.LblInstalling.Visible = false;
+            // 
             // PrgInstall
             // 
             this.PrgInstall.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.PrgInstall.Depth = 0;
-            this.PrgInstall.Location = new System.Drawing.Point(299, 36);
+            this.PrgInstall.Location = new System.Drawing.Point(299, 39);
             this.PrgInstall.MouseState = MaterialSkin.MouseState.HOVER;
             this.PrgInstall.Name = "PrgInstall";
             this.PrgInstall.Size = new System.Drawing.Size(413, 5);
@@ -269,7 +283,7 @@
             this.PcxExit.BackColor = System.Drawing.Color.Transparent;
             this.PcxExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxExit.BackgroundImage")));
             this.PcxExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxExit.Location = new System.Drawing.Point(775, 27);
+            this.PcxExit.Location = new System.Drawing.Point(849, 24);
             this.PcxExit.Name = "PcxExit";
             this.PcxExit.Size = new System.Drawing.Size(16, 16);
             this.PcxExit.TabIndex = 15;
@@ -283,7 +297,7 @@
             this.LblExit.Depth = 0;
             this.LblExit.Font = new System.Drawing.Font("Roboto", 11F);
             this.LblExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LblExit.Location = new System.Drawing.Point(791, 25);
+            this.LblExit.Location = new System.Drawing.Point(865, 22);
             this.LblExit.MouseState = MaterialSkin.MouseState.HOVER;
             this.LblExit.Name = "LblExit";
             this.LblExit.Size = new System.Drawing.Size(34, 19);
@@ -297,7 +311,7 @@
             this.PcxSettings.BackColor = System.Drawing.Color.Transparent;
             this.PcxSettings.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxSettings.BackgroundImage")));
             this.PcxSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxSettings.Location = new System.Drawing.Point(836, 27);
+            this.PcxSettings.Location = new System.Drawing.Point(910, 24);
             this.PcxSettings.Name = "PcxSettings";
             this.PcxSettings.Size = new System.Drawing.Size(16, 16);
             this.PcxSettings.TabIndex = 13;
@@ -311,40 +325,13 @@
             this.LblView.Depth = 0;
             this.LblView.Font = new System.Drawing.Font("Roboto", 11F);
             this.LblView.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LblView.Location = new System.Drawing.Point(852, 25);
+            this.LblView.Location = new System.Drawing.Point(926, 22);
             this.LblView.MouseState = MaterialSkin.MouseState.HOVER;
             this.LblView.Name = "LblView";
             this.LblView.Size = new System.Drawing.Size(72, 19);
             this.LblView.TabIndex = 14;
             this.LblView.Text = "View App";
             this.LblView.Click += new System.EventHandler(this.LblView_Click);
-            // 
-            // PcxALogo
-            // 
-            this.PcxALogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PcxALogo.BackColor = System.Drawing.Color.Transparent;
-            this.PcxALogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxALogo.BackgroundImage")));
-            this.PcxALogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxALogo.Location = new System.Drawing.Point(933, 27);
-            this.PcxALogo.Name = "PcxALogo";
-            this.PcxALogo.Size = new System.Drawing.Size(16, 16);
-            this.PcxALogo.TabIndex = 11;
-            this.PcxALogo.TabStop = false;
-            // 
-            // LblInstall
-            // 
-            this.LblInstall.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.LblInstall.AutoSize = true;
-            this.LblInstall.BackColor = System.Drawing.Color.Transparent;
-            this.LblInstall.Depth = 0;
-            this.LblInstall.Font = new System.Drawing.Font("Roboto", 11F);
-            this.LblInstall.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LblInstall.Location = new System.Drawing.Point(949, 25);
-            this.LblInstall.MouseState = MaterialSkin.MouseState.HOVER;
-            this.LblInstall.Name = "LblInstall";
-            this.LblInstall.Size = new System.Drawing.Size(50, 19);
-            this.LblInstall.TabIndex = 12;
-            this.LblInstall.Text = "Install";
             // 
             // PnlSplitter
             // 
@@ -3535,6 +3522,7 @@
             // TmrCheckVal
             // 
             this.TmrCheckVal.Enabled = true;
+            this.TmrCheckVal.Interval = 1;
             this.TmrCheckVal.Tick += new System.EventHandler(this.TmrCheckVal_Tick);
             // 
             // FmSwitchMain
@@ -3558,7 +3546,6 @@
             this.PnlBottom.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PcxExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSettings)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PcxALogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSwitchLogo)).EndInit();
             this.TbThemes.ResumeLayout(false);
             this.TbAdv.ResumeLayout(false);
@@ -3583,8 +3570,6 @@
         private MaterialSkin.Controls.MaterialLabel LblExit;
         private System.Windows.Forms.PictureBox PcxSettings;
         private MaterialSkin.Controls.MaterialLabel LblView;
-        private System.Windows.Forms.PictureBox PcxALogo;
-        private MaterialSkin.Controls.MaterialLabel LblInstall;
         private System.Windows.Forms.Panel PnlSplitter;
         private System.Windows.Forms.PictureBox PcxSwitchLogo;
         private System.Windows.Forms.TabPage TbThemes;
@@ -3596,7 +3581,6 @@
         private MaterialSkin.Controls.MaterialTabControl TbPage;
         private MaterialSkin.Controls.MaterialTabSelector TbSel;
         private System.Windows.Forms.Timer TmrCheckVal;
-        private MaterialSkin.Controls.MaterialProgressBar PrgInstall;
         private MaterialSkin.Controls.MaterialLabel LblHeaderHome;
         private MaterialSkin.Controls.MaterialFlatButton BtnGameMystery;
         private MaterialSkin.Controls.MaterialFlatButton BtnGameOpenLara;
@@ -3753,5 +3737,7 @@
         private MaterialSkin.Controls.MaterialFlatButton BtnToolHBMenu;
         private MaterialSkin.Controls.MaterialFlatButton BtnToolGoldleaf_;
         private MaterialSkin.Controls.MaterialFlatButton BtnToolGCDump;
+        public MaterialSkin.Controls.MaterialProgressBar PrgInstall;
+        public MaterialSkin.Controls.MaterialLabel LblInstalling;
     }
 }
