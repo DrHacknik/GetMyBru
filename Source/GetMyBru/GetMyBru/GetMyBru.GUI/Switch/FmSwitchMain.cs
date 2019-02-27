@@ -64,6 +64,7 @@ namespace GetMyBru.GetMyBru.GUI
             else if (IServiceInstall.Installing == false)
             {
                 this.Enabled = true;
+
                 LblInstalling.Visible = false;
             }
 
