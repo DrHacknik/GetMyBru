@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -54,14 +55,22 @@ namespace GetMyBru.GetMyBru.GUI
         private void TmrCheckVal_Tick(object sender, EventArgs e)
         {
             PrgInstall.Value = int.Parse(Math.Truncate(IServiceInstall.percentage).ToString());
-            if (IServiceInstall.Installing == true)
+            if (IServiceInstall.Downloading == true)
             {
+                this.Enabled = false;
                 LblInstalling.Visible = true;
-                LblInstalling.Text = "Installing package: " + AppToInstall;
+                LblInstalling.Text = "Downloading package: " + AppToInstall;
             }
             else if (IServiceInstall.Installing == false)
             {
+                this.Enabled = true;
                 LblInstalling.Visible = false;
+            }
+
+            if (IServiceInstall.Downloading == false && IServiceInstall.Installing == true)
+            {
+                this.Enabled = false;
+                LblInstalling.Text = "Installing package: " + AppToInstall;
             }
 
             if (AppInView == true)
@@ -208,7 +217,7 @@ namespace GetMyBru.GetMyBru.GUI
 
         private void BtnGameMystery_Click(object sender, EventArgs e)
         {
-            return;
+            AppToInstall = IHomebrewList.GameSolarusDX; ; IServiceInstall.InstallSwitch(AppToInstall);
         }
 
         private void BtnGameWolf4SDL_Click(object sender, EventArgs e)
@@ -709,6 +718,12 @@ namespace GetMyBru.GetMyBru.GUI
         private void BtnAdvAragon_Click(object sender, EventArgs e)
         {
             AppToInstall = IHomebrewList.AdvArgonNX; IServiceInstall.InstallSwitch(AppToInstall);
+        }
+
+        private void BtnViewDownloads_Click(object sender, EventArgs e)
+        {
+            Process.Start(Environment.CurrentDirectory + "\\Data\\Cache\\Switch");
+            return;
         }
     }
 }

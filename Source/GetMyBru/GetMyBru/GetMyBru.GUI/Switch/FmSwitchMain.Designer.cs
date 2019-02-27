@@ -205,6 +205,8 @@
             this.TbPage = new MaterialSkin.Controls.MaterialTabControl();
             this.TbSel = new MaterialSkin.Controls.MaterialTabSelector();
             this.TmrCheckVal = new System.Windows.Forms.Timer(this.components);
+            this.PcxDownloads = new System.Windows.Forms.PictureBox();
+            this.BtnViewDownloads = new MaterialSkin.Controls.MaterialLabel();
             this.PnlBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PcxExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSettings)).BeginInit();
@@ -216,11 +218,13 @@
             this.TbGame.SuspendLayout();
             this.TbHome.SuspendLayout();
             this.TbPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PcxDownloads)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlBottom
             // 
-            this.PnlBottom.Controls.Add(this.LblInstalling);
+            this.PnlBottom.Controls.Add(this.PcxDownloads);
+            this.PnlBottom.Controls.Add(this.BtnViewDownloads);
             this.PnlBottom.Controls.Add(this.PrgInstall);
             this.PnlBottom.Controls.Add(this.LblVersion);
             this.PnlBottom.Controls.Add(this.PcxExit);
@@ -229,6 +233,7 @@
             this.PnlBottom.Controls.Add(this.LblView);
             this.PnlBottom.Controls.Add(this.PnlSplitter);
             this.PnlBottom.Controls.Add(this.PcxSwitchLogo);
+            this.PnlBottom.Controls.Add(this.LblInstalling);
             this.PnlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.PnlBottom.Location = new System.Drawing.Point(0, 683);
             this.PnlBottom.Name = "PnlBottom";
@@ -256,10 +261,10 @@
             // 
             this.PrgInstall.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.PrgInstall.Depth = 0;
-            this.PrgInstall.Location = new System.Drawing.Point(299, 39);
+            this.PrgInstall.Location = new System.Drawing.Point(326, 39);
             this.PrgInstall.MouseState = MaterialSkin.MouseState.HOVER;
             this.PrgInstall.Name = "PrgInstall";
-            this.PrgInstall.Size = new System.Drawing.Size(413, 5);
+            this.PrgInstall.Size = new System.Drawing.Size(359, 5);
             this.PrgInstall.TabIndex = 9;
             // 
             // LblVersion
@@ -283,7 +288,7 @@
             this.PcxExit.BackColor = System.Drawing.Color.Transparent;
             this.PcxExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxExit.BackgroundImage")));
             this.PcxExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxExit.Location = new System.Drawing.Point(849, 24);
+            this.PcxExit.Location = new System.Drawing.Point(703, 24);
             this.PcxExit.Name = "PcxExit";
             this.PcxExit.Size = new System.Drawing.Size(16, 16);
             this.PcxExit.TabIndex = 15;
@@ -297,7 +302,7 @@
             this.LblExit.Depth = 0;
             this.LblExit.Font = new System.Drawing.Font("Roboto", 11F);
             this.LblExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LblExit.Location = new System.Drawing.Point(865, 22);
+            this.LblExit.Location = new System.Drawing.Point(718, 22);
             this.LblExit.MouseState = MaterialSkin.MouseState.HOVER;
             this.LblExit.Name = "LblExit";
             this.LblExit.Size = new System.Drawing.Size(34, 19);
@@ -311,7 +316,7 @@
             this.PcxSettings.BackColor = System.Drawing.Color.Transparent;
             this.PcxSettings.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxSettings.BackgroundImage")));
             this.PcxSettings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxSettings.Location = new System.Drawing.Point(910, 24);
+            this.PcxSettings.Location = new System.Drawing.Point(908, 24);
             this.PcxSettings.Name = "PcxSettings";
             this.PcxSettings.Size = new System.Drawing.Size(16, 16);
             this.PcxSettings.TabIndex = 13;
@@ -326,7 +331,7 @@
             this.LblView.Enabled = false;
             this.LblView.Font = new System.Drawing.Font("Roboto", 11F);
             this.LblView.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LblView.Location = new System.Drawing.Point(926, 22);
+            this.LblView.Location = new System.Drawing.Point(924, 22);
             this.LblView.MouseState = MaterialSkin.MouseState.HOVER;
             this.LblView.Name = "LblView";
             this.LblView.Size = new System.Drawing.Size(72, 19);
@@ -3526,6 +3531,34 @@
             this.TmrCheckVal.Interval = 1;
             this.TmrCheckVal.Tick += new System.EventHandler(this.TmrCheckVal_Tick);
             // 
+            // PcxDownloads
+            // 
+            this.PcxDownloads.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PcxDownloads.BackColor = System.Drawing.Color.Transparent;
+            this.PcxDownloads.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxDownloads.BackgroundImage")));
+            this.PcxDownloads.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PcxDownloads.Location = new System.Drawing.Point(762, 24);
+            this.PcxDownloads.Name = "PcxDownloads";
+            this.PcxDownloads.Size = new System.Drawing.Size(16, 16);
+            this.PcxDownloads.TabIndex = 19;
+            this.PcxDownloads.TabStop = false;
+            // 
+            // BtnViewDownloads
+            // 
+            this.BtnViewDownloads.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnViewDownloads.AutoSize = true;
+            this.BtnViewDownloads.BackColor = System.Drawing.Color.Transparent;
+            this.BtnViewDownloads.Depth = 0;
+            this.BtnViewDownloads.Font = new System.Drawing.Font("Roboto", 11F);
+            this.BtnViewDownloads.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnViewDownloads.Location = new System.Drawing.Point(778, 22);
+            this.BtnViewDownloads.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnViewDownloads.Name = "BtnViewDownloads";
+            this.BtnViewDownloads.Size = new System.Drawing.Size(121, 19);
+            this.BtnViewDownloads.TabIndex = 20;
+            this.BtnViewDownloads.Text = "View Downloads";
+            this.BtnViewDownloads.Click += new System.EventHandler(this.BtnViewDownloads_Click);
+            // 
             // FmSwitchMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3559,6 +3592,7 @@
             this.TbGame.PerformLayout();
             this.TbHome.ResumeLayout(false);
             this.TbPage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PcxDownloads)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3740,5 +3774,7 @@
         private MaterialSkin.Controls.MaterialFlatButton BtnToolGCDump;
         public MaterialSkin.Controls.MaterialProgressBar PrgInstall;
         public MaterialSkin.Controls.MaterialLabel LblInstalling;
+        private System.Windows.Forms.PictureBox PcxDownloads;
+        private MaterialSkin.Controls.MaterialLabel BtnViewDownloads;
     }
 }

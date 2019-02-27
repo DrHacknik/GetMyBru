@@ -27,12 +27,13 @@ namespace GetMyBru.GetMyBru.Core.Installer
         public static double percentage;
         public static bool Installing;
         public static bool Installed;
+        public static bool Downloading;
 
         public static void InstallSwitch(string AppToInstall)
         {
             try
             {
-                Installing = true;
+                Downloading = true;
                 PackageDownloadComplete = false;
                 PackageProgress = 0;
                 Path = cd + "\\Data\\Cache\\Switch\\" + AppToInstall + ".zip";
@@ -48,6 +49,7 @@ namespace GetMyBru.GetMyBru.Core.Installer
             {
                 MessageBox.Show(ex.Message + Environment.NewLine + "URL: " + URLStr, "Error:", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Installing = false;
+                Downloading = false;
                 return;
             }
         }
@@ -94,6 +96,8 @@ namespace GetMyBru.GetMyBru.Core.Installer
             }
             else
             {
+                Downloading = false;
+                Installing = true;
                 Console.WriteLine("Package downloaded");
                 ExtractPackage();
             }
