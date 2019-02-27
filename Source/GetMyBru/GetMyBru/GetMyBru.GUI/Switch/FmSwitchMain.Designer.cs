@@ -31,7 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FmSwitchMain));
             this.PnlBottom = new System.Windows.Forms.Panel();
-            this.LblInstalling = new MaterialSkin.Controls.MaterialLabel();
+            this.PcxDownloads = new System.Windows.Forms.PictureBox();
+            this.BtnViewDownloads = new MaterialSkin.Controls.MaterialLabel();
             this.PrgInstall = new MaterialSkin.Controls.MaterialProgressBar();
             this.LblVersion = new MaterialSkin.Controls.MaterialLabel();
             this.PcxExit = new System.Windows.Forms.PictureBox();
@@ -40,6 +41,7 @@
             this.LblView = new MaterialSkin.Controls.MaterialLabel();
             this.PnlSplitter = new System.Windows.Forms.Panel();
             this.PcxSwitchLogo = new System.Windows.Forms.PictureBox();
+            this.LblInstalling = new MaterialSkin.Controls.MaterialLabel();
             this.TbThemes = new System.Windows.Forms.TabPage();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.TbAdv = new System.Windows.Forms.TabPage();
@@ -205,9 +207,8 @@
             this.TbPage = new MaterialSkin.Controls.MaterialTabControl();
             this.TbSel = new MaterialSkin.Controls.MaterialTabSelector();
             this.TmrCheckVal = new System.Windows.Forms.Timer(this.components);
-            this.PcxDownloads = new System.Windows.Forms.PictureBox();
-            this.BtnViewDownloads = new MaterialSkin.Controls.MaterialLabel();
             this.PnlBottom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PcxDownloads)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSettings)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSwitchLogo)).BeginInit();
@@ -218,7 +219,6 @@
             this.TbGame.SuspendLayout();
             this.TbHome.SuspendLayout();
             this.TbPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PcxDownloads)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlBottom
@@ -240,22 +240,33 @@
             this.PnlBottom.Size = new System.Drawing.Size(1011, 63);
             this.PnlBottom.TabIndex = 5;
             // 
-            // LblInstalling
+            // PcxDownloads
             // 
-            this.LblInstalling.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LblInstalling.BackColor = System.Drawing.Color.Transparent;
-            this.LblInstalling.Depth = 0;
-            this.LblInstalling.Font = new System.Drawing.Font("Roboto", 11F);
-            this.LblInstalling.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LblInstalling.Location = new System.Drawing.Point(299, 14);
-            this.LblInstalling.MouseState = MaterialSkin.MouseState.HOVER;
-            this.LblInstalling.Name = "LblInstalling";
-            this.LblInstalling.Size = new System.Drawing.Size(413, 19);
-            this.LblInstalling.TabIndex = 18;
-            this.LblInstalling.Text = "Installing %APP%";
-            this.LblInstalling.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.LblInstalling.Visible = false;
+            this.PcxDownloads.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.PcxDownloads.BackColor = System.Drawing.Color.Transparent;
+            this.PcxDownloads.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxDownloads.BackgroundImage")));
+            this.PcxDownloads.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PcxDownloads.Location = new System.Drawing.Point(762, 24);
+            this.PcxDownloads.Name = "PcxDownloads";
+            this.PcxDownloads.Size = new System.Drawing.Size(16, 16);
+            this.PcxDownloads.TabIndex = 19;
+            this.PcxDownloads.TabStop = false;
+            // 
+            // BtnViewDownloads
+            // 
+            this.BtnViewDownloads.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnViewDownloads.AutoSize = true;
+            this.BtnViewDownloads.BackColor = System.Drawing.Color.Transparent;
+            this.BtnViewDownloads.Depth = 0;
+            this.BtnViewDownloads.Font = new System.Drawing.Font("Roboto", 11F);
+            this.BtnViewDownloads.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnViewDownloads.Location = new System.Drawing.Point(778, 22);
+            this.BtnViewDownloads.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BtnViewDownloads.Name = "BtnViewDownloads";
+            this.BtnViewDownloads.Size = new System.Drawing.Size(121, 19);
+            this.BtnViewDownloads.TabIndex = 20;
+            this.BtnViewDownloads.Text = "View Downloads";
+            this.BtnViewDownloads.Click += new System.EventHandler(this.BtnViewDownloads_Click);
             // 
             // PrgInstall
             // 
@@ -360,6 +371,23 @@
             this.PcxSwitchLogo.Size = new System.Drawing.Size(36, 32);
             this.PcxSwitchLogo.TabIndex = 3;
             this.PcxSwitchLogo.TabStop = false;
+            // 
+            // LblInstalling
+            // 
+            this.LblInstalling.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LblInstalling.BackColor = System.Drawing.Color.Transparent;
+            this.LblInstalling.Depth = 0;
+            this.LblInstalling.Font = new System.Drawing.Font("Roboto", 11F);
+            this.LblInstalling.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LblInstalling.Location = new System.Drawing.Point(299, 14);
+            this.LblInstalling.MouseState = MaterialSkin.MouseState.HOVER;
+            this.LblInstalling.Name = "LblInstalling";
+            this.LblInstalling.Size = new System.Drawing.Size(413, 19);
+            this.LblInstalling.TabIndex = 18;
+            this.LblInstalling.Text = "Installing %APP%";
+            this.LblInstalling.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.LblInstalling.Visible = false;
             // 
             // TbThemes
             // 
@@ -3531,34 +3559,6 @@
             this.TmrCheckVal.Interval = 1;
             this.TmrCheckVal.Tick += new System.EventHandler(this.TmrCheckVal_Tick);
             // 
-            // PcxDownloads
-            // 
-            this.PcxDownloads.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.PcxDownloads.BackColor = System.Drawing.Color.Transparent;
-            this.PcxDownloads.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PcxDownloads.BackgroundImage")));
-            this.PcxDownloads.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PcxDownloads.Location = new System.Drawing.Point(762, 24);
-            this.PcxDownloads.Name = "PcxDownloads";
-            this.PcxDownloads.Size = new System.Drawing.Size(16, 16);
-            this.PcxDownloads.TabIndex = 19;
-            this.PcxDownloads.TabStop = false;
-            // 
-            // BtnViewDownloads
-            // 
-            this.BtnViewDownloads.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnViewDownloads.AutoSize = true;
-            this.BtnViewDownloads.BackColor = System.Drawing.Color.Transparent;
-            this.BtnViewDownloads.Depth = 0;
-            this.BtnViewDownloads.Font = new System.Drawing.Font("Roboto", 11F);
-            this.BtnViewDownloads.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.BtnViewDownloads.Location = new System.Drawing.Point(778, 22);
-            this.BtnViewDownloads.MouseState = MaterialSkin.MouseState.HOVER;
-            this.BtnViewDownloads.Name = "BtnViewDownloads";
-            this.BtnViewDownloads.Size = new System.Drawing.Size(121, 19);
-            this.BtnViewDownloads.TabIndex = 20;
-            this.BtnViewDownloads.Text = "View Downloads";
-            this.BtnViewDownloads.Click += new System.EventHandler(this.BtnViewDownloads_Click);
-            // 
             // FmSwitchMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3578,6 +3578,7 @@
             this.Load += new System.EventHandler(this.FmSwitchMain_Load);
             this.PnlBottom.ResumeLayout(false);
             this.PnlBottom.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PcxDownloads)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSettings)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxSwitchLogo)).EndInit();
@@ -3592,7 +3593,6 @@
             this.TbGame.PerformLayout();
             this.TbHome.ResumeLayout(false);
             this.TbPage.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PcxDownloads)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -94,6 +94,7 @@
     <Compile Include="GetMyBru.GUI\Wii\FmWiiMain.Designer.cs">
       <DependentUpon>FmWiiMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="GetMyBru.Services\SvcGetIcons.cs" />
     <Compile Include="GetMyBru.Services\SvcUpdate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
