@@ -126,29 +126,17 @@ namespace GetMyBru.GetMyBru.GUI
 
         private void LblSettings_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("Please do keep in mind that this feature is not implemented yet.", "Do note:", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //return;
-
-            if (Properties.Settings.Default.FirstTime == true)
+            if (SettingsActive == false)
             {
-                MessageBox.Show("You haven't saved the settings for first use. Please do so.", "Wait a min~", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return;
+                SettingsActive = true;
+                TxtDrive.Clear();
+                LoadSettings();
             }
-            else
+            else if (SettingsActive == true)
             {
-                if (SettingsActive == false)
-                {
-                    SettingsActive = true;
-                    TxtDrive.Clear();
-                    LoadSettings();
-                }
-                else if (SettingsActive == true)
-                {
-                    SettingsActive = false;
-                }
+                SettingsActive = false;
             }
         }
-
         private void TmrCheckVal_Tick(object sender, EventArgs e)
         {
             SetLocationButtons();
@@ -209,6 +197,7 @@ namespace GetMyBru.GetMyBru.GUI
 
         private void SaveSettings()
         {
+            LblSettings.Enabled = true;
             if (ChckAutoUpdate.Checked == true)
             {
                 Properties.Settings.Default.AutoUpdate = true;
