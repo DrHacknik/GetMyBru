@@ -44,6 +44,7 @@ namespace GetMyBru.GetMyBru.GUI
             {
                 MessageBox.Show("This is the first time you have used this program. " + Environment.NewLine + "We'll need you to change some settings to your liking before we go on.", "Wait a min~", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 SettingsActive = true;
+                LblSettings.Enabled = false;
             }
         }
 
