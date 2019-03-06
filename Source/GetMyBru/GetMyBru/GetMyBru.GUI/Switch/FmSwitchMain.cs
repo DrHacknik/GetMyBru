@@ -178,7 +178,7 @@ namespace GetMyBru.GetMyBru.GUI
 
         private void BtnGameKgDoom_Click(object sender, EventArgs e)
         {
-            AppToInstall = IHomebrewList.EmuGDKGBA; ; IServiceInstall.InstallSwitch(AppToInstall);
+            AppToInstall = IHomebrewList.GameKGDOOM; ; IServiceInstall.InstallSwitch(AppToInstall);
         }
 
         private void BtnGameXash_Click(object sender, EventArgs e)

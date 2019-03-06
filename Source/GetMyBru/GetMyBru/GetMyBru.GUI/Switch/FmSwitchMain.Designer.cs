@@ -207,6 +207,7 @@
             this.TbPage = new MaterialSkin.Controls.MaterialTabControl();
             this.TbSel = new MaterialSkin.Controls.MaterialTabSelector();
             this.TmrCheckVal = new System.Windows.Forms.Timer(this.components);
+            this.TxtSearch = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.PnlBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PcxDownloads)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcxExit)).BeginInit();
@@ -3559,12 +3560,34 @@
             this.TmrCheckVal.Interval = 1;
             this.TmrCheckVal.Tick += new System.EventHandler(this.TmrCheckVal_Tick);
             // 
+            // TxtSearch
+            // 
+            this.TxtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
+            this.TxtSearch.Depth = 0;
+            this.TxtSearch.ForeColor = System.Drawing.Color.White;
+            this.TxtSearch.Hint = "Search";
+            this.TxtSearch.Location = new System.Drawing.Point(762, 68);
+            this.TxtSearch.MaxLength = 32;
+            this.TxtSearch.MouseState = MaterialSkin.MouseState.HOVER;
+            this.TxtSearch.Name = "TxtSearch";
+            this.TxtSearch.PasswordChar = '\0';
+            this.TxtSearch.SelectedText = "";
+            this.TxtSearch.SelectionLength = 0;
+            this.TxtSearch.SelectionStart = 0;
+            this.TxtSearch.Size = new System.Drawing.Size(234, 23);
+            this.TxtSearch.TabIndex = 9;
+            this.TxtSearch.TabStop = false;
+            this.TxtSearch.UseSystemPasswordChar = false;
+            this.TxtSearch.Visible = false;
+            // 
             // FmSwitchMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(1011, 746);
+            this.Controls.Add(this.TxtSearch);
             this.Controls.Add(this.TbSel);
             this.Controls.Add(this.TbPage);
             this.Controls.Add(this.PnlBottom);
@@ -3776,5 +3799,6 @@
         public MaterialSkin.Controls.MaterialLabel LblInstalling;
         private System.Windows.Forms.PictureBox PcxDownloads;
         private MaterialSkin.Controls.MaterialLabel BtnViewDownloads;
+        private MaterialSkin.Controls.MaterialSingleLineTextField TxtSearch;
     }
 }
