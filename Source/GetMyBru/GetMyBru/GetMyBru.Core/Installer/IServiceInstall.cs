@@ -42,7 +42,7 @@ namespace GetMyBru.GetMyBru.Core.Installer
                 CacheCheck.PerformCheck();
                 URLStr = URL.ToString();
                 GetPackage.DownloadProgressChanged += new DownloadProgressChangedEventHandler(PackageDownloadProgress);
-                GetPackage.DownloadFileCompleted += new AsyncCompletedEventHandler(PackageDownloaded);
+                GetPackage.DownloadFileCompleted += new AsyncCompletedEventHandler(PackageDownloadedAsync);
                 GetPackage.DownloadFileAsync(URL, Path);
                 return;
             }
@@ -55,19 +55,19 @@ namespace GetMyBru.GetMyBru.Core.Installer
             }
         }
 
-        private static void ExtractPackage()
+        private static async Task ExtractPackageAsync()
         {
             try
             {
                 using (ZipFile Package = ZipFile.Read(Path))
                 {
-                    Package.ExtractExistingFile = ExtractExistingFileAction.OverwriteSilently;
-                    Package.ExtractAll(Properties.Settings.Default.Drive + ":\\");
                     if (File.Exists(Properties.Settings.Default.Drive + ":\\info.json") || File.Exists(Properties.Settings.Default.Drive + ":\\manifest.install"))
                     {
                         File.Delete(Properties.Settings.Default.Drive + ":\\info.json");
                         File.Delete(Properties.Settings.Default.Drive + ":\\manifest.install");
                     }
+                    Package.ExtractExistingFile = ExtractExistingFileAction.OverwriteSilently;
+                    await Task.Run(() => Package.ExtractAll(Properties.Settings.Default.Drive + ":\\"));
                 }
             }
             catch
@@ -89,7 +89,7 @@ namespace GetMyBru.GetMyBru.Core.Installer
             PackageProgress = int.Parse(Math.Truncate(percentage).ToString());
         }
 
-        public static void PackageDownloaded(object sender, AsyncCompletedEventArgs e)
+        public static async void PackageDownloadedAsync(object sender, AsyncCompletedEventArgs e)
         {
             if (e.Cancelled == true)
             {
@@ -100,7 +100,7 @@ namespace GetMyBru.GetMyBru.Core.Installer
                 Downloading = false;
                 Installing = true;
                 Console.WriteLine("Package downloaded");
-                ExtractPackage();
+                await ExtractPackageAsync();
             }
         }
 

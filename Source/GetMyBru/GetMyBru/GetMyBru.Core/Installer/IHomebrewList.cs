@@ -32,6 +32,7 @@ namespace GetMyBru.GetMyBru.Core.Installer
         public static readonly string GameTREKT = "T-Rekt-NX";
         public static readonly string GameGameOfLife = "gol";
         public static readonly string GameHexGem = "hexgem";
+        public static readonly string GameHCL = "HCL-switch";
         public static readonly string GameBermuda = "bs";
         public static readonly string GameInvaders = "InvadersNX";
         public static readonly string GamePostal = "Postal";

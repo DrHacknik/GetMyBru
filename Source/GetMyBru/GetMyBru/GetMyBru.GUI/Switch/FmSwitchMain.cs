@@ -163,7 +163,7 @@ namespace GetMyBru.GetMyBru.GUI
 
         private void BtnGameHCLSwitch_Click(object sender, EventArgs e)
         {
-            return;
+            AppToInstall = IHomebrewList.GameHCL; ; IServiceInstall.InstallSwitch(AppToInstall);
         }
 
         private void BtnGameSuperMarioWar_Click(object sender, EventArgs e)
