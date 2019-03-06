@@ -57,20 +57,20 @@ namespace GetMyBru.GetMyBru.GUI
             PrgInstall.Value = int.Parse(Math.Truncate(IServiceInstall.percentage).ToString());
             if (IServiceInstall.Downloading == true)
             {
-                this.Enabled = false;
+                TbPage.Enabled = false;
                 LblInstalling.Visible = true;
                 LblInstalling.Text = "Downloading package: " + AppToInstall;
             }
             else if (IServiceInstall.Installing == false)
             {
-                this.Enabled = true;
+                TbPage.Enabled = true;
 
                 LblInstalling.Visible = false;
             }
 
             if (IServiceInstall.Downloading == false && IServiceInstall.Installing == true)
             {
-                this.Enabled = false;
+                TbPage.Enabled = false;
                 LblInstalling.Text = "Installing package: " + AppToInstall;
             }
 
