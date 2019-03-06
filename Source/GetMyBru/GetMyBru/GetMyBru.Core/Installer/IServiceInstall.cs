@@ -61,13 +61,9 @@ namespace GetMyBru.GetMyBru.Core.Installer
             {
                 using (ZipFile Package = ZipFile.Read(Path))
                 {
-                    if (File.Exists(Properties.Settings.Default.Drive + ":\\info.json") || File.Exists(Properties.Settings.Default.Drive + ":\\manifest.install"))
-                    {
-                        File.Delete(Properties.Settings.Default.Drive + ":\\info.json");
-                        File.Delete(Properties.Settings.Default.Drive + ":\\manifest.install");
-                    }
-                    Package.ExtractExistingFile = ExtractExistingFileAction.OverwriteSilently;
-                    await Task.Run(() => Package.ExtractAll(Properties.Settings.Default.Drive + ":\\"));
+                    CheckManifest();
+                    await Task.Run(() => Package.ExtractAll(Properties.Settings.Default.Drive + ":\\", ExtractExistingFileAction.OverwriteSilently));
+                    CheckManifest();
                 }
             }
             catch
@@ -78,6 +74,17 @@ namespace GetMyBru.GetMyBru.Core.Installer
             }
             Installed = true;
             Installing = false;
+            return;
+        }
+
+        private static void CheckManifest()
+        {
+            if (File.Exists(Properties.Settings.Default.Drive + ":\\*.tmp") || File.Exists(Properties.Settings.Default.Drive + ":\\*.install") || File.Exists(Properties.Settings.Default.Drive + ":\\*.json")) ;
+            {
+                File.Delete(Properties.Settings.Default.Drive + ":\\*.json");
+                File.Delete(Properties.Settings.Default.Drive + ":\\*.install");
+                File.Delete(Properties.Settings.Default.Drive + ":\\*.tmp");
+            }
             return;
         }
 
