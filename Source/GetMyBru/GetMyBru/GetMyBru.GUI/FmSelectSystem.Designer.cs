@@ -166,12 +166,17 @@
             this.exitToolStripMenuItem});
             this.MtxMain.MouseState = MaterialSkin.MouseState.HOVER;
             this.MtxMain.Name = "MtxMain";
-            this.MtxMain.Size = new System.Drawing.Size(149, 48);
+            this.MtxMain.Size = new System.Drawing.Size(94, 48);
+            // 
+            // openSelectorToolStripMenuItem
+            // 
+            this.openSelectorToolStripMenuItem.Name = "openSelectorToolStripMenuItem";
+            this.openSelectorToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -500,7 +505,6 @@
             this.ChckClean.AutoSize = true;
             this.ChckClean.BackColor = System.Drawing.Color.Transparent;
             this.ChckClean.Depth = 0;
-            this.ChckClean.Enabled = false;
             this.ChckClean.Font = new System.Drawing.Font("Roboto", 10F);
             this.ChckClean.ForeColor = System.Drawing.Color.White;
             this.ChckClean.Location = new System.Drawing.Point(36, 109);

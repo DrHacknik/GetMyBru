@@ -1,13 +1,8 @@
-﻿using GetMyBru.GetMyBru.GUI;
-using Ionic.Zip;
+﻿using Ionic.Zip;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -62,9 +57,14 @@ namespace GetMyBru.GetMyBru.Core.Installer
                 using (ZipFile Package = ZipFile.Read(Path))
                 {
                     CheckManifest();
-                    await Task.Run(() => Package.ExtractAll(Properties.Settings.Default.Drive + ":\\", ExtractExistingFileAction.OverwriteSilently));
-                    CheckManifest();
+                    await Task.Run(() => Package.ExtractAll(Properties.Settings.Default.Drive + ":\\", ExtractExistingFileAction.OverwriteSilently), );
                 }
+                if (Properties.Settings.Default.Clean == true)
+                {
+                    Directory.Delete(cd + "\\Data\\Cache\\Switch", true);
+                    return;
+                }
+                CheckManifest();
             }
             catch
             {
@@ -73,7 +73,6 @@ namespace GetMyBru.GetMyBru.Core.Installer
                 return;
             }
             Installed = true;
-            Installing = false;
             return;
         }
 
