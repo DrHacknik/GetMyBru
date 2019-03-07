@@ -161,16 +161,6 @@ namespace GetMyBru.GetMyBru.GUI
                     return;
                 }
             }
-            
-            if (SettingsActive == false)
-            {
-                TxtDrive.Clear();
-                LoadSettings();
-            }
-            else if (SettingsActive == true)
-            {
-                SettingsActive = false;
-            }
         }
 
         private void SetLocationButtons()
