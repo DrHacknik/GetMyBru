@@ -1,6 +1,7 @@
 ![Icon](https://raw.githubusercontent.com/DrHacknik/GetMyBru/master/Common/Icons/Icon128.png)
 
 [![Build status](https://ci.appveyor.com/api/projects/status/rv1ka3qoiw4mqn0p/branch/master?svg=true)](https://ci.appveyor.com/project/zoltx23/getmybru/branch/master)
+
 Latest build [here.](https://ci.appveyor.com/project/zoltx23/getmybru/branch/master/artifacts)
 
 # GetMyBru - **WIP**
