@@ -161,6 +161,17 @@ namespace GetMyBru.GetMyBru.GUI
                     return;
                 }
             }
+            
+            if (SettingsActive == false)
+            {
+                SettingsActive = true;
+                TxtDrive.Clear();
+                LoadSettings();
+            }
+            else if (SettingsActive == true)
+            {
+                SettingsActive = false;
+            }
         }
 
         private void SetLocationButtons()
@@ -259,7 +270,7 @@ namespace GetMyBru.GetMyBru.GUI
             }
             else
             {
-                if (TxtDrive == null)
+                if (String.IsNullOrEmpty(TxtDrive.Text.ToString())
                 {
                     MessageBox.Show("The Drive text field is empty!", "Error: ", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     TxtDrive.Focus();
