@@ -270,7 +270,7 @@ namespace GetMyBru.GetMyBru.GUI
             }
             else
             {
-                if (String.IsNullOrEmpty(TxtDrive.Text.ToString())
+                if (String.IsNullOrEmpty(TxtDrive.Text.ToString()))
                 {
                     MessageBox.Show("The Drive text field is empty!", "Error: ", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     TxtDrive.Focus();
