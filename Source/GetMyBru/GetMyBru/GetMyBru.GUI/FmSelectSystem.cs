@@ -164,7 +164,6 @@ namespace GetMyBru.GetMyBru.GUI
             
             if (SettingsActive == false)
             {
-                SettingsActive = true;
                 TxtDrive.Clear();
                 LoadSettings();
             }
