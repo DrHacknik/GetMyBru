@@ -59,7 +59,7 @@ namespace GetMyBru.GetMyBru.GUI
             {
                 TbPage.Enabled = false;
                 LblInstalling.Visible = true;
-                LblInstalling.Text = "Downloading package: " + AppToInstall + int.Parse(Math.Truncate(IServiceInstall.percentage).ToString("P"));;
+                LblInstalling.Text = "Downloading package: " + AppToInstall + IServiceInstall.percentage.ToString("P");
             }
             else if (IServiceInstall.Installing == false)
             {
