@@ -239,7 +239,7 @@ namespace GetMyBru.GetMyBru.GUI
             Properties.Settings.Default.Save();
             //Write values to JSON
             
-            if (!TxtDrive.Text == null) && (Properties.Settings.Default.FirstTime == true) || (TxtDrive.Text == null)
+            if (!TxtDrive.Text == null && Properties.Settings.Default.FirstTime == true || TxtDrive.Text == null)
             {
                  MessageBox.Show("The Drive text field cannot be left empty!", "Error:", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                  return; 
