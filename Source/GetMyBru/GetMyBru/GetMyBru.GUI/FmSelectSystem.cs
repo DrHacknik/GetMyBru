@@ -238,7 +238,12 @@ namespace GetMyBru.GetMyBru.GUI
 
             Properties.Settings.Default.Save();
             //Write values to JSON
-
+            
+            if (!TxtDrive.Text == null) && (Properties.Settings.Default.FirstTime == true) || (TxtDrive.Text == null)
+            {
+                 MessageBox.Show("The Drive text field cannot be left empty!", "Error:", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                 return; 
+            }
             if (TxtDrive.Text.Contains(":") || TxtDrive.Text.Contains("\\") || TxtDrive.Text.Contains("/") || TxtDrive.Text.Contains(","))
             {
                 MessageBox.Show("The Drive text field contains invalid character/s. Please only input the drive letter!", "Error: Invalid character/s", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
