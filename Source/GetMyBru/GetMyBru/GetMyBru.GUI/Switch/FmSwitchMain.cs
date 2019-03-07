@@ -59,7 +59,7 @@ namespace GetMyBru.GetMyBru.GUI
             {
                 TbPage.Enabled = false;
                 LblInstalling.Visible = true;
-                LblInstalling.Text = "Downloading package: " + AppToInstall;
+                LblInstalling.Text = "Downloading package: " + AppToInstall + int.Parse(Math.Truncate(IServiceInstall.percentage).ToString("P"));;
             }
             else if (IServiceInstall.Installing == false)
             {
@@ -71,7 +71,7 @@ namespace GetMyBru.GetMyBru.GUI
             if (IServiceInstall.Downloading == false && IServiceInstall.Installing == true)
             {
                 TbPage.Enabled = false;
-                LblInstalling.Text = "Installing package: " + AppToInstall + " (" + PackageProgress.ToString("P") + ")";
+                LblInstalling.Text = "Installing package: " + AppToInstall;
             }
 
             if (AppInView == true)
