@@ -241,8 +241,10 @@ namespace GetMyBru.GetMyBru.GUI
             
             if (String.IsNullOrEmpty(TxtDrive.Text.ToString()) == false && Properties.Settings.Default.FirstTime == true || TxtDrive.Text == String.Empty)
             {
-                 MessageBox.Show("The Drive text field cannot be left empty!", "Error:", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                 return; 
+                MessageBox.Show("The Drive text field cannot be left empty!", "Error:", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                TxtDrive.Focus();
+                SettingsActive = true;
+                return;
             }
             if (TxtDrive.Text.Contains(":") || TxtDrive.Text.Contains("\\") || TxtDrive.Text.Contains("/") || TxtDrive.Text.Contains(","))
             {
