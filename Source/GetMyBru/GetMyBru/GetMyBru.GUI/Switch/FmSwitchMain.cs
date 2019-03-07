@@ -71,7 +71,7 @@ namespace GetMyBru.GetMyBru.GUI
             if (IServiceInstall.Downloading == false && IServiceInstall.Installing == true)
             {
                 TbPage.Enabled = false;
-                LblInstalling.Text = "Installing package: " + AppToInstall;
+                LblInstalling.Text = "Installing package: " + AppToInstall + " (" + PackageProgress.ToString("P") + ")";
             }
 
             if (AppInView == true)
