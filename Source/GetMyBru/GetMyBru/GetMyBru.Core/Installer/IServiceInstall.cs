@@ -57,7 +57,7 @@ namespace GetMyBru.GetMyBru.Core.Installer
                 using (ZipFile Package = ZipFile.Read(Path))
                 {
                     CheckManifest();
-                    await Task.Run(() => Package.ExtractAll(Properties.Settings.Default.Drive + ":\\", ExtractExistingFileAction.OverwriteSilently), );
+                    await Task.Run(() => Package.ExtractAll(Properties.Settings.Default.Drive + ":\\", ExtractExistingFileAction.OverwriteSilently));
                 }
                 if (Properties.Settings.Default.Clean == true)
                 {
