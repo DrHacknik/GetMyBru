@@ -32,7 +32,7 @@ namespace GetMyBru.GetMyBru.Core.Installer
                 if (Properties.Settings.Default.Drive == String.Empty)
                 {
                     MessageBox.Show("The Drive settings field has been left empty. Please configure this and try again.", "Error: No Drive set", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    Form Fs = new UISelectSystem(); 
+                    Form Fs = new FmSelectSystem(); 
                     Fs.Show();
                     FmSelectSystem.SettingsActive = true; 
                     this.Close();
