@@ -5,6 +5,7 @@ using System.IO;
 using System.Net;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GetMyBru.GetMyBru.GUI; 
 
 namespace GetMyBru.GetMyBru.Core.Installer
 {
@@ -35,7 +36,6 @@ namespace GetMyBru.GetMyBru.Core.Installer
                     Form Fs = new FmSelectSystem(); 
                     Fs.Show();
                     FmSelectSystem.SettingsActive = true; 
-                    this.Close();
                     return;
                 }
                 Downloading = true;
