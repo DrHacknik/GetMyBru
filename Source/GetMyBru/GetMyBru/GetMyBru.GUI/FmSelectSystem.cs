@@ -23,7 +23,7 @@ namespace GetMyBru.GetMyBru.GUI
         private Form FmWii = new FmWiiMain();
         private Form FmWiiU = new FmWiiUMain();
         private Form FmSwitch = new FmSwitchMain();
-        private bool SettingsActive = false;
+        public static bool SettingsActive = false;
         private string cd = Environment.CurrentDirectory;
         public static string NotifTitle;
         public static string NotifText;
