@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO; 
+using System.Configuration; 
 
 namespace GetMyBru.GetMyBru.Core.Config
 {
