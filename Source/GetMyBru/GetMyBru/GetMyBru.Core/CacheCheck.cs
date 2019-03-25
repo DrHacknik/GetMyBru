@@ -45,10 +45,6 @@ namespace GetMyBru.GetMyBru.Core
             {
                 SvcUpdate.GetUpdate();
             }
-            //if (Properties.Settings.Default.Clean == true)
-            //{
-            //    ClearCache(cd + "\\Data\\Cache\\");
-            //}
 
             return;
         }

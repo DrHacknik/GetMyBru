@@ -1790,7 +1790,7 @@
             this.BtnEmuGenesisPlusGX.Name = "BtnEmuGenesisPlusGX";
             this.BtnEmuGenesisPlusGX.Primary = false;
             this.BtnEmuGenesisPlusGX.Size = new System.Drawing.Size(163, 36);
-            this.BtnEmuGenesisPlusGX.TabIndex = 1;
+            this.BtnEmuGenesisPlusGX.TabIndex = 20;
             this.BtnEmuGenesisPlusGX.Text = "Genesis Plus NX";
             this.BtnEmuGenesisPlusGX.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnEmuGenesisPlusGX.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;

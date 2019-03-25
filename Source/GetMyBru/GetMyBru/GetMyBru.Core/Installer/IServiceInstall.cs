@@ -5,7 +5,7 @@ using System.IO;
 using System.Net;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using GetMyBru.GetMyBru.GUI; 
+using GetMyBru.GetMyBru.GUI;
 
 namespace GetMyBru.GetMyBru.Core.Installer
 {
@@ -33,9 +33,9 @@ namespace GetMyBru.GetMyBru.Core.Installer
                 if (Properties.Settings.Default.Drive == String.Empty)
                 {
                     MessageBox.Show("The Drive settings field has been left empty. Please configure this and try again.", "Error: No Drive set", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    Form Fs = new FmSelectSystem(); 
+                    Form Fs = new FmSelectSystem();
                     Fs.Show();
-                    FmSelectSystem.SettingsActive = true; 
+                    FmSelectSystem.SettingsActive = true;
                     return;
                 }
                 Downloading = true;
@@ -63,17 +63,28 @@ namespace GetMyBru.GetMyBru.Core.Installer
         {
             try
             {
-                using (ZipFile Package = ZipFile.Read(Path))
+                if (Properties.Settings.Default.Drive == null)
                 {
-                    CheckManifest();
-                    await Task.Run(() => Package.ExtractAll(Properties.Settings.Default.Drive + ":\\", ExtractExistingFileAction.OverwriteSilently));
-                }
-                if (Properties.Settings.Default.Clean == true)
-                {
-                    Directory.Delete(cd + "\\Data\\Cache\\Switch", true);
+                    MessageBox.Show("The drive letter has not been configured. Please do so, then try again.", "Error: Invalid Settings", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    Form _UISettings = new FmSelectSystem();
+                    _UISettings.Show();
+                    FmSelectSystem.SettingsActive = true;
                     return;
                 }
-                CheckManifest();
+                else
+                {
+                    using (ZipFile Package = ZipFile.Read(Path))
+                    {
+                        CheckManifest();
+                        await Task.Run(() => Package.ExtractAll(Properties.Settings.Default.Drive + ":\\", ExtractExistingFileAction.OverwriteSilently));
+                    }
+                    if (Properties.Settings.Default.Clean == true)
+                    {
+                        Directory.Delete(cd + "\\Data\\Cache\\Switch", true);
+                        return;
+                    }
+                    CheckManifest();
+                }
             }
             catch
             {
@@ -87,7 +98,7 @@ namespace GetMyBru.GetMyBru.Core.Installer
 
         private static void CheckManifest()
         {
-            if (File.Exists(Properties.Settings.Default.Drive + ":\\*.tmp") || File.Exists(Properties.Settings.Default.Drive + ":\\*.install") || File.Exists(Properties.Settings.Default.Drive + ":\\*.json")) ;
+            if (File.Exists(Properties.Settings.Default.Drive + ":\\*.tmp") || File.Exists(Properties.Settings.Default.Drive + ":\\*.install") || File.Exists(Properties.Settings.Default.Drive + ":\\*.json"))
             {
                 File.Delete(Properties.Settings.Default.Drive + ":\\*.json");
                 File.Delete(Properties.Settings.Default.Drive + ":\\*.install");

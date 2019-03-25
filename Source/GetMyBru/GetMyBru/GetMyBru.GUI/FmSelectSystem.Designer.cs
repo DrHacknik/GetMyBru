@@ -558,6 +558,7 @@
             this.ChckAutoUpdate.AutoSize = true;
             this.ChckAutoUpdate.BackColor = System.Drawing.Color.Transparent;
             this.ChckAutoUpdate.Depth = 0;
+            this.ChckAutoUpdate.Enabled = false;
             this.ChckAutoUpdate.Font = new System.Drawing.Font("Roboto", 10F);
             this.ChckAutoUpdate.ForeColor = System.Drawing.Color.White;
             this.ChckAutoUpdate.Location = new System.Drawing.Point(36, 79);
