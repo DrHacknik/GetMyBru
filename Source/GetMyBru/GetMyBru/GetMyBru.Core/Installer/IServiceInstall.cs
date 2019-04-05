@@ -120,6 +120,7 @@ namespace GetMyBru.GetMyBru.Core.Installer
             if (e.Cancelled == true)
             {
                 Console.WriteLine("Package download failed");
+                return; 
             }
             else
             {
@@ -127,6 +128,7 @@ namespace GetMyBru.GetMyBru.Core.Installer
                 Installing = true;
                 Console.WriteLine("Package downloaded");
                 await ExtractPackageAsync();
+                return;
             }
         }
 
