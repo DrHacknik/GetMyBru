@@ -62,13 +62,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GetMyBru.Core\CacheCheck.cs" />
-    <Compile Include="GetMyBru.Core\Config\ConfigParser.cs" />
     <Compile Include="GetMyBru.Core\Installer\IHomebrewList.cs" />
     <Compile Include="GetMyBru.Core\Installer\IServiceInstall.cs" />
     <Compile Include="GetMyBru.Core\Logging\IConsolePercent.cs" />
     <Compile Include="GetMyBru.Core\Logging\ILogging.cs" />
-    <Compile Include="GetMyBru.Core\Net\Parser\AppveyorParser.cs" />
-    <Compile Include="GetMyBru.Core\Net\Parser\BruParser.cs" />
     <Compile Include="GetMyBru.GUI\FmHomebrewInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,7 +139,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="GetMyBru.Core\Config\" />
+    <Folder Include="GetMyBru.Core\Net\Parser\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Icon256.ico" />
     <None Include="Resources\NoImage.png" />

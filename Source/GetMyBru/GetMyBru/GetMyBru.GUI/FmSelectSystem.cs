@@ -35,7 +35,6 @@ namespace GetMyBru.GetMyBru.GUI
             Program.EnableVisualsDefault();
             InitializeComponent();
             CheckFirstTime();
-            BruParser.PrepareJSON();
         }
 
         private void CheckFirstTime()

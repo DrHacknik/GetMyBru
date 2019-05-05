@@ -43,7 +43,6 @@ namespace GetMyBru.GetMyBru.GUI
         {
             LblVersion.Text = "Version: " + Application.ProductVersion;
 
-            BruParser.ParseJSONSwitch();
             //MessageBox.Show("Packages RAW Data returned:" + Environment.NewLine + BruParser.PackagesRawList, "Packages:", MessageBoxButtons.OK, MessageBoxIcon.Information);
             return;
         }
