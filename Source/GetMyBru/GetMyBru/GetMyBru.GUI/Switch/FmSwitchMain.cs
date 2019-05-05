@@ -66,6 +66,7 @@ namespace GetMyBru.GetMyBru.GUI
             else if (IServiceInstall.Installing == false && IServiceInstall.Installed == true)
             {
                 TbPage.Enabled = true;
+                IServiceInstall.Downloading = false;
                 ILogging.Output(false, false, false, true, "Package installed", true);
                 FmSelectSystem.NotifTitle = "GetMyBru - Package Installer";
                 FmSelectSystem.NotifText = "Package Installed";
@@ -74,10 +75,23 @@ namespace GetMyBru.GetMyBru.GUI
                 IServiceInstall.Installed = false;
                 LblInstalling.Visible = false;
             }
+            if (IServiceInstall.Failed == true)
+            {
+                TbPage.Enabled = true;
+                IServiceInstall.Installed = true; 
+                IServiceInstall.Failed = false;
+                IServiceInstall.Downloading = false;
+                ILogging.Output(true, false, false, false, "Package failed to install", true);
+                FmSelectSystem.NotifTitle = "GetMyBru - Package Installer";
+                FmSelectSystem.NotifText = "Package Failed to install";
+                FmSelectSystem.NotifTime = 40000;
+                FmSelectSystem.ShowToast = true;
+                IServiceInstall.Installed = false;
+                LblInstalling.Visible = false;
+            }
 
             if (IServiceInstall.Downloading == false && IServiceInstall.Installing == true)
             {
-                TbPage.Enabled = false;
                 LblInstalling.Text = "Installing package: " + AppToInstall;
             }
             if (AppInView == true)
@@ -101,6 +115,7 @@ namespace GetMyBru.GetMyBru.GUI
             //{
             //    PrgInstall.Value = 100;
             //    MessageBox.Show("Packaged installed.");
+            //    return;
             //    return;
             //}
         }

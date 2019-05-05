@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using GetMyBru.GetMyBru.GUI;
 using System.Linq;
+using System.Diagnostics;
 
 namespace GetMyBru.GetMyBru.Core.Installer
 {
@@ -26,6 +27,7 @@ namespace GetMyBru.GetMyBru.Core.Installer
         public static double percentage;
         public static bool Installing;
         public static bool Installed;
+        public static bool Failed = false;
         public static bool Downloading;
 
         public static void InstallSwitch(string AppToInstall)
@@ -82,15 +84,23 @@ namespace GetMyBru.GetMyBru.Core.Installer
                     {
                         try
                         {
-                            File.Delete(Properties.Settings.Default.Drive + ":\\*.json");
-                            File.Delete(Properties.Settings.Default.Drive + ":\\*.install");
-                            File.Delete(Properties.Settings.Default.Drive + ":\\*.tmp");
+                            if (!File.Exists(cd + "\\Data\\Cache\\Cleanup.bat"))
+                            {
+                                File.WriteAllText(cd + "\\Data\\Cache\\Cleanup.bat", "@echo off \r\ndel \"" + Properties.Settings.Default.Drive + ":\\manifest.install.tmp\"" + 
+                                    "\r\ndel \"" + Properties.Settings.Default.Drive + ":\\info.json\"" +
+                                    "\r\ndel \"" + Properties.Settings.Default.Drive + ":\\manifest.install\"" +
+                                    "\r\ndel \"" + Properties.Settings.Default.Drive + ":\\info.json.tmp\"");
+                                Process.Start(cd + "\\Data\\Cache\\Cleanup.bat");
+                            }
+                            else
+                            {
+                                Process.Start(cd + "\\Data\\Cache\\Cleanup.bat");
+                            }
                         }
                         catch (Exception ex)
                         {
                             Core.ILogging.Output(true, false, false, false, ex.Message, true);
-                            Installing = false;
-                            Installed = true;
+                            Failed = true;
                             return;
                         }
                         await Task.Run(() => Package.ExtractAll(Properties.Settings.Default.Drive + ":\\", ExtractExistingFileAction.OverwriteSilently));
