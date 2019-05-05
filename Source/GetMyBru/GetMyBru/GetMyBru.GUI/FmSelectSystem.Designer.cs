@@ -69,6 +69,7 @@
             this.PcxWii = new System.Windows.Forms.PictureBox();
             this.PcxWiiU = new System.Windows.Forms.PictureBox();
             this.PcxSwitch = new System.Windows.Forms.PictureBox();
+            this.ChckConsoleWind = new MaterialSkin.Controls.MaterialCheckBox();
             this.MtxMain.SuspendLayout();
             this.PnlBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PcxButtonX)).BeginInit();
@@ -377,6 +378,7 @@
             // 
             // PnlSettings
             // 
+            this.PnlSettings.Controls.Add(this.ChckConsoleWind);
             this.PnlSettings.Controls.Add(this.TxtDrive);
             this.PnlSettings.Controls.Add(this.ChckNotif);
             this.PnlSettings.Controls.Add(this.panel1);
@@ -616,6 +618,25 @@
             this.PcxSwitch.TabIndex = 6;
             this.PcxSwitch.TabStop = false;
             // 
+            // ChckConsoleWind
+            // 
+            this.ChckConsoleWind.AutoSize = true;
+            this.ChckConsoleWind.BackColor = System.Drawing.Color.Transparent;
+            this.ChckConsoleWind.Depth = 0;
+            this.ChckConsoleWind.Enabled = false;
+            this.ChckConsoleWind.Font = new System.Drawing.Font("Roboto", 10F);
+            this.ChckConsoleWind.ForeColor = System.Drawing.Color.White;
+            this.ChckConsoleWind.Location = new System.Drawing.Point(275, 109);
+            this.ChckConsoleWind.Margin = new System.Windows.Forms.Padding(0);
+            this.ChckConsoleWind.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.ChckConsoleWind.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ChckConsoleWind.Name = "ChckConsoleWind";
+            this.ChckConsoleWind.Ripple = true;
+            this.ChckConsoleWind.Size = new System.Drawing.Size(207, 30);
+            this.ChckConsoleWind.TabIndex = 15;
+            this.ChckConsoleWind.Text = "Enable the Console Window?";
+            this.ChckConsoleWind.UseVisualStyleBackColor = false;
+            // 
             // FmSelectSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -701,5 +722,6 @@
         private MaterialSkin.Controls.MaterialCheckBox ChckNotif;
         private MaterialSkin.Controls.MaterialSingleLineTextField TxtDrive;
         public System.Windows.Forms.NotifyIcon NtfMain;
+        private MaterialSkin.Controls.MaterialCheckBox ChckConsoleWind;
     }
 }

@@ -3,9 +3,11 @@ using System;
 using System.ComponentModel;
 using System.IO;
 using System.Net;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using GetMyBru.GetMyBru.GUI;
+using System.Linq;
 
 namespace GetMyBru.GetMyBru.Core.Installer
 {
@@ -32,6 +34,7 @@ namespace GetMyBru.GetMyBru.Core.Installer
             {
                 if (Properties.Settings.Default.Drive == String.Empty)
                 {
+                    Core.ILogging.Output(true, false, false, false, "The Drive settings field has been left empty. Please configure this and try again.", true); 
                     MessageBox.Show("The Drive settings field has been left empty. Please configure this and try again.", "Error: No Drive set", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     Form Fs = new FmSelectSystem();
                     Fs.Show();
@@ -52,6 +55,7 @@ namespace GetMyBru.GetMyBru.Core.Installer
             }
             catch (Exception ex)
             {
+                Core.ILogging.Output(true, false, false, false, ex.Message, true); 
                 MessageBox.Show(ex.Message + Environment.NewLine + "URL: " + URLStr, "Error:", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Installing = false;
                 Downloading = false;
@@ -65,6 +69,7 @@ namespace GetMyBru.GetMyBru.Core.Installer
             {
                 if (Properties.Settings.Default.Drive == null)
                 {
+                    Core.ILogging.Output(true, false, false, false, "The Drive settings field has been left empty. Please configure this and try again.", true);
                     MessageBox.Show("The drive letter has not been configured. Please do so, then try again.", "Error: Invalid Settings", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     Form _UISettings = new FmSelectSystem();
                     _UISettings.Show();
@@ -75,15 +80,27 @@ namespace GetMyBru.GetMyBru.Core.Installer
                 {
                     using (ZipFile Package = ZipFile.Read(Path))
                     {
-                        CheckManifest();
+                        try
+                        {
+                            File.Delete(Properties.Settings.Default.Drive + ":\\*.json");
+                            File.Delete(Properties.Settings.Default.Drive + ":\\*.install");
+                            File.Delete(Properties.Settings.Default.Drive + ":\\*.tmp");
+                        }
+                        catch (Exception ex)
+                        {
+                            Core.ILogging.Output(true, false, false, false, ex.Message, true);
+                            Installing = false;
+                            Installed = true;
+                            return;
+                        }
                         await Task.Run(() => Package.ExtractAll(Properties.Settings.Default.Drive + ":\\", ExtractExistingFileAction.OverwriteSilently));
                     }
                     if (Properties.Settings.Default.Clean == true)
                     {
                         Directory.Delete(cd + "\\Data\\Cache\\Switch", true);
-                        return;
                     }
-                    CheckManifest();
+                    Installing = false;
+                    Installed = true;
                 }
             }
             catch
@@ -92,40 +109,28 @@ namespace GetMyBru.GetMyBru.Core.Installer
                 Installing = false;
                 return;
             }
-            Installed = true;
             return;
         }
 
-        private static void CheckManifest()
-        {
-            if (File.Exists(Properties.Settings.Default.Drive + ":\\*.tmp") || File.Exists(Properties.Settings.Default.Drive + ":\\*.install") || File.Exists(Properties.Settings.Default.Drive + ":\\*.json"))
-            {
-                File.Delete(Properties.Settings.Default.Drive + ":\\*.json");
-                File.Delete(Properties.Settings.Default.Drive + ":\\*.install");
-                File.Delete(Properties.Settings.Default.Drive + ":\\*.tmp");
-            }
-            return;
-        }
 
         public static void PackageDownloadProgress(object sender, DownloadProgressChangedEventArgs e)
         {
-            bytesIn = double.Parse(e.BytesReceived.ToString());
-            totalBytes = double.Parse(e.TotalBytesToReceive.ToString());
-            percentage = bytesIn / totalBytes * 100;
-            PackageProgress = int.Parse(Math.Truncate(percentage).ToString());
+            percentage = e.ProgressPercentage;
+            PackageProgress = e.ProgressPercentage;
         }
 
         public static async void PackageDownloadedAsync(object sender, AsyncCompletedEventArgs e)
         {
             if (e.Cancelled == true)
             {
-                Console.WriteLine("Package download failed");
+                Core.ILogging.Output(true, false, false, false, "Package download failed", true);
             }
             else
             {
                 Downloading = false;
                 Installing = true;
-                Console.WriteLine("Package downloaded");
+                Core.ILogging.Output(false, false, false, true, "Package downloaded", true);
+                Core.ILogging.Output(false, false, false, true, "Package installing", true);
                 await ExtractPackageAsync();
             }
         }

@@ -94,5 +94,17 @@ namespace GetMyBru.Properties {
                 this["Drive"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool Console {
+            get {
+                return ((bool)(this["Console"]));
+            }
+            set {
+                this["Console"] = value;
+            }
+        }
     }
 }

@@ -94,6 +94,7 @@ namespace GetMyBru.GetMyBru.GUI
             }
             else if (SettingsActive == false)
             {
+                LoadSettings(); 
                 SafeExit = true;
                 if (RdSwitch.Checked == true)
                 {
@@ -176,8 +177,6 @@ namespace GetMyBru.GetMyBru.GUI
                 LblExit.Location = new Point(478, 25);
                 PcxButtonX.Location = new Point(459, 26);
                 PnlSettings.Visible = false;
-
-                LoadSettings();
                 return;
             }
             if (SettingsActive == true)
@@ -205,6 +204,14 @@ namespace GetMyBru.GetMyBru.GUI
             else if (ChckAutoUpdate.Checked == false)
             {
                 Properties.Settings.Default.AutoUpdate = false;
+            }
+            if (ChckConsoleWind.Checked == true)
+            {
+                Properties.Settings.Default.Console = true;
+            }
+            else if (ChckConsoleWind.Checked == false)
+            {
+                Properties.Settings.Default.Console = false;
             }
             if (ChckClean.Checked == true)
             {
@@ -241,6 +248,7 @@ namespace GetMyBru.GetMyBru.GUI
             
             if (String.IsNullOrEmpty(TxtDrive.Text.ToString()) == false && Properties.Settings.Default.FirstTime == true || TxtDrive.Text == String.Empty)
             {
+                Core.ILogging.Output(true, false, false, false, "The Drive text field cannot be left empty!", true);
                 MessageBox.Show("The Drive text field cannot be left empty!", "Error:", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 TxtDrive.Focus();
                 SettingsActive = true;
@@ -248,6 +256,7 @@ namespace GetMyBru.GetMyBru.GUI
             }
             if (TxtDrive.Text.Contains(":") || TxtDrive.Text.Contains("\\") || TxtDrive.Text.Contains("/") || TxtDrive.Text.Contains(","))
             {
+                Core.ILogging.Output(true, false, false, false, "The Drive text field contains invalid character/s. Please only input the drive letter!", true); 
                 MessageBox.Show("The Drive text field contains invalid character/s. Please only input the drive letter!", "Error: Invalid character/s", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 TxtDrive.Focus();
                 SettingsActive = true;
@@ -261,6 +270,7 @@ namespace GetMyBru.GetMyBru.GUI
             {
                 if (String.IsNullOrEmpty(TxtDrive.Text.ToString()))
                 {
+                    Core.ILogging.Output(true, false, false, false, "The Drive text field is empty!", true); 
                     MessageBox.Show("The Drive text field is empty!", "Error: ", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     TxtDrive.Focus();
                     SettingsActive = true;
@@ -277,6 +287,7 @@ namespace GetMyBru.GetMyBru.GUI
             NotifText = "Saved the settings to the Config";
             NotifTime = 40000;
             ShowToast = true;
+            Core.ILogging.Output(false, true, false, false, "Saved Settings", true);
         }
 
         private void LoadSettings()
@@ -292,6 +303,14 @@ namespace GetMyBru.GetMyBru.GUI
             else if (Properties.Settings.Default.Branch == "Canary")
             {
                 RdCanary.Checked = true;
+            }
+            if (Properties.Settings.Default.Console == true)
+            {
+                ChckConsoleWind.Checked = true;
+            }
+            else if (Properties.Settings.Default.Console == true)
+            {
+                ChckConsoleWind.Checked = false;
             }
             if (Properties.Settings.Default.AutoUpdate == true)
             {
@@ -317,6 +336,7 @@ namespace GetMyBru.GetMyBru.GUI
             {
                 ChckNotif.Checked = false;
             }
+            Core.ILogging.Output(false, true, false, false, "Loaded Settings", true); 
             return;
         }
     }

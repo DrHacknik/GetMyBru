@@ -9,6 +9,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -59,12 +60,19 @@ namespace GetMyBru.GetMyBru.GUI
             {
                 TbPage.Enabled = false;
                 LblInstalling.Visible = true;
-                LblInstalling.Text = "Downloading package: " + AppToInstall + " (" + IServiceInstall.percentage.ToString("0.00%") + ")";
+                ILogging.Output(false, false, false, true, "Downloading package: " + AppToInstall + " (" + IServiceInstall.percentage.ToString() + "%)", false);
+                LblInstalling.Text = "Downloading package: " + AppToInstall + " (" + IServiceInstall.percentage.ToString() + "%)";
+                //ILogging.Output(false, false, false, true, "Download package: " + AppToInstall + "::" + IServiceInstall.percentage.ToString() + "%"); 
             }
-            else if (IServiceInstall.Installing == false)
+            else if (IServiceInstall.Installing == false && IServiceInstall.Installed == true)
             {
                 TbPage.Enabled = true;
-
+                ILogging.Output(false, false, false, true, "Package installed", true);
+                FmSelectSystem.NotifTitle = "GetMyBru - Package Installer";
+                FmSelectSystem.NotifText = "Package Installed";
+                FmSelectSystem.NotifTime = 40000;
+                FmSelectSystem.ShowToast = true;
+                IServiceInstall.Installed = false;
                 LblInstalling.Visible = false;
             }
 
@@ -73,7 +81,6 @@ namespace GetMyBru.GetMyBru.GUI
                 TbPage.Enabled = false;
                 LblInstalling.Text = "Installing package: " + AppToInstall;
             }
-
             if (AppInView == true)
             {
                 ShowAppInfo();
