@@ -124,6 +124,8 @@ namespace GetMyBru.GetMyBru.Core.Installer
             if (e.Cancelled == true)
             {
                 Core.ILogging.Output(true, false, false, false, "Package download failed", true);
+                Console.WriteLine("Package download failed");
+                return; 
             }
             else
             {
@@ -132,6 +134,7 @@ namespace GetMyBru.GetMyBru.Core.Installer
                 Core.ILogging.Output(false, false, false, true, "Package downloaded", true);
                 Core.ILogging.Output(false, false, false, true, "Package installing", true);
                 await ExtractPackageAsync();
+                return;
             }
         }
 
