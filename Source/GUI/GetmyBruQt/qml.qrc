@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>XButton.png</file>
+        <file>WiiU.png</file>
+        <file>WiiU_White.png</file>
+        <file>Wii.png</file>
+        <file>Wii_White.png</file>
+        <file>switch_icon.png</file>
+        <file>switch_icon_white.png</file>
+        <file>ShadedBlurredMainWindow.png</file>
+        <file>NoImage.png</file>
+        <file>Icon256.png</file>
+        <file>Icon128.png</file>
+        <file>Icon64.png</file>
+        <file>Icon32.png</file>
+        <file>CogSettingsWhite.png</file>
+        <file>CogSettings.png</file>
+        <file>BlurredMainWindow.png</file>
+        <file>BButton.png</file>
+        <file>AButton.png</file>
+    </qresource>
+</RCC>

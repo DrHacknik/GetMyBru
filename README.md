@@ -21,4 +21,5 @@ A copy of the License is included with the Source inside in the Repository.
 * [4TU](https://fortheusers.org/#services)
 * [WiiBrew](https://wiibrew.org/wiki/Main_Page)
 * Google's Material Design Icon/s
-* [MaterialSkin](https://github.com/IgnaceMaes/MaterialSkin)
+* Uses Libget made by the team over at 4TU
+* Qt design library
