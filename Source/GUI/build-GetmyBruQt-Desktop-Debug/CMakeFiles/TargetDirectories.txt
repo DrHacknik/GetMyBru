@@ -1,4 +1,0 @@
-/mnt/FC4C17E74C179C08/GitHub/GetMyBru/Source/GUI/build-GetmyBruQt-Desktop-Debug/CMakeFiles/rebuild_cache.dir
-/mnt/FC4C17E74C179C08/GitHub/GetMyBru/Source/GUI/build-GetmyBruQt-Desktop-Debug/CMakeFiles/GetmyBruQt.dir
-/mnt/FC4C17E74C179C08/GitHub/GetMyBru/Source/GUI/build-GetmyBruQt-Desktop-Debug/CMakeFiles/edit_cache.dir
-/mnt/FC4C17E74C179C08/GitHub/GetMyBru/Source/GUI/build-GetmyBruQt-Desktop-Debug/CMakeFiles/GetmyBruQt_autogen.dir
